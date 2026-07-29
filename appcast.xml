@@ -3,6 +3,32 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.8</title>
+            <pubDate>Wed, 29 Jul 2026 22:00:10 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.8</link>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.1.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.8
+
+## Neu und verbessert
+
+- „Kopieren“ steht als erste lokale Aktion in der Aktionsleiste.
+- „Einfügen“ erscheint direkt danach, sobald die Zwischenablage Text enthält
+  und die aktuelle Auswahl beschreibbar ist.
+- Eingefügter Text ersetzt die aktuelle Auswahl und lässt sich mit `⌘Z`
+  rückgängig machen.
+- Ein Doppelklick auf ein Wort öffnet die Aktionsleiste wie eine abgeschlossene
+  Mausauswahl.
+- Die kompakte Leiste ist nochmals etwa ein Viertel kleiner: 25 Punkte große
+  Buttons und 33 statt 44 Punkte Gesamthöhe.
+
+Kopieren und Einfügen laufen vollständig lokal und verwenden keinen
+KI-Provider.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.8/Instant-0.1.8-10.zip" length="4572022" type="application/octet-stream" sparkle:edSignature="mn/b/QkRv21HDeC4nFzkJf4h4iWNCHtUyG31cSpOawRaEltmumNuouKKod4J3w9tUXEmhY110PhcPvJtyEE5Aw=="/>
+        </item>
+        <item>
             <title>0.1.7</title>
             <pubDate>Wed, 29 Jul 2026 21:18:38 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.7</link>
