@@ -3,6 +3,27 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.1</title>
+            <pubDate>Wed, 29 Jul 2026 12:22:31 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.1</link>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.1
+
+## Neu
+
+- Instant besitzt jetzt ein eigenständiges, hochauflösendes macOS-App-Icon.
+- Die vollständige Größenreihe ist für Finder, Dock, Spotlight,
+  Systemeinstellungen und kleinere Darstellungen optimiert.
+- Das Motiv zeigt ausgewählte Textzeilen und einen Transformationsfunken und
+  fügt sich in die visuelle Familie von Skill Notes und Local AI Reference ein.
+
+Die Funktionen von Version 0.1.0 bleiben unverändert.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.1/Instant-0.1.1-3.zip" length="4491087" type="application/octet-stream" sparkle:edSignature="sSm8LMgt7P6fcOjyZ5am4FYW6qck38mmHKBb8KYeGluHzzKMGIIbe42Dguud6TjTGMavRoG/zAnWYHowwMspDg=="/>
+        </item>
+        <item>
             <title>0.1.0</title>
             <pubDate>Wed, 29 Jul 2026 12:10:14 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.0</link>
