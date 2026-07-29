@@ -3,6 +3,42 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.7</title>
+            <pubDate>Wed, 29 Jul 2026 21:18:38 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.7</link>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.7
+
+Dieses Update bündelt die Verbesserungen seit der öffentlichen Version 0.1.1.
+
+## Neu und verbessert
+
+- Die automatische Aktionsleiste erscheint nach einer abgeschlossenen
+  Mausauswahl und ist bei neuen Installationen standardmäßig aktiv.
+- Die kompakte PopClip-artige Leiste ist flacher, schmaler und dichter, behält
+  aber vollständige Klickflächen und Tastaturbedienung.
+- Einstellungen sind zuverlässig über das Menüleistensymbol erreichbar.
+- Globale Kurzbefehle werden atomar registriert, sodass eine belegte
+  Kombination den bisherigen Kurzbefehl nicht beschädigt.
+- Laufende, erfolgreiche und fehlgeschlagene Aktionen geben direkt am
+  Auswahlort sichtbare Rückmeldung.
+
+## Behoben
+
+- Dieselbe Aktion kann für dieselbe Auswahl nicht versehentlich doppelt
+  gestartet werden.
+- KI-Ergebnisse mit geänderter Textlänge werden korrekt geprüft und genau
+  einmal eingesetzt.
+- Instant meldet nicht mehr fälschlich „Einfügen nicht erlaubt“, nachdem die
+  Ziel-App den Text bereits übernommen hat.
+- `⌘Z` stellt den ursprünglichen Text weiterhin als nativen Undo-Schritt
+  wieder her.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.7/Instant-0.1.7-9.zip" length="4563368" type="application/octet-stream" sparkle:edSignature="EfQilBZJx28D3gT48Sxrm70h0cNc/7breJRKmXL+gteJrD4b18iDEfgXIMU2OmZcfLr4A72FqFRqlnIqiujkBw=="/>
+        </item>
+        <item>
             <title>0.1.1</title>
             <pubDate>Wed, 29 Jul 2026 12:22:31 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.1</link>
