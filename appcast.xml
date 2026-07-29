@@ -3,6 +3,41 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.9</title>
+            <pubDate>Thu, 30 Jul 2026 00:35:19 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.9</link>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.1.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.9
+
+## Neu und verbessert
+
+- Transformierte Ergebnisse können jetzt direkt ersetzt, ausschließlich in
+  die Zwischenablage kopiert, in der Vorschau geprüft oder nach der
+  Transformation per „Jedes Mal fragen“ verwendet werden.
+- Das Ausgabeziel lässt sich global und für jede transformierende Aktion
+  einzeln konfigurieren.
+- Mit gedrückter `⌥`-Taste wird das Ergebnis für genau diesen Lauf kopiert,
+  ohne die gespeicherte Einstellung zu verändern.
+- Die Aktionsleiste zeigt den temporären Kopiermodus sichtbar an.
+- Bei einer sicher erkannten schreibgeschützten Auswahl wird das Ergebnis
+  automatisch kopiert, statt eine irreführende Fehlermeldung zu zeigen.
+- Die Vorschau bietet „Ersetzen“ und „Kopieren“ gleichzeitig an und erklärt,
+  wenn die Quellauswahl nicht beschreibbar ist.
+
+## Sicherheit und Kompatibilität
+
+- Geänderte Auswahlen, Fokuswechsel und geschützte Eingabefelder lösen keinen
+  automatischen Kopier-Fallback aus.
+- Konfigurationsexporte verwenden Schema-Version 2; vorhandene Exporte der
+  Version 1 bleiben importierbar.
+- Alle neuen Bedienelemente und Rückmeldungen sind auf Deutsch und Englisch
+  verfügbar.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.9/Instant-0.1.9-11.zip" length="4606967" type="application/octet-stream" sparkle:edSignature="ku9RK0uBVSsRK2Nq7vP5AkLnB2hBxi1uRlz1mIVzfUvrPN8jO4aqkulBk2MBW//YiA4j4I3L+hMkYeOBLzg+Bg=="/>
+        </item>
+        <item>
             <title>0.1.8</title>
             <pubDate>Wed, 29 Jul 2026 22:00:10 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.8</link>
