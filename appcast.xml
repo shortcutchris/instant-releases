@@ -1,0 +1,47 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>Instant</title>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Wed, 29 Jul 2026 12:10:14 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.0</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.0
+
+Die erste öffentliche Version von Instant bringt frei konfigurierbare
+Texttransformationen direkt in jede unterstützte Mac-App.
+
+## Highlights
+
+- markierten Text per globalem Kurzbefehl oder automatischem Auswahlmenü
+  bearbeiten;
+- eigene Aktionen, Prompts, Symbole, Kurzbefehle und Ausgabemodi anlegen;
+- Ergebnisse direkt ersetzen oder zuerst in einer streamenden Vorschau prüfen;
+- Änderungen mit `⌘Z` rückgängig machen;
+- OpenAI, Codex CLI sowie lokale OpenAI-kompatible Modelle wie Ollama und
+  LM Studio verwenden;
+- automatische Regeln pro App definieren;
+- vollständige deutsche und englische Oberfläche;
+- sichere In-App-Updates über Sparkle.
+
+Passwortfelder und geschützte Eingaben werden nicht gelesen oder
+transformiert. API-Schlüssel werden ausschließlich im macOS-Schlüsselbund
+gespeichert.
+
+## Voraussetzungen
+
+Instant benötigt macOS 14 oder neuer. Für die systemweite Auswahl und
+Ersetzung muss Instant einmalig unter
+„Systemeinstellungen → Datenschutz & Sicherheit → Bedienungshilfen“
+freigegeben werden.
+
+Die App ist mit Developer ID signiert, von Apple notarisiert und als Universal
+Binary für Apple Silicon und Intel enthalten.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.0/Instant-0.1.0-2.zip" length="1800590" type="application/octet-stream" sparkle:edSignature="l0kLhJYxABZt2swbNyIwYvEoUm5HSUHnsMRI7H6JOtAolP5uTJK2ERy0aQYJrRY1XQv13r/tNGtaq9hSqieHDg=="/>
+        </item>
+    </channel>
+</rss>
