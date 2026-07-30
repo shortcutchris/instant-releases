@@ -3,6 +3,39 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.10</title>
+            <pubDate>Thu, 30 Jul 2026 14:53:24 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.10</link>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.1.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.10
+
+## Neu und verbessert
+
+- Die globale Zielsprache lässt sich jetzt über eine verständliche Auswahl
+  festlegen. Neben „Automatisch“ stehen die gepflegten Zielsprachen mit
+  lokalisierten Namen zur Verfügung.
+- Transformierende Aktionen können die globale Zielsprache übernehmen oder
+  eine eigene Zielsprache festlegen.
+- Die Aktionsleiste berücksichtigt den verfügbaren Platz auf dem Bildschirm
+  und erscheint je nach Auswahl ober- oder unterhalb des markierten Textes.
+- In Electron-Apps wie Codex werden unplausible Auswahlkoordinaten erkannt.
+  Instant verwendet dann die tatsächliche Position beim Loslassen der Maus,
+  statt die Leiste an einem entfernten Bildschirmrand anzuzeigen.
+- Aktions- und Vorschauleiste liegen auf der Fensterebene von Systemmenüs und
+  bleiben dadurch über normalen App-Fenstern, Vollbildfenstern und Spaces
+  sichtbar.
+
+## Kompatibilität
+
+- Vorhandene Aktionen und Einstellungen bleiben gültig. Ohne individuelle
+  Vorgabe übernehmen Aktionen weiterhin die globale Zielsprache.
+- Alle neuen sichtbaren Texte sind auf Deutsch und Englisch verfügbar.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.10/Instant-0.1.10-12.zip" length="4631234" type="application/octet-stream" sparkle:edSignature="rws0aJSh6E/DE+mZwLv5HSUHNULC+DHPldbGKnNrBKpVK36zwsGDn0WJFgN0vm7hGIc4WiUVkX49YHe9trTlCw=="/>
+        </item>
+        <item>
             <title>0.1.9</title>
             <pubDate>Thu, 30 Jul 2026 00:35:19 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.9</link>
