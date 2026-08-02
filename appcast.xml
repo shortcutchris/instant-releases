@@ -3,6 +3,35 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.12</title>
+            <pubDate>Sun, 02 Aug 2026 23:23:26 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.12</link>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>0.1.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.12
+
+## Neu und verbessert
+
+- Erfolgreiche Aktionen und Kopiervorgänge verwenden jetzt standardmäßig eine
+  kompakte, einzeilige Statusanzeige, die sich an die Länge des Inhalts anpasst.
+- In den allgemeinen Einstellungen kann alternativ die minimale
+  Erfolgsanzeige aktiviert werden. Nach einem erfolgreichen Vorgang erscheint
+  dann ausschließlich ein kleiner Haken.
+- Laufende Aktionen, Fehler und Hinweise auf doppelte Ausführungen bleiben
+  weiterhin ausführlich sichtbar, damit wichtige Informationen nicht verloren
+  gehen.
+
+## Kompatibilität
+
+- Die gewählte Erfolgsanzeige wird dauerhaft gespeichert und beim Export von
+  Einstellungen berücksichtigt. Bestehende Exporte der Versionen 1 bis 3
+  bleiben importierbar.
+- Alle neuen sichtbaren Texte sind auf Deutsch und Englisch verfügbar.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.12/Instant-0.1.12-14.zip" length="4640184" type="application/octet-stream" sparkle:edSignature="oKj9hppFFakJ8/CZ5wM34hT171R6MsG84Qa+ZgHQdLjnmgdv0iXseW9mpOJlZSpZow+ZuylM/hM05LbV79uWAw=="/>
+        </item>
+        <item>
             <title>0.1.11</title>
             <pubDate>Sun, 02 Aug 2026 14:50:41 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.11</link>
