@@ -3,6 +3,36 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.11</title>
+            <pubDate>Sun, 02 Aug 2026 14:50:41 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.11</link>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>0.1.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.11
+
+## Neu und verbessert
+
+- Ein Doppelklick in einen leeren, beschreibbaren Textbereich öffnet die
+  Aktionsleiste jetzt auch ohne markierten Quelltext, sofern die
+  Zwischenablage Text enthält.
+- In diesem Kontext bietet Instant ausschließlich „Einfügen“ an. Kopieren,
+  lokale Textoperationen und KI-Transformationen bleiben verborgen.
+- Der Inhalt der Zwischenablage wird an der aktuellen Einfügemarke eingesetzt
+  und lässt sich mit `⌘Z` über den nativen Undo-Weg der Ziel-App rückgängig
+  machen.
+
+## Sicherheit und Kompatibilität
+
+- Ein einfacher Klick und der globale Kurzbefehl öffnen ohne Textauswahl keine
+  Aktionsleiste.
+- Passwortfelder, geschützte Eingaben und statische Texte bleiben von der
+  Caret-Erfassung ausgeschlossen.
+- Das bisherige Verhalten für normale Textauswahlen bleibt unverändert.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.11/Instant-0.1.11-13.zip" length="4634238" type="application/octet-stream" sparkle:edSignature="Dmny3ueB36faewqdwquqyxnXrFPeOTxEaZnxGgEz4os6kL1C6XmA/r8bU6Er9IGEI5SAuTOJZl8OPsjkTOeoDg=="/>
+        </item>
+        <item>
             <title>0.1.10</title>
             <pubDate>Thu, 30 Jul 2026 14:53:24 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.10</link>
