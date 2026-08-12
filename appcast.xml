@@ -3,6 +3,39 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.14</title>
+            <pubDate>Wed, 12 Aug 2026 14:26:49 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.14</link>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>0.1.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.14
+
+## Neu
+
+- „Deutsch → Englisch“ übersetzt ausgewählten Text mit fest eingestellter
+  Zielsprache Englisch.
+- „Englisch → Deutsch“ übersetzt ausgewählten Text mit fest eingestellter
+  Zielsprache Deutsch.
+- Beide Aktionen erscheinen als getrennte Buttons und können unabhängig
+  aktiviert, sortiert, einem Provider zugeordnet oder auf einen anderen
+  Ausgabemodus eingestellt werden.
+
+## Kompatibilität
+
+- Eine unveränderte bisherige Standardaktion „Übersetzen“ wird beim ersten
+  Start automatisch durch die beiden Richtungsaktionen ersetzt. Provider,
+  Ausgabemodus, Aktivierungszustand und Kurzbefehl bleiben erhalten.
+- Individuell benannte, mit einem eigenen Symbol versehene, auf eine eigene
+  Zielsprache gesetzte oder im Prompt veränderte Übersetzungsaktionen werden
+  nicht überschrieben.
+- Bewusst gelöschte Richtungsaktionen werden nach der einmaligen Migration
+  nicht erneut angelegt.
+- Es werden keine neuen Berechtigungen benötigt.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.14/Instant-0.1.14-16.zip" length="4654305" type="application/octet-stream" sparkle:edSignature="hh98f9p9RDiJU7sISJ9mf+J4Kv2kBdex8M4FqFayzli4d2q/4j3h3+R786wXKj/XLnV8Zg4V2V3hwqsH12QsCw=="/>
+        </item>
+        <item>
             <title>0.1.13</title>
             <pubDate>Mon, 03 Aug 2026 22:07:12 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.13</link>
