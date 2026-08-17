@@ -3,6 +3,49 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.16</title>
+            <pubDate>Mon, 17 Aug 2026 16:48:20 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.16</link>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>0.1.16</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.16
+
+## Neu
+
+- Die kompakte Aktionsleiste verwendet standardmäßig nur Symbole und erhält
+  einen optionalen einzeiligen Stil „Symbol + Text“.
+- Leistenfarbe und Highlight-Farbe lassen sich unabhängig voneinander über
+  kuratierte Vorgaben oder den nativen macOS-Farbwähler anpassen.
+- Die neuen Darstellungseinstellungen enthalten eine sichere Live-Vorschau
+  mit festem Beispieltext. Es wird dabei niemals ausgewählter Text gelesen
+  oder an einen Provider gesendet.
+
+## Verbessert
+
+- Beide Leistenstile bleiben auch bei vielen Aktionen einzeilig und verwenden
+  weiterhin die adaptive Mehr-/Zurück-Navigation.
+- Kopieren und Einfügen sind visuell von transformierenden Aktionen getrennt.
+- Vollständige Aktionsnamen, Provider und Shortcuts bleiben über native Hilfe
+  und VoiceOver verfügbar, auch wenn nur Symbole sichtbar sind.
+- Der Aktionseditor warnt vor mehrfach verwendeten Symbolen, ohne eine
+  bewusste Konfiguration zu blockieren.
+- Eigene Farben berücksichtigen erhöhten Kontrast, reduzierte Transparenz und
+  „Ohne Farben differenzieren“. Erfolgs-, Warn- und Fehlerfarben bleiben
+  semantisch unverändert.
+
+## Kompatibilität
+
+- Bestehende kompakte Leisten werden auf „Nur Symbole“ abgebildet; eine
+  bewusst gewählte Listenansicht bleibt unverändert.
+- Konfigurationsexporte verwenden Schema-Version 5. Exporte der Versionen 1
+  bis 4 bleiben importierbar und erhalten sichere Standardfarben.
+- Alle neuen sichtbaren Texte sind auf Deutsch und Englisch lokalisiert.
+- Es werden keine neuen Berechtigungen benötigt.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.16/Instant-0.1.16-18.zip" length="4766492" type="application/octet-stream" sparkle:edSignature="vbn9JZf/NqypdtW4fHDxVnaJq5Nc4GCXYi6stsI6DAK56XXQqVRQmQ4NnsVsB4sQyBx+Vw2VqbiPu1aOOSEXDw=="/>
+        </item>
+        <item>
             <title>0.1.15</title>
             <pubDate>Mon, 17 Aug 2026 14:48:36 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.15</link>
@@ -283,27 +326,6 @@ Dieses Update bündelt die Verbesserungen seit der öffentlichen Version 0.1.1.
   wieder her.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.7/Instant-0.1.7-9.zip" length="4563368" type="application/octet-stream" sparkle:edSignature="EfQilBZJx28D3gT48Sxrm70h0cNc/7breJRKmXL+gteJrD4b18iDEfgXIMU2OmZcfLr4A72FqFRqlnIqiujkBw=="/>
-        </item>
-        <item>
-            <title>0.1.1</title>
-            <pubDate>Wed, 29 Jul 2026 12:22:31 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.1</link>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.1.1</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.1
-
-## Neu
-
-- Instant besitzt jetzt ein eigenständiges, hochauflösendes macOS-App-Icon.
-- Die vollständige Größenreihe ist für Finder, Dock, Spotlight,
-  Systemeinstellungen und kleinere Darstellungen optimiert.
-- Das Motiv zeigt ausgewählte Textzeilen und einen Transformationsfunken und
-  fügt sich in die visuelle Familie von Skill Notes und Local AI Reference ein.
-
-Die Funktionen von Version 0.1.0 bleiben unverändert.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.1/Instant-0.1.1-3.zip" length="4491087" type="application/octet-stream" sparkle:edSignature="sSm8LMgt7P6fcOjyZ5am4FYW6qck38mmHKBb8KYeGluHzzKMGIIbe42Dguud6TjTGMavRoG/zAnWYHowwMspDg=="/>
         </item>
     </channel>
 </rss>
