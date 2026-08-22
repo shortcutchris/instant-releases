@@ -3,6 +3,58 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.19</title>
+            <pubDate>Sun, 23 Aug 2026 01:22:43 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.19</link>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>0.1.19</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.19
+
+## Neu
+
+- KI-Dateiaktionen können jetzt Inhalte aus Word-Dokumenten (`.doc`, `.docx`),
+  Excel-Arbeitsmappen (`.xlsx`) und PowerPoint-Präsentationen (`.pptx`) lesen.
+- Bilder und PDF-Seiten ohne Textebene erhalten eine lokale Texterkennung über
+  Apples Vision-Framework. PNG, JPEG, HEIC/HEIF, TIFF, BMP und WebP werden
+  unterstützt, sofern macOS das konkrete Bild dekodieren kann.
+- Unter „Allgemein > Dokumente und OCR“ lassen sich OCR, automatische,
+  deutsche oder englische Erkennung sowie das maximale PDF-Seitenlimit
+  einstellen.
+- Bestehende allgemeine KI-Dateiaktionen erhalten die neuen Office- und
+  Bildtypen automatisch, ohne individuelle Typfilter zu überschreiben.
+
+## Bedienung und Datenschutz
+
+- Office-Import und OCR laufen vollständig lokal. Erst eine bewusst gestartete
+  KI-Dateiaktion sendet den extrahierten Text an den ausgewählten Provider.
+- Bilder zeigen bei deaktivierter OCR keine inhaltsbasierten KI-Aktionen.
+  Office-Dokumente und PDFs mit vorhandener Textebene bleiben verfügbar.
+- Word-Absätze, Excel-Zellen und PowerPoint-Folien werden in ihrer natürlichen
+  Reihenfolge übernommen. Originaldateien werden niemals verändert.
+
+## Sicherheitsgrenzen
+
+- Moderne Office-Dateien werden ohne temporäres Entpacken über einen
+  begrenzten Open-XML-Leser verarbeitet.
+- Archivpfade, Eintragszahl, Entpackgröße, Kompressionsart und CRC-Prüfsummen
+  werden validiert; verschlüsselte Einträge, DTDs und XML-Entitäten werden
+  abgewiesen.
+- Zusätzlich gelten feste PDF-, OCR- und Bildpunktlimits sowie das vorhandene
+  Datei- und Zeichenbudget. Bei einer Überschreitung erhält kein Provider
+  Inhalte.
+
+## Qualität
+
+- Die neue Verarbeitung ist mit echten komprimierten DOCX-Daten,
+  Excel Shared Strings, numerischen Zellen, Folienreihenfolge, OCR-Bildern,
+  Konfigurationsmigration und negativen Parserfällen automatisiert geprüft.
+- Die Oberfläche und alle neuen Fehlermeldungen sind vollständig auf Deutsch
+  und Englisch lokalisiert.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.19/Instant-0.1.19-21.zip" length="5234663" type="application/octet-stream" sparkle:edSignature="lLyCoYhjpnkTXKQl8x1Albo32lGX/T58lVc5O169fofHAPzZgCV+8P1sK87SLFFKFOifTIMu0YHQN1VjIGxDCQ=="/>
+        </item>
+        <item>
             <title>0.1.18</title>
             <pubDate>Sat, 22 Aug 2026 23:27:31 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.18</link>
@@ -340,41 +392,6 @@
 - Alle neuen sichtbaren Texte sind auf Deutsch und Englisch verfügbar.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.10/Instant-0.1.10-12.zip" length="4631234" type="application/octet-stream" sparkle:edSignature="rws0aJSh6E/DE+mZwLv5HSUHNULC+DHPldbGKnNrBKpVK36zwsGDn0WJFgN0vm7hGIc4WiUVkX49YHe9trTlCw=="/>
-        </item>
-        <item>
-            <title>0.1.9</title>
-            <pubDate>Thu, 30 Jul 2026 00:35:19 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.9</link>
-            <sparkle:version>11</sparkle:version>
-            <sparkle:shortVersionString>0.1.9</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.9
-
-## Neu und verbessert
-
-- Transformierte Ergebnisse können jetzt direkt ersetzt, ausschließlich in
-  die Zwischenablage kopiert, in der Vorschau geprüft oder nach der
-  Transformation per „Jedes Mal fragen“ verwendet werden.
-- Das Ausgabeziel lässt sich global und für jede transformierende Aktion
-  einzeln konfigurieren.
-- Mit gedrückter `⌥`-Taste wird das Ergebnis für genau diesen Lauf kopiert,
-  ohne die gespeicherte Einstellung zu verändern.
-- Die Aktionsleiste zeigt den temporären Kopiermodus sichtbar an.
-- Bei einer sicher erkannten schreibgeschützten Auswahl wird das Ergebnis
-  automatisch kopiert, statt eine irreführende Fehlermeldung zu zeigen.
-- Die Vorschau bietet „Ersetzen“ und „Kopieren“ gleichzeitig an und erklärt,
-  wenn die Quellauswahl nicht beschreibbar ist.
-
-## Sicherheit und Kompatibilität
-
-- Geänderte Auswahlen, Fokuswechsel und geschützte Eingabefelder lösen keinen
-  automatischen Kopier-Fallback aus.
-- Konfigurationsexporte verwenden Schema-Version 2; vorhandene Exporte der
-  Version 1 bleiben importierbar.
-- Alle neuen Bedienelemente und Rückmeldungen sind auf Deutsch und Englisch
-  verfügbar.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.9/Instant-0.1.9-11.zip" length="4606967" type="application/octet-stream" sparkle:edSignature="ku9RK0uBVSsRK2Nq7vP5AkLnB2hBxi1uRlz1mIVzfUvrPN8jO4aqkulBk2MBW//YiA4j4I3L+hMkYeOBLzg+Bg=="/>
         </item>
     </channel>
 </rss>
