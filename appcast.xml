@@ -3,6 +3,43 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.27</title>
+            <pubDate>Mon, 24 Aug 2026 01:16:36 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.27</link>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>0.1.27</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.27
+
+## Stabiler visueller Chat
+
+- Längere gesprochene Antworten werden nicht mehr durch das bisherige
+  Ausgabelimit von 1.024 Tokens vorzeitig beendet. Instant nutzt nun das volle
+  Ausgabefenster des Realtime-Modells.
+- Ein Fehler innerhalb einer einzelnen Antwort beendet nach einer bereits
+  aufgebauten Sitzung nicht mehr automatisch die gesamte Live-Unterhaltung.
+  Mikrofon und Verbindung bleiben aktiv, sodass direkt weitergefragt werden
+  kann.
+- Wirklich nicht fortsetzbare Fehler wie eine ungültige Berechtigung oder eine
+  abgelaufene Sitzung trennen weiterhin sicher und zeigen die bestehende
+  Wiederholen-Funktion.
+- Der Status wechselt erst nach dem vollständigen `response.done`-Ereignis
+  zurück zu „Hört zu“. Ein kompakter, lokalisierter Hinweis informiert über
+  unterbrochene Einzelantworten, ohne das Layout oder den Gesprächsfluss zu
+  blockieren.
+
+## Diagnose und Qualität
+
+- Realtime-Fehler protokollieren ausschließlich technische Fehlerklasse, Code,
+  Parameter und Ereignis-ID. Schlüssel, Fragen, Antworten und Bildinhalte
+  werden nicht protokolliert.
+- Der Live-Test stellt nun zwei vollständige Antworten nacheinander über
+  dieselbe OpenAI-WebSocket-Sitzung sicher. Zusätzliche Unit-Tests decken
+  fortsetzbare sowie nicht fortsetzbare Serverfehler ab.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.27/Instant-0.1.27-29.zip" length="5669096" type="application/octet-stream" sparkle:edSignature="/HwTiKOMeOVdX/kreSM2UaCp5XvSnqafjD/DKgdcUMoEIkSobbJ3l2XbJgUQYWXFc2EhCNO93UybaIix18pjCg=="/>
+        </item>
+        <item>
             <title>0.1.26</title>
             <pubDate>Mon, 24 Aug 2026 00:53:09 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.26</link>
@@ -346,40 +383,6 @@
   wiederverwendet; die UI bleibt von einzelnen Providern unabhängig.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.18/Instant-0.1.18-20.zip" length="5147219" type="application/octet-stream" sparkle:edSignature="BlTePqTQpYSfzM9KGVabLvtM2ZF97q3CHke9CFCK7T5kPzoYtYZxpZLi/h06aIhRsZXprp1SI39qC4fFfHh8Dw=="/>
-        </item>
-        <item>
-            <title>0.1.17</title>
-            <pubDate>Wed, 19 Aug 2026 20:18:03 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.17</link>
-            <sparkle:version>19</sparkle:version>
-            <sparkle:shortVersionString>0.1.17</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.17
-
-## Neu
-
-- Die neue lokale Standardaktion „Entfernen“ löscht markierten Text direkt aus
-  der Ziel-App. Sie steht mit dem Symbol `delete.left` unmittelbar neben
-  „Kopieren“.
-- `⌘Z` stellt den entfernten Text über den nativen Undo-Weg der Ziel-App wieder
-  her.
-
-## Datenschutz und Sicherheit
-
-- „Entfernen“ verwendet weder OpenAI noch Codex CLI oder ein lokales Modell.
-- Die Zwischenablage wird durch die Aktion nicht verändert.
-- In nicht beschreibbaren oder geschützten Textfeldern wird „Entfernen“ nicht
-  angeboten.
-
-## Kompatibilität
-
-- Bestehende Konfigurationen erhalten die Aktion einmalig direkt hinter
-  „Kopieren“. Eine später bewusst gelöschte Aktion wird nicht erneut angelegt.
-- Die Bezeichnung und alle lokalen Operationsnamen im Aktionseditor sind auf
-  Deutsch und Englisch lokalisiert.
-- Es werden keine neuen Berechtigungen benötigt.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.17/Instant-0.1.17-19.zip" length="4772739" type="application/octet-stream" sparkle:edSignature="Mt9CBJ7ZGjl1/ar0QUtmxb2PSWAhwiVZ4Cx0yDL1iP1R/MjvTk6p/N1twiLfGBd2Qf73Mva/bmfT2d915hcmDQ=="/>
         </item>
     </channel>
 </rss>
