@@ -3,6 +3,56 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.20</title>
+            <pubDate>Sun, 23 Aug 2026 04:15:29 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.20</link>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>0.1.20</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.20
+
+## Neu
+
+- Mit „Bildschirm fragen“ lässt sich ein Bildschirmbereich markieren und
+  direkt mit OpenAI besprechen.
+- Fragen funktionieren per Text oder als live gesprochener Dialog mit
+  sichtbarem Pegel, Transkript und gesprochener Antwort.
+- Die kompakte Voice-Pille wächst nur bei Bedarf zu einem schmalen
+  Gesprächsverlauf und bleibt über normalen App-Fenstern sichtbar.
+- Visuelle Chats lassen sich lokal speichern, wieder öffnen und fortsetzen.
+  Modell, Stimme und Screenshot-Aufbewahrung sind konfigurierbar.
+
+## Bedienung
+
+- Der Zeichenmodus unterstützt Freihandmarkierungen, Rückgängig, vollständiges
+  Löschen, `Esc` zum Abbrechen und `Return` zum Fortfahren.
+- Texteingabe bleibt auch ohne Mikrofonberechtigung vollständig nutzbar.
+- Beim Dazwischenreden stoppt Instant die laufende Audioantwort sofort.
+- Ein eigener Einstellungsbereich bündelt Modell, Stimme, Bildschirm- und
+  Mikrofonberechtigungen sowie alle Verlaufsoptionen.
+
+## Datenschutz
+
+- Bildschirmaufnahme und Mikrofon starten nur nach einer sichtbaren Aktion.
+- Roh-Audio wird niemals gespeichert. Der Verlauf ist optional und liegt nur
+  lokal mit restriktiven Dateirechten.
+- Screenshots werden nach der gewählten Frist gelöscht; geschützte Felder und
+  gesperrte Apps bleiben ausgeschlossen.
+- API-Schlüssel verbleiben ausschließlich in der macOS-Keychain.
+
+## Qualität
+
+- Realtime-WebSocket, Bildfrage, Text- und Audioantwort wurden gegen OpenAI
+  live geprüft.
+- Verlauf, Bildaufbereitung, Panelplatzierung, Konfigurationsmigration und
+  Fehlerzustände sind automatisiert getestet.
+- Der vollständige Rail und der neue Einstellungsbereich wurden auf dem
+  MacBook Air visuell und per UI-Test abgenommen.
+- Alle neuen sichtbaren Texte sind auf Deutsch und Englisch lokalisiert.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.20/Instant-0.1.20-22.zip" length="5630997" type="application/octet-stream" sparkle:edSignature="HaU6LzFlpqInqhirSXfqS0WKQ8Ul9Oc1yhLVXB/MTmzAH5eYsISf+vFD8scVuLJuHVBIyq/1mcksyz+K14SGAg=="/>
+        </item>
+        <item>
             <title>0.1.19</title>
             <pubDate>Sun, 23 Aug 2026 01:22:43 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.19</link>
@@ -359,39 +409,6 @@
 - Das bisherige Verhalten für normale Textauswahlen bleibt unverändert.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.11/Instant-0.1.11-13.zip" length="4634238" type="application/octet-stream" sparkle:edSignature="Dmny3ueB36faewqdwquqyxnXrFPeOTxEaZnxGgEz4os6kL1C6XmA/r8bU6Er9IGEI5SAuTOJZl8OPsjkTOeoDg=="/>
-        </item>
-        <item>
-            <title>0.1.10</title>
-            <pubDate>Thu, 30 Jul 2026 14:53:24 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.10</link>
-            <sparkle:version>12</sparkle:version>
-            <sparkle:shortVersionString>0.1.10</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.10
-
-## Neu und verbessert
-
-- Die globale Zielsprache lässt sich jetzt über eine verständliche Auswahl
-  festlegen. Neben „Automatisch“ stehen die gepflegten Zielsprachen mit
-  lokalisierten Namen zur Verfügung.
-- Transformierende Aktionen können die globale Zielsprache übernehmen oder
-  eine eigene Zielsprache festlegen.
-- Die Aktionsleiste berücksichtigt den verfügbaren Platz auf dem Bildschirm
-  und erscheint je nach Auswahl ober- oder unterhalb des markierten Textes.
-- In Electron-Apps wie Codex werden unplausible Auswahlkoordinaten erkannt.
-  Instant verwendet dann die tatsächliche Position beim Loslassen der Maus,
-  statt die Leiste an einem entfernten Bildschirmrand anzuzeigen.
-- Aktions- und Vorschauleiste liegen auf der Fensterebene von Systemmenüs und
-  bleiben dadurch über normalen App-Fenstern, Vollbildfenstern und Spaces
-  sichtbar.
-
-## Kompatibilität
-
-- Vorhandene Aktionen und Einstellungen bleiben gültig. Ohne individuelle
-  Vorgabe übernehmen Aktionen weiterhin die globale Zielsprache.
-- Alle neuen sichtbaren Texte sind auf Deutsch und Englisch verfügbar.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.10/Instant-0.1.10-12.zip" length="4631234" type="application/octet-stream" sparkle:edSignature="rws0aJSh6E/DE+mZwLv5HSUHNULC+DHPldbGKnNrBKpVK36zwsGDn0WJFgN0vm7hGIc4WiUVkX49YHe9trTlCw=="/>
         </item>
     </channel>
 </rss>
