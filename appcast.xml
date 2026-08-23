@@ -3,6 +3,33 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.21</title>
+            <pubDate>Sun, 23 Aug 2026 10:35:42 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.21</link>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>0.1.21</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.21
+
+## Verbessert
+
+- Die untere Voice-Bar des visuellen Chats ist jetzt als eigene, eingerückte
+  Dock-Fläche klar vom Gespräch getrennt.
+- Das Mikrofon sitzt wie in der Designreferenz links. Status und Pegel stehen
+  direkt daneben, der Tastaturumschalter rechts.
+- Das Texteingabefeld gehört sichtbar zur selben Composer-Fläche, ohne an
+  Antworten oder das Mikrofon zu stoßen.
+
+## Qualität
+
+- Die neue Anordnung wurde bei identischer Panelgröße visuell gegen die
+  freigegebene Referenz geprüft.
+- Ein zusätzlicher UI-Geometrie-Test schützt Abstand und Ausrichtung der
+  Bedienelemente vor späteren Regressionen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.21/Instant-0.1.21-23.zip" length="5635878" type="application/octet-stream" sparkle:edSignature="CsQ7NDKyYx1lRrEst4I6/Nve6Ym41HN+spD+Ap8Oh5iSr13hpIpuW1oyh1u4qCWTshE7rB5KWz/XB7PIlYLeDQ=="/>
+        </item>
+        <item>
             <title>0.1.20</title>
             <pubDate>Sun, 23 Aug 2026 04:15:29 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.20</link>
@@ -379,36 +406,6 @@
 - Alle neuen sichtbaren Texte sind auf Deutsch und Englisch verfügbar.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.12/Instant-0.1.12-14.zip" length="4640184" type="application/octet-stream" sparkle:edSignature="oKj9hppFFakJ8/CZ5wM34hT171R6MsG84Qa+ZgHQdLjnmgdv0iXseW9mpOJlZSpZow+ZuylM/hM05LbV79uWAw=="/>
-        </item>
-        <item>
-            <title>0.1.11</title>
-            <pubDate>Sun, 02 Aug 2026 14:50:41 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.11</link>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>0.1.11</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.11
-
-## Neu und verbessert
-
-- Ein Doppelklick in einen leeren, beschreibbaren Textbereich öffnet die
-  Aktionsleiste jetzt auch ohne markierten Quelltext, sofern die
-  Zwischenablage Text enthält.
-- In diesem Kontext bietet Instant ausschließlich „Einfügen“ an. Kopieren,
-  lokale Textoperationen und KI-Transformationen bleiben verborgen.
-- Der Inhalt der Zwischenablage wird an der aktuellen Einfügemarke eingesetzt
-  und lässt sich mit `⌘Z` über den nativen Undo-Weg der Ziel-App rückgängig
-  machen.
-
-## Sicherheit und Kompatibilität
-
-- Ein einfacher Klick und der globale Kurzbefehl öffnen ohne Textauswahl keine
-  Aktionsleiste.
-- Passwortfelder, geschützte Eingaben und statische Texte bleiben von der
-  Caret-Erfassung ausgeschlossen.
-- Das bisherige Verhalten für normale Textauswahlen bleibt unverändert.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.11/Instant-0.1.11-13.zip" length="4634238" type="application/octet-stream" sparkle:edSignature="Dmny3ueB36faewqdwquqyxnXrFPeOTxEaZnxGgEz4os6kL1C6XmA/r8bU6Er9IGEI5SAuTOJZl8OPsjkTOeoDg=="/>
         </item>
     </channel>
 </rss>
