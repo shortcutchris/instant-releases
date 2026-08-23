@@ -3,6 +3,33 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.24</title>
+            <pubDate>Sun, 23 Aug 2026 19:35:43 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.24</link>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>0.1.24</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.24
+
+## Kompatibilität
+
+- Safari ist jetzt durch einen echten Textarea-Ablauf mit Auswahl,
+  Transformation, direkter Ersetzung und nativem `⌘Z` abgesichert.
+- Notizen ist durch denselben vollständigen Ersetzungs- und Undo-Ablauf
+  abgesichert. Der Test behandelt auch Apples einmaligen Einführungsdialog und
+  entfernt ausschließlich seine eigene Testnotiz wieder.
+- Terminal-Ausgaben werden als unveränderlicher Text behandelt: Instant
+  transformiert die Auswahl und legt das Ergebnis sicher in die
+  Zwischenablage, ohne Terminal-Inhalte oder Befehlszeile zu überschreiben.
+
+## Qualität
+
+- Die drei neuen Abläufe bestehen sowohl einzeln als auch gemeinsam, sodass
+  Fokus, Zwischenablage und App-Zustand nicht zwischen den Tests auslaufen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.24/Instant-0.1.24-26.zip" length="5643500" type="application/octet-stream" sparkle:edSignature="3741w029Ia/JP6csQktJiYERx1NT8lJNUvE7m1R8VDCn4orSj06MsyJq5yzD4JLFiDK/d0Xy8w3VpRm7HE51Dw=="/>
+        </item>
+        <item>
             <title>0.1.23</title>
             <pubDate>Sun, 23 Aug 2026 12:29:39 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.23</link>
@@ -368,39 +395,6 @@
 - Es werden keine neuen Berechtigungen benötigt.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.15/Instant-0.1.15-17.zip" length="4659008" type="application/octet-stream" sparkle:edSignature="uxSFtJ6tGcEvPjfZWeoYW1hagqhso9RRV5TE5IS9BRkVinXF+obuIn0IKWfMhnERV7QuDRRj41aL7JRqz4UgDg=="/>
-        </item>
-        <item>
-            <title>0.1.14</title>
-            <pubDate>Wed, 12 Aug 2026 14:26:49 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.14</link>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:shortVersionString>0.1.14</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.14
-
-## Neu
-
-- „Deutsch → Englisch“ übersetzt ausgewählten Text mit fest eingestellter
-  Zielsprache Englisch.
-- „Englisch → Deutsch“ übersetzt ausgewählten Text mit fest eingestellter
-  Zielsprache Deutsch.
-- Beide Aktionen erscheinen als getrennte Buttons und können unabhängig
-  aktiviert, sortiert, einem Provider zugeordnet oder auf einen anderen
-  Ausgabemodus eingestellt werden.
-
-## Kompatibilität
-
-- Eine unveränderte bisherige Standardaktion „Übersetzen“ wird beim ersten
-  Start automatisch durch die beiden Richtungsaktionen ersetzt. Provider,
-  Ausgabemodus, Aktivierungszustand und Kurzbefehl bleiben erhalten.
-- Individuell benannte, mit einem eigenen Symbol versehene, auf eine eigene
-  Zielsprache gesetzte oder im Prompt veränderte Übersetzungsaktionen werden
-  nicht überschrieben.
-- Bewusst gelöschte Richtungsaktionen werden nach der einmaligen Migration
-  nicht erneut angelegt.
-- Es werden keine neuen Berechtigungen benötigt.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.14/Instant-0.1.14-16.zip" length="4654305" type="application/octet-stream" sparkle:edSignature="hh98f9p9RDiJU7sISJ9mf+J4Kv2kBdex8M4FqFayzli4d2q/4j3h3+R786wXKj/XLnV8Zg4V2V3hwqsH12QsCw=="/>
         </item>
     </channel>
 </rss>
