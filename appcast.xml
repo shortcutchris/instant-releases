@@ -3,6 +3,29 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.23</title>
+            <pubDate>Sun, 23 Aug 2026 12:29:39 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.23</link>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>0.1.23</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.23
+
+## Verbessert
+
+- „Verbindung wird hergestellt“ bleibt jetzt einzeilig. Die zuvor allein in
+  die zweite Zeile umgebrochenen Auslassungspunkte wurden entfernt.
+- Der Spinner zeigt den laufenden Verbindungsaufbau weiterhin eindeutig an.
+- Die englische Meldung „Connecting“ folgt derselben Darstellung.
+
+## Qualität
+
+- Der GUI-Test prüft nun ausdrücklich, dass der Verbindungsstatus keine
+  Auslassungspunkte enthält und dieselbe einzeilige Höhe wie „Hört zu“ behält.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.23/Instant-0.1.23-25.zip" length="5643462" type="application/octet-stream" sparkle:edSignature="rx44n52uNnszBUAhmIFecv2bDIzCBZygnZKbQCH+72gPZDb1apM0ILGBbrZGox466HG4ZBjCplApDQRTs27dBQ=="/>
+        </item>
+        <item>
             <title>0.1.22</title>
             <pubDate>Sun, 23 Aug 2026 11:05:47 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.22</link>
@@ -378,32 +401,6 @@
 - Es werden keine neuen Berechtigungen benötigt.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.14/Instant-0.1.14-16.zip" length="4654305" type="application/octet-stream" sparkle:edSignature="hh98f9p9RDiJU7sISJ9mf+J4Kv2kBdex8M4FqFayzli4d2q/4j3h3+R786wXKj/XLnV8Zg4V2V3hwqsH12QsCw=="/>
-        </item>
-        <item>
-            <title>0.1.13</title>
-            <pubDate>Mon, 03 Aug 2026 22:07:12 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.13</link>
-            <sparkle:version>15</sparkle:version>
-            <sparkle:shortVersionString>0.1.13</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.13
-
-## Verbessert
-
-- Wird an einer leeren Einfügemarke ausschließlich „Einfügen“ angeboten,
-  bleibt die sichtbare Fläche der kompakten Werkzeugleiste jetzt zuverlässig
-  quadratisch und umschließt nur den einzelnen Button samt Rand.
-- Die bisherige zusätzliche Mindestbreite für ein oder zwei kompakte Aktionen
-  wurde entfernt. Werkzeugleisten mit mehreren Aktionen wachsen weiterhin
-  ausschließlich mit ihrem tatsächlichen Inhalt.
-
-## Kompatibilität
-
-- Auswahl, Einfügen, nativer Undo-Weg und alle konfigurierten Aktionen bleiben
-  unverändert.
-- Es wurden keine neuen Berechtigungen oder sichtbaren Texte ergänzt.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.13/Instant-0.1.13-15.zip" length="4640160" type="application/octet-stream" sparkle:edSignature="RqbIRUoAJqYwBGrY5ztdUrqxRPCdMhdzFZG7vQ3zJrVcknvkahQXSbzwLOz4M3B6viMLE9pHDt341Rnv8uDFDA=="/>
         </item>
     </channel>
 </rss>
