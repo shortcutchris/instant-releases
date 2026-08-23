@@ -3,6 +3,36 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.25</title>
+            <pubDate>Sun, 23 Aug 2026 22:56:50 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.25</link>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>0.1.25</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.25
+
+## Visueller Chat
+
+- Der Sprachchat startet jetzt auch dann zuverlässig, wenn Mikrofon und
+  Audioausgabe unterschiedliche Abtastraten verwenden, etwa das eingebaute
+  48-kHz-Mikrofon zusammen mit einem 44,1-kHz-USB-Ausgabegerät.
+- Instant aktiviert die systemseitige Sprachverarbeitung nur auf kompatiblen
+  Audiokonfigurationen und fällt bei einem unerwarteten Startfehler automatisch
+  auf den stabilen Standard-Audioweg zurück.
+- Audiofehler werden verständlich und handlungsorientiert angezeigt, statt nur
+  die allgemeine macOS-Meldung „Der Vorgang konnte nicht abgeschlossen werden“
+  auszugeben.
+
+## Qualität
+
+- Die Geräteentscheidung ist durch Tests für gleiche, gemischte und nicht
+  verfügbare Abtastraten abgesichert.
+- Der OpenAI-Realtime-Bildchat wurde mit dem produktiven Keychain-Zugang erneut
+  live geprüft.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.25/Instant-0.1.25-27.zip" length="5649434" type="application/octet-stream" sparkle:edSignature="x5OezwOTTV/xQR/j5B1B8i+ea0QKANm32sSGDziq/MVVbGb7f37fLgVmFW2zovdiPS2Navpylk7wVrgbfstzAQ=="/>
+        </item>
+        <item>
             <title>0.1.24</title>
             <pubDate>Sun, 23 Aug 2026 19:35:43 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.24</link>
@@ -361,40 +391,6 @@
 - Es werden keine neuen Berechtigungen benötigt.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.16/Instant-0.1.16-18.zip" length="4766492" type="application/octet-stream" sparkle:edSignature="vbn9JZf/NqypdtW4fHDxVnaJq5Nc4GCXYi6stsI6DAK56XXQqVRQmQ4NnsVsB4sQyBx+Vw2VqbiPu1aOOSEXDw=="/>
-        </item>
-        <item>
-            <title>0.1.15</title>
-            <pubDate>Mon, 17 Aug 2026 14:48:36 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.15</link>
-            <sparkle:version>17</sparkle:version>
-            <sparkle:shortVersionString>0.1.15</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.15
-
-## Verbessert
-
-- Die kompakte Aktionsleiste bleibt unabhängig von der Anzahl konfigurierter
-  Aktionen immer einzeilig.
-- Solange der Zielmonitor genügend Platz bietet, bleiben weiterhin alle
-  Aktionen direkt sichtbar.
-- Bei Platzmangel führt eine „Weitere Aktionen“-Schaltfläche durch die
-  restlichen Aktionen. Ein Zurück-Pfeil bringt die Leiste jederzeit zur ersten
-  Seite zurück.
-- Die Reihenfolge im Aktionseditor bestimmt, welche Aktionen zuerst sichtbar
-  sind. Aktionsshortcuts funktionieren weiterhin auch für Aktionen auf einer
-  anderen Seite.
-- Die Leiste wird bei jedem Seitenwechsel passend zum tatsächlichen Inhalt
-  bemessen und intelligent am ursprünglichen Auswahlort innerhalb des
-  sichtbaren Monitorbereichs platziert.
-
-## Kompatibilität
-
-- Vorhandene Aktionen, Reihenfolgen, Shortcuts und Einstellungen bleiben
-  unverändert.
-- Die beschriftete Listenansicht verhält sich wie bisher.
-- Es werden keine neuen Berechtigungen benötigt.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.15/Instant-0.1.15-17.zip" length="4659008" type="application/octet-stream" sparkle:edSignature="uxSFtJ6tGcEvPjfZWeoYW1hagqhso9RRV5TE5IS9BRkVinXF+obuIn0IKWfMhnERV7QuDRRj41aL7JRqz4UgDg=="/>
         </item>
     </channel>
 </rss>
