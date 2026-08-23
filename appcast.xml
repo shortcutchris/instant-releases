@@ -3,6 +3,38 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.26</title>
+            <pubDate>Mon, 24 Aug 2026 00:53:09 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.26</link>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>0.1.26</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.26
+
+## Visueller Chat
+
+- Die OpenAI-Realtime-Verbindung wird jetzt vorbereitet, sobald das
+  Chat-Fenster erscheint. Der Verbindungsaufbau läuft damit bereits, bevor eine
+  Sprach- oder Textfrage abgeschickt wird.
+- Der OpenAI-Schlüssel wird beim App-Start einmal aus der macOS-Keychain geladen
+  und ausschließlich für die laufende App-Sitzung im Arbeitsspeicher
+  wiederverwendet. Besonders langsame Keychain-Entschlüsselungen im
+  Remote-Betrieb blockieren dadurch nicht mehr jeden einzelnen Chat-Start.
+- Mehrkanalige virtuelle Audiogeräte wie Jump Desktop umgehen Apples dafür
+  ungeeigneten Sprachverarbeitungsweg. So bleibt der Audiomotor stabil, statt
+  nach dem Verbindungsaufbau wieder abzubrechen.
+
+## Sicherheit und Qualität
+
+- Der Schlüssel wird weiterhin weder in Einstellungen noch in Dateien oder
+  Protokollen gespeichert. Ändern oder Entfernen des Keychain-Eintrags
+  aktualisiert zugleich die flüchtige Sitzungskopie.
+- Die Audio-Routenentscheidung ist zusätzlich mit einem Test für virtuelle
+  Achtkanal-Ein- und -Ausgabegeräte abgesichert.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.26/Instant-0.1.26-28.zip" length="5655796" type="application/octet-stream" sparkle:edSignature="UDU/1ssTNtoCU0/g6rwQMrC7B7se/Ye47VYB8jmcqblKmaRgYEnQVe6ptrjabmS8gjXTQiEsKHRvoYGTBj8PCQ=="/>
+        </item>
+        <item>
             <title>0.1.25</title>
             <pubDate>Sun, 23 Aug 2026 22:56:50 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.25</link>
@@ -348,49 +380,6 @@
 - Es werden keine neuen Berechtigungen benötigt.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.17/Instant-0.1.17-19.zip" length="4772739" type="application/octet-stream" sparkle:edSignature="Mt9CBJ7ZGjl1/ar0QUtmxb2PSWAhwiVZ4Cx0yDL1iP1R/MjvTk6p/N1twiLfGBd2Qf73Mva/bmfT2d915hcmDQ=="/>
-        </item>
-        <item>
-            <title>0.1.16</title>
-            <pubDate>Mon, 17 Aug 2026 16:48:20 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.16</link>
-            <sparkle:version>18</sparkle:version>
-            <sparkle:shortVersionString>0.1.16</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.16
-
-## Neu
-
-- Die kompakte Aktionsleiste verwendet standardmäßig nur Symbole und erhält
-  einen optionalen einzeiligen Stil „Symbol + Text“.
-- Leistenfarbe und Highlight-Farbe lassen sich unabhängig voneinander über
-  kuratierte Vorgaben oder den nativen macOS-Farbwähler anpassen.
-- Die neuen Darstellungseinstellungen enthalten eine sichere Live-Vorschau
-  mit festem Beispieltext. Es wird dabei niemals ausgewählter Text gelesen
-  oder an einen Provider gesendet.
-
-## Verbessert
-
-- Beide Leistenstile bleiben auch bei vielen Aktionen einzeilig und verwenden
-  weiterhin die adaptive Mehr-/Zurück-Navigation.
-- Kopieren und Einfügen sind visuell von transformierenden Aktionen getrennt.
-- Vollständige Aktionsnamen, Provider und Shortcuts bleiben über native Hilfe
-  und VoiceOver verfügbar, auch wenn nur Symbole sichtbar sind.
-- Der Aktionseditor warnt vor mehrfach verwendeten Symbolen, ohne eine
-  bewusste Konfiguration zu blockieren.
-- Eigene Farben berücksichtigen erhöhten Kontrast, reduzierte Transparenz und
-  „Ohne Farben differenzieren“. Erfolgs-, Warn- und Fehlerfarben bleiben
-  semantisch unverändert.
-
-## Kompatibilität
-
-- Bestehende kompakte Leisten werden auf „Nur Symbole“ abgebildet; eine
-  bewusst gewählte Listenansicht bleibt unverändert.
-- Konfigurationsexporte verwenden Schema-Version 5. Exporte der Versionen 1
-  bis 4 bleiben importierbar und erhalten sichere Standardfarben.
-- Alle neuen sichtbaren Texte sind auf Deutsch und Englisch lokalisiert.
-- Es werden keine neuen Berechtigungen benötigt.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.16/Instant-0.1.16-18.zip" length="4766492" type="application/octet-stream" sparkle:edSignature="vbn9JZf/NqypdtW4fHDxVnaJq5Nc4GCXYi6stsI6DAK56XXQqVRQmQ4NnsVsB4sQyBx+Vw2VqbiPu1aOOSEXDw=="/>
         </item>
     </channel>
 </rss>
