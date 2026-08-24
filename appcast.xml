@@ -3,6 +3,53 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.37</title>
+            <pubDate>Mon, 24 Aug 2026 22:03:48 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.37</link>
+            <sparkle:version>39</sparkle:version>
+            <sparkle:shortVersionString>0.1.37</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.37
+
+## Ruhige Zeichenbearbeitung
+
+- Auswahlrahmen und Eckgriffe verwenden jetzt einen festen
+  Canvas-Koordinatenraum. Verschieben und Skalieren folgen dadurch dem Mausweg,
+  ohne zu springen oder während des Ziehens ihren Bezugspunkt zu verändern.
+- Die UI-Abnahme prüft neben der Richtung nun auch die tatsächlich erreichte
+  Strecke und unveränderte Objektgröße beim Verschieben.
+
+## Masken ohne Fensterkonflikt
+
+- Beim Aufziehen, Verschieben oder Skalieren einer Bereichsmaske bleibt das
+  Chatfenster vollständig an seiner Position.
+- Neue Masken entstehen nur auf der freien Bildfläche. Vorhandene Masken und
+  ihre Eckgriffe besitzen getrennte Gesten und lösen keine zweite Auswahl aus.
+- Das Fenster bleibt über einen eindeutigen Griff in der Viewer-Kopfzeile
+  verschiebbar.
+
+## Auslöseton
+
+- Nach einer erfolgreich erstellten Bildschirmaufnahme bestätigt ein kurzer
+  Auslöseton den richtigen Zeitpunkt der Aufnahme.
+- In den Visual-Chat-Einstellungen lässt sich der Ton jederzeit deaktivieren.
+  Fehlgeschlagene oder abgebrochene Aufnahmen bleiben stumm.
+
+## Qualität
+
+- Konfigurationsspeicherung und -austausch enthalten die neue Toneinstellung
+  rückwärtskompatibel.
+- Gezielte echte GUI-Tests auf dem MacBook Air prüfen Objektbewegung,
+  Griffskalierung, den unveränderten Fensterrahmen während einer Maskengeste,
+  den separaten Viewer-Ziehgriff und die neue Einstellung.
+- Das vollständige Gate umfasst 235 Unit-Tests (229 bestanden, 6 bewusst
+  übersprungen), 1 von 1 Accessibility-Prüfung und 37 von 37 UI-Abläufe.
+  Release-Build und statische Analyse sind ohne Fehler oder Warnungen
+  abgeschlossen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.37/Instant-0.1.37-39.zip" length="6489579" type="application/octet-stream" sparkle:edSignature="LhCk9y0PJ2i8oBbksrC0AMe9z+4Lo6n1nhd/0OXw8dUpbSPWdehu/i6mtNh72gYBYofDWKOIcKV/i2PTOJKEAg=="/>
+        </item>
+        <item>
             <title>0.1.36</title>
             <pubDate>Mon, 24 Aug 2026 21:19:42 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.36</link>
@@ -441,43 +488,6 @@
   Einstellungen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.28/Instant-0.1.28-30.zip" length="5701439" type="application/octet-stream" sparkle:edSignature="FyEgf5q/M1i50jO+9YskZrLQm2idCuDIqzeAtCmdek6QXIHCdUeR5pD1Qec8nmhMOYIniVnnT+ezL+1C6N0dCA=="/>
-        </item>
-        <item>
-            <title>0.1.27</title>
-            <pubDate>Mon, 24 Aug 2026 01:16:36 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.27</link>
-            <sparkle:version>29</sparkle:version>
-            <sparkle:shortVersionString>0.1.27</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.27
-
-## Stabiler visueller Chat
-
-- Längere gesprochene Antworten werden nicht mehr durch das bisherige
-  Ausgabelimit von 1.024 Tokens vorzeitig beendet. Instant nutzt nun das volle
-  Ausgabefenster des Realtime-Modells.
-- Ein Fehler innerhalb einer einzelnen Antwort beendet nach einer bereits
-  aufgebauten Sitzung nicht mehr automatisch die gesamte Live-Unterhaltung.
-  Mikrofon und Verbindung bleiben aktiv, sodass direkt weitergefragt werden
-  kann.
-- Wirklich nicht fortsetzbare Fehler wie eine ungültige Berechtigung oder eine
-  abgelaufene Sitzung trennen weiterhin sicher und zeigen die bestehende
-  Wiederholen-Funktion.
-- Der Status wechselt erst nach dem vollständigen `response.done`-Ereignis
-  zurück zu „Hört zu“. Ein kompakter, lokalisierter Hinweis informiert über
-  unterbrochene Einzelantworten, ohne das Layout oder den Gesprächsfluss zu
-  blockieren.
-
-## Diagnose und Qualität
-
-- Realtime-Fehler protokollieren ausschließlich technische Fehlerklasse, Code,
-  Parameter und Ereignis-ID. Schlüssel, Fragen, Antworten und Bildinhalte
-  werden nicht protokolliert.
-- Der Live-Test stellt nun zwei vollständige Antworten nacheinander über
-  dieselbe OpenAI-WebSocket-Sitzung sicher. Zusätzliche Unit-Tests decken
-  fortsetzbare sowie nicht fortsetzbare Serverfehler ab.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.27/Instant-0.1.27-29.zip" length="5669096" type="application/octet-stream" sparkle:edSignature="/HwTiKOMeOVdX/kreSM2UaCp5XvSnqafjD/DKgdcUMoEIkSobbJ3l2XbJgUQYWXFc2EhCNO93UybaIix18pjCg=="/>
         </item>
     </channel>
 </rss>
