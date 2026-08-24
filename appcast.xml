@@ -3,6 +3,44 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.29</title>
+            <pubDate>Mon, 24 Aug 2026 10:04:57 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.29</link>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>0.1.29</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.29
+
+## Stabiler Verbindungsstatus
+
+- Sobald OpenAI Realtime die Sitzung bestätigt hat und das Mikrofon bereits
+  läuft, zeigt Instant unmittelbar „Hört zu“. Die Anzeige bleibt nicht länger
+  fälschlich bei „Verbindung wird hergestellt“, obwohl Textnachrichten bereits
+  funktionieren.
+- Echte Transportabbrüche werden weiterhin automatisch neu verbunden und als
+  eigener, vorübergehender Zustand angezeigt.
+
+## Zuverlässige Sprachübertragung
+
+- Kleine Mikrofonblöcke werden zu geordneten 100-Millisekunden-Paketen
+  zusammengeführt und nacheinander gesendet. Dadurch entstehen bei längeren
+  Gesprächen keine Dutzenden parallelen WebSocket-Sendevorgänge pro Sekunde.
+- Ein begrenzter Arbeitsspeicherpuffer hält die Reihenfolge bei einer
+  Neuverbindung ein, ohne Roh-Audio zu speichern.
+- Regelmäßige WebSocket-Pings halten ruhige Sitzungen aktiv. Transport-
+  Steuerframes werden getrennt von Realtime-JSON-Ereignissen verarbeitet.
+
+## Qualität
+
+- Unit-Tests decken Statuswechsel, Paketbildung, Reihenfolge und Puffergrenze
+  ab.
+- Live-Tests prüfen mit dem produktiven OpenAI-Realtime-Adapter den Handshake,
+  einen vollständigen Textdialog und 25 Sekunden kontinuierliche
+  Audioübertragung mit anschließender Antwort.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.29/Instant-0.1.29-31.zip" length="5706037" type="application/octet-stream" sparkle:edSignature="8Uabf9mbCk60yIuNYDBK7US3D2HcAs0hzfW1P4ggY1mbLj5hXa0iLas8WJs5Sm8uBWqnlolgYFi+G3cTOl7gCw=="/>
+        </item>
+        <item>
             <title>0.1.28</title>
             <pubDate>Mon, 24 Aug 2026 02:20:29 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.28</link>
@@ -305,58 +343,6 @@
 - Alle neuen sichtbaren Texte sind auf Deutsch und Englisch lokalisiert.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.20/Instant-0.1.20-22.zip" length="5630997" type="application/octet-stream" sparkle:edSignature="HaU6LzFlpqInqhirSXfqS0WKQ8Ul9Oc1yhLVXB/MTmzAH5eYsISf+vFD8scVuLJuHVBIyq/1mcksyz+K14SGAg=="/>
-        </item>
-        <item>
-            <title>0.1.19</title>
-            <pubDate>Sun, 23 Aug 2026 01:22:43 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.19</link>
-            <sparkle:version>21</sparkle:version>
-            <sparkle:shortVersionString>0.1.19</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.19
-
-## Neu
-
-- KI-Dateiaktionen können jetzt Inhalte aus Word-Dokumenten (`.doc`, `.docx`),
-  Excel-Arbeitsmappen (`.xlsx`) und PowerPoint-Präsentationen (`.pptx`) lesen.
-- Bilder und PDF-Seiten ohne Textebene erhalten eine lokale Texterkennung über
-  Apples Vision-Framework. PNG, JPEG, HEIC/HEIF, TIFF, BMP und WebP werden
-  unterstützt, sofern macOS das konkrete Bild dekodieren kann.
-- Unter „Allgemein > Dokumente und OCR“ lassen sich OCR, automatische,
-  deutsche oder englische Erkennung sowie das maximale PDF-Seitenlimit
-  einstellen.
-- Bestehende allgemeine KI-Dateiaktionen erhalten die neuen Office- und
-  Bildtypen automatisch, ohne individuelle Typfilter zu überschreiben.
-
-## Bedienung und Datenschutz
-
-- Office-Import und OCR laufen vollständig lokal. Erst eine bewusst gestartete
-  KI-Dateiaktion sendet den extrahierten Text an den ausgewählten Provider.
-- Bilder zeigen bei deaktivierter OCR keine inhaltsbasierten KI-Aktionen.
-  Office-Dokumente und PDFs mit vorhandener Textebene bleiben verfügbar.
-- Word-Absätze, Excel-Zellen und PowerPoint-Folien werden in ihrer natürlichen
-  Reihenfolge übernommen. Originaldateien werden niemals verändert.
-
-## Sicherheitsgrenzen
-
-- Moderne Office-Dateien werden ohne temporäres Entpacken über einen
-  begrenzten Open-XML-Leser verarbeitet.
-- Archivpfade, Eintragszahl, Entpackgröße, Kompressionsart und CRC-Prüfsummen
-  werden validiert; verschlüsselte Einträge, DTDs und XML-Entitäten werden
-  abgewiesen.
-- Zusätzlich gelten feste PDF-, OCR- und Bildpunktlimits sowie das vorhandene
-  Datei- und Zeichenbudget. Bei einer Überschreitung erhält kein Provider
-  Inhalte.
-
-## Qualität
-
-- Die neue Verarbeitung ist mit echten komprimierten DOCX-Daten,
-  Excel Shared Strings, numerischen Zellen, Folienreihenfolge, OCR-Bildern,
-  Konfigurationsmigration und negativen Parserfällen automatisiert geprüft.
-- Die Oberfläche und alle neuen Fehlermeldungen sind vollständig auf Deutsch
-  und Englisch lokalisiert.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.19/Instant-0.1.19-21.zip" length="5234663" type="application/octet-stream" sparkle:edSignature="lLyCoYhjpnkTXKQl8x1Albo32lGX/T58lVc5O169fofHAPzZgCV+8P1sK87SLFFKFOifTIMu0YHQN1VjIGxDCQ=="/>
         </item>
     </channel>
 </rss>
