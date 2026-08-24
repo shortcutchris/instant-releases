@@ -3,6 +3,57 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.28</title>
+            <pubDate>Mon, 24 Aug 2026 02:20:29 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.28</link>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>0.1.28</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.28
+
+## Zuverlässiger visueller Live-Chat
+
+- Realtime-Antworten nutzen jetzt das dokumentierte Ausgabemaximum der
+  aktuellen OpenAI-Modelle statt der veralteten lokalen Grenze von 4.096
+  Tokens.
+- Unerwartet geschlossene WebSocket-Verbindungen werden erkannt und bis zu
+  fünfmal automatisch mit kurzem exponentiellem Backoff neu aufgebaut.
+- Noch nicht versendete Textfragen bleiben während einer Neuverbindung
+  erhalten. Sprache kann bereits während des Verbindungsaufbaus beginnen;
+  höchstens 30 Sekunden Audio werden dafür ausschließlich im Arbeitsspeicher
+  gepuffert.
+- Antworten sind standardmäßig kürzer und leichter zu unterbrechen. Ein
+  einzelnes abgeschlossenes oder unterbrochenes Antwortereignis beendet nicht
+  mehr die gesamte Unterhaltung.
+
+## Direkter Start nach dem Zeichnen
+
+- In „Einstellungen > Visueller Chat“ kann getrennt gewählt werden, ob nach
+  „Fertig“ direkt die vollständige Unterhaltung angezeigt wird.
+- Eine zweite Checkbox steuert unabhängig davon, ob das Mikrofon nach
+  „Fertig“ sofort zuhört. Beide Optionen sind standardmäßig aktiviert.
+- Das kompakte Voice-Widget und das ausgeklappte Chatfenster besitzen einen
+  sichtbaren Drag-Griff und lassen sich per Maus verschieben. Die Position
+  bleibt beim Auf- und Zuklappen erhalten.
+
+## Updates
+
+- Das Menüleistenmenü enthält dauerhaft „Nach Updates suchen …“.
+- Sobald Sparkle eine neuere Version erkannt hat, wechselt der Eintrag auf
+  „Update <Version> verfügbar …“ und öffnet direkt den Update-Dialog.
+
+## Qualität
+
+- Der echte OpenAI-Realtime-Test stellt zwei vollständige Antworten in einer
+  Sitzung sicher.
+- Unit-Tests decken Modellbudget, Wiederholbarkeit von Transportfehlern,
+  Konfigurationspersistenz und den dynamischen Update-Menütitel ab.
+- Der fokussierte macOS-UI-Test prüft beide Drag-Zustände sowie die neuen
+  Einstellungen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.28/Instant-0.1.28-30.zip" length="5701439" type="application/octet-stream" sparkle:edSignature="FyEgf5q/M1i50jO+9YskZrLQm2idCuDIqzeAtCmdek6QXIHCdUeR5pD1Qec8nmhMOYIniVnnT+ezL+1C6N0dCA=="/>
+        </item>
+        <item>
             <title>0.1.27</title>
             <pubDate>Mon, 24 Aug 2026 01:16:36 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.27</link>
@@ -306,83 +357,6 @@
   und Englisch lokalisiert.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.19/Instant-0.1.19-21.zip" length="5234663" type="application/octet-stream" sparkle:edSignature="lLyCoYhjpnkTXKQl8x1Albo32lGX/T58lVc5O169fofHAPzZgCV+8P1sK87SLFFKFOifTIMu0YHQN1VjIGxDCQ=="/>
-        </item>
-        <item>
-            <title>0.1.18</title>
-            <pubDate>Sat, 22 Aug 2026 23:27:31 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.18</link>
-            <sparkle:version>20</sparkle:version>
-            <sparkle:shortVersionString>0.1.18</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.18
-
-## Neu
-
-- Instant erkennt im Finder und auf dem Schreibtisch ausgewählte Dateien und
-  zeigt dafür ein eigenes, konfigurierbares Dateiaktionsprofil.
-- Die lokalen Standardaktionen kopieren Dateiobjekte oder absolute Pfade,
-  duplizieren, zeigen Dateien im Finder und verschieben sie sicher in den
-  Papierkorb.
-- Eine erweiterbare KI-Aktionsbibliothek enthält Zusammenfassen, Analysieren,
-  Aufgaben extrahieren, Übersetzen, intelligent Umbenennen und den Vergleich
-  mehrerer Dateien. Die ersten drei Aktionen sind direkt aktiviert; weitere
-  Vorlagen lassen sich gezielt zuschalten oder als eigene Promptaktion
-  duplizieren.
-- Mehrfachauswahlen werden gesammelt oder einzeln verarbeitet. KI-Ergebnisse
-  können geprüft, kopiert und als Markdown gespeichert werden. Der
-  Dateivergleich erscheint erst ab zwei geeigneten Dateien.
-- Intelligente Umbenennungen erhalten eine eigene Vorschau, behalten die
-  ursprüngliche Dateiendung, verwerfen Pfade und unzulässige Zeichen, prüfen
-  Namenskollisionen und werden erst nach Bestätigung angewendet. `⌘Z` stellt
-  den vorherigen Namen wieder her.
-- Der Aktionseditor trennt Text- und Dateiaktionen. Reihenfolge, Symbole,
-  Shortcuts, Provider, Dateitypen, Mehrfachauswahl, Bestätigung und Vorschau
-  lassen sich pro Dateiaktion konfigurieren.
-- Lokale und KI-Aktionen sind in Editor und Leiste klar gekennzeichnet. Der
-  Editor zeigt nur Einstellungen, die für den gewählten Aktionstyp wirksam
-  sind.
-- OpenAI, Codex CLI und lokale HTTP-Modelle besitzen einen sicheren
-  Verbindungstest mit fester, nicht nutzerbezogener Testanfrage und klarer
-  Erfolgs- oder Fehlermeldung.
-
-## Bedienung und Sicherheit
-
-- Ein einfacher Finder-Klick, Ziehen sowie Mehrfachauswahl können die
-  Dateiaktionsleiste automatisch öffnen. Die Position wird an Auswahl,
-  Mauspunkt und verfügbarem Bildschirmbereich ausgerichtet.
-- „In den Papierkorb“ löscht niemals endgültig, verlangt standardmäßig eine
-  Bestätigung und kann unmittelbar über die Erfolgspille oder `⌘Z`
-  rückgängig gemacht werden.
-- Vor jeder Dateiänderung wird geprüft, ob Auswahl, Existenz und Rechte noch
-  dem erfassten Zustand entsprechen. Teilerfolge werden ausdrücklich
-  ausgewiesen.
-- Text-, Markdown-, Quellcode-, PDF-, RTF- und RTFD-Inhalte werden lokal
-  extrahiert. Erst eine bewusst gestartete KI-Aktion sendet den extrahierten
-  Text an den gewählten Provider; sensible Speicherorte verlangen bei
-  externen Providern eine zusätzliche Bestätigung.
-- Symbolische Links werden für Inhaltsaktionen nicht verfolgt; auch
-  RTFD-Pakete mit internen symbolischen Links werden sicher abgewiesen. Nach
-  der Extraktion wird die Auswahl nochmals geprüft. Dateinamen und Inhalte
-  bleiben gegenüber Provideranweisungen als unvertrauenswürdige,
-  strukturierte JSON-Quelldaten getrennt.
-- Dateigröße und extrahierte Textmenge sind begrenzt und in den Einstellungen
-  konfigurierbar. Originaldateien werden durch KI-Aktionen auch über Alias-
-  oder Symlink-Ziele nie überschrieben.
-
-## Kompatibilität
-
-- Bestehende Textaktionen und ihre Reihenfolge bleiben unverändert. Das neue
-  Dateiaktionsprofil wurde mit Schema 6 eingeführt und wird mit Schema 7 auf
-  generische KI-Dateiaktionen migriert. Import und Export bleiben
-  geheimnisfrei.
-- Die Apps-Tabelle nutzt bei wenigen Einträgen nur die benötigte Höhe; die
-  Farbauswahl passt sich ohne abgeschnittene Optionen an die Fensterbreite an.
-- Die Oberfläche und alle neuen Meldungen sind vollständig auf Deutsch und
-  Englisch lokalisiert.
-- Das bestehende OpenAI-, Codex-CLI- und lokale HTTP-Provider-System wird
-  wiederverwendet; die UI bleibt von einzelnen Providern unabhängig.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.18/Instant-0.1.18-20.zip" length="5147219" type="application/octet-stream" sparkle:edSignature="BlTePqTQpYSfzM9KGVabLvtM2ZF97q3CHke9CFCK7T5kPzoYtYZxpZLi/h06aIhRsZXprp1SI39qC4fFfHh8Dw=="/>
         </item>
     </channel>
 </rss>
