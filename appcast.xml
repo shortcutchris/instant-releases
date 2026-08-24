@@ -3,6 +3,41 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.39</title>
+            <pubDate>Tue, 25 Aug 2026 01:13:14 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.39</link>
+            <sparkle:version>41</sparkle:version>
+            <sparkle:shortVersionString>0.1.39</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.39
+
+## Beweglich während der KI-Bearbeitung
+
+- Das Bildbearbeitungsfenster lässt sich jetzt auch während Vorbereitung und
+  Generierung über den sichtbaren Kopfzeilen-Griff verschieben.
+- Prompt, Maske, Optionen, Schließen und Größenänderung bleiben währenddessen
+  weiterhin gesperrt. „Abbrechen“ bleibt als einzige inhaltliche Aktion
+  verfügbar.
+- Die Fortschrittsanzeige und der laufende Auftrag bleiben beim Verschieben
+  vollständig erhalten.
+- Bei Bereichsbearbeitungen übernimmt Instant nur die ausgewählten Flächen aus
+  dem KI-Ergebnis und legt sie lokal auf das Original. Auch mehrere Masken werden
+  gemeinsam verarbeitet; außerhalb bleibt das Bild unverändert und das Ergebnis
+  behält die vollständige Originalgröße.
+
+## Qualität
+
+- Ein echter UI-Regressionstest auf dem MacBook Air versetzt das Fenster im
+  simulierten Generierungszustand und prüft anschließend Position, konstante
+  Größe, aktive Sperre und kontrollierten Abbruch.
+- Das vollständige Gate umfasst 237 Unit-Tests (231 bestanden, 6 bewusst
+  übersprungen), 1 von 1 Accessibility-Prüfung und 37 von 37 UI-Abläufe.
+  Release-Build und statische Analyse sind ohne Fehler oder Warnungen
+  abgeschlossen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.39/Instant-0.1.39-41.zip" length="6514083" type="application/octet-stream" sparkle:edSignature="8/TGz/aaJy0eNcIrz1fS9vT773Vib8vCqO0yJOnTzV3nzIUQizOvf3oYP9/vi2TmcylarqlrAvsg7N8fsFl1DA=="/>
+        </item>
+        <item>
             <title>0.1.38</title>
             <pubDate>Mon, 24 Aug 2026 23:29:51 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.38</link>
@@ -442,44 +477,6 @@
   einzeiligen Statusbereich.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.30/Instant-0.1.30-32.zip" length="5717002" type="application/octet-stream" sparkle:edSignature="5Uw/TmX7BXbGGHw4S0Z3uS29OR2cJRVCZs4aFUDTJVuoPvoZoU+ajlGqLGRSlLRNGOadzR5PyV7bmjci4LF2Ag=="/>
-        </item>
-        <item>
-            <title>0.1.29</title>
-            <pubDate>Mon, 24 Aug 2026 10:04:57 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.29</link>
-            <sparkle:version>31</sparkle:version>
-            <sparkle:shortVersionString>0.1.29</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.29
-
-## Stabiler Verbindungsstatus
-
-- Sobald OpenAI Realtime die Sitzung bestätigt hat und das Mikrofon bereits
-  läuft, zeigt Instant unmittelbar „Hört zu“. Die Anzeige bleibt nicht länger
-  fälschlich bei „Verbindung wird hergestellt“, obwohl Textnachrichten bereits
-  funktionieren.
-- Echte Transportabbrüche werden weiterhin automatisch neu verbunden und als
-  eigener, vorübergehender Zustand angezeigt.
-
-## Zuverlässige Sprachübertragung
-
-- Kleine Mikrofonblöcke werden zu geordneten 100-Millisekunden-Paketen
-  zusammengeführt und nacheinander gesendet. Dadurch entstehen bei längeren
-  Gesprächen keine Dutzenden parallelen WebSocket-Sendevorgänge pro Sekunde.
-- Ein begrenzter Arbeitsspeicherpuffer hält die Reihenfolge bei einer
-  Neuverbindung ein, ohne Roh-Audio zu speichern.
-- Regelmäßige WebSocket-Pings halten ruhige Sitzungen aktiv. Transport-
-  Steuerframes werden getrennt von Realtime-JSON-Ereignissen verarbeitet.
-
-## Qualität
-
-- Unit-Tests decken Statuswechsel, Paketbildung, Reihenfolge und Puffergrenze
-  ab.
-- Live-Tests prüfen mit dem produktiven OpenAI-Realtime-Adapter den Handshake,
-  einen vollständigen Textdialog und 25 Sekunden kontinuierliche
-  Audioübertragung mit anschließender Antwort.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.29/Instant-0.1.29-31.zip" length="5706037" type="application/octet-stream" sparkle:edSignature="8Uabf9mbCk60yIuNYDBK7US3D2HcAs0hzfW1P4ggY1mbLj5hXa0iLas8WJs5Sm8uBWqnlolgYFi+G3cTOl7gCw=="/>
         </item>
     </channel>
 </rss>
