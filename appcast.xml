@@ -3,6 +3,65 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.35</title>
+            <pubDate>Mon, 24 Aug 2026 19:34:47 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.35</link>
+            <sparkle:version>37</sparkle:version>
+            <sparkle:shortVersionString>0.1.35</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.35
+
+## Visual Workspace
+
+- Jedes Bild eines visuellen Chats lässt sich in einem integrierten Viewer
+  öffnen, vergrößern, verschieben, wechseln, kopieren und sichern.
+- Originale, lokale Markierungen und KI-Bearbeitungen bleiben als
+  unveränderliche Versionen mit Herkunft, Elternversion und Schutzstatus
+  nachvollziehbar.
+- Eine gewählte Version kann erneut markiert, erneut analysiert oder gezielt
+  für die nächste Frage in den Chat übernommen werden.
+
+## Direkt erklären
+
+- Die Markierungsleiste bietet den neuen Modus „Direkt erklären“. Nach
+  „Fertig“ startet Instant auf Wunsch unmittelbar eine kurze Erklärung der
+  sichtbaren Markierungen.
+- Der Startzustand lässt sich in den Einstellungen festlegen, ohne die
+  unabhängigen Optionen für Chatfenster und Mikrofon zu verändern.
+
+## KI-Bildbearbeitung
+
+- GPT Image 2 kann das gesamte Bild oder ausdrücklich markierte Bereiche
+  bearbeiten. Prompt, Qualität und Ausgabegröße bleiben vor dem Start sichtbar.
+- Der Bearbeitungsprompt kann getippt oder per Mikrofon diktiert werden; erst
+  die Schaltfläche „Bild bearbeiten“ löst einen kostenpflichtigen Auftrag aus.
+- Quelle und Ergebnis lassen sich direkt vergleichen. Ergebnisse können
+  übernommen, im Chat verwendet, weiterbearbeitet oder vollständig verworfen
+  werden, ohne das Original zu überschreiben.
+- Ein separates lokales Monatslimit begrenzt erfolgreiche Bildbearbeitungen.
+
+## Datenschutz und Qualität
+
+- Schwärzungen bleiben in abgeleiteten Versionen als geschützt markiert;
+  Provider erhalten ausschließlich die sichtbare, bereits gerenderte
+  Bildversion.
+- KI-bearbeitete Bilder werden im Viewer, Providerkontext, Verlauf und Export
+  dauerhaft als generierte Ableitungen gekennzeichnet.
+- Die neue Oberfläche ist auf Deutsch und Englisch lokalisiert und besitzt
+  eindeutige VoiceOver-Beschriftungen für Viewer, Navigation, Diktat und
+  Bearbeitungsaktionen.
+- 231 Unit-Tests liefen mit 225 Erfolgen, 0 Fehlern und 6 bewusst
+  übersprungenen Live-Provider-Tests. Analyse, Lokalisierungs- und Icon-Prüfung
+  sind ebenfalls grün.
+- Die unabhängige Accessibility-Prüfung bestand mit 1 von 1. Die vollständige
+  bestehende UI-Matrix bestand mit 35 von 35; der neue Viewer- und
+  Bildeditor-Ablauf wurde zusätzlich mit 1 von 1 auf dem MacBook Air geprüft.
+- Ein echter Low-Quality-Aufruf von `gpt-image-2` bestätigte Modellzugriff,
+  Upload und nichtleere Bildausgabe über den produktiven Edit-Endpunkt.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.35/Instant-0.1.35-37.zip" length="6371058" type="application/octet-stream" sparkle:edSignature="q818h0LnLOqM7VV+3D6gv2Ugu0ljDMYcZ0wNshYeX+CutrVUjrAxJI8davvkdUDxyxtC2qBb0tfNiL/BueazCw=="/>
+        </item>
+        <item>
             <title>0.1.34</title>
             <pubDate>Mon, 24 Aug 2026 17:28:44 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.34</link>
@@ -397,36 +456,6 @@
   Achtkanal-Ein- und -Ausgabegeräte abgesichert.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.26/Instant-0.1.26-28.zip" length="5655796" type="application/octet-stream" sparkle:edSignature="UDU/1ssTNtoCU0/g6rwQMrC7B7se/Ye47VYB8jmcqblKmaRgYEnQVe6ptrjabmS8gjXTQiEsKHRvoYGTBj8PCQ=="/>
-        </item>
-        <item>
-            <title>0.1.25</title>
-            <pubDate>Sun, 23 Aug 2026 22:56:50 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.25</link>
-            <sparkle:version>27</sparkle:version>
-            <sparkle:shortVersionString>0.1.25</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.25
-
-## Visueller Chat
-
-- Der Sprachchat startet jetzt auch dann zuverlässig, wenn Mikrofon und
-  Audioausgabe unterschiedliche Abtastraten verwenden, etwa das eingebaute
-  48-kHz-Mikrofon zusammen mit einem 44,1-kHz-USB-Ausgabegerät.
-- Instant aktiviert die systemseitige Sprachverarbeitung nur auf kompatiblen
-  Audiokonfigurationen und fällt bei einem unerwarteten Startfehler automatisch
-  auf den stabilen Standard-Audioweg zurück.
-- Audiofehler werden verständlich und handlungsorientiert angezeigt, statt nur
-  die allgemeine macOS-Meldung „Der Vorgang konnte nicht abgeschlossen werden“
-  auszugeben.
-
-## Qualität
-
-- Die Geräteentscheidung ist durch Tests für gleiche, gemischte und nicht
-  verfügbare Abtastraten abgesichert.
-- Der OpenAI-Realtime-Bildchat wurde mit dem produktiven Keychain-Zugang erneut
-  live geprüft.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.25/Instant-0.1.25-27.zip" length="5649434" type="application/octet-stream" sparkle:edSignature="x5OezwOTTV/xQR/j5B1B8i+ea0QKANm32sSGDziq/MVVbGb7f37fLgVmFW2zovdiPS2Navpylk7wVrgbfstzAQ=="/>
         </item>
     </channel>
 </rss>
