@@ -3,6 +3,55 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.32</title>
+            <pubDate>Mon, 24 Aug 2026 14:53:16 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.32</link>
+            <sparkle:version>34</sparkle:version>
+            <sparkle:shortVersionString>0.1.32</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.32
+
+## Chatbeiträge bewusst auswählen
+
+- Über das Mehr-Menü lassen sich einzelne Nachrichten, Bereiche oder der
+  gesamte visuelle Chat auswählen.
+- Die feste Aktionszeile kopiert die Auswahl oder öffnet direkt PDF-,
+  Markdown- und macOS-Share-Export.
+- Ein Schnellzugriff im Chatkopf exportiert auf Wunsch sofort den ganzen Chat.
+
+## Flexible Exporte
+
+- PDF-Dateien werden mehrseitig, durchsuchbar und mit Seitenzahlen erzeugt.
+- Für PDF stehen ein kompaktes und ein ausführliches Layout zur Wahl.
+- Bilder und Zeitstempel können vor jedem Datei- oder Share-Export unabhängig
+  voneinander ausgeschlossen werden.
+- Markdown kann die bewusst freigegebenen Bilder direkt einbetten; Kopieren
+  erzeugt eine geordnete, gut lesbare Textfassung.
+
+## Verlauf und Datenschutz
+
+- Gespeicherte Chats lassen sich direkt aus dem Verlauf als PDF oder Markdown
+  exportieren und über macOS teilen.
+- Nach Ablauf der Bildaufbewahrung bleibt der Export der vorhandenen
+  Transkripte möglich.
+- Nur abgeschlossene und ausgewählte Beiträge gelangen in den Export.
+  Roh-Audio, API-Schlüssel und interne Anweisungen werden nie einbezogen.
+- Temporäre Share-Dateien sind privat, zufällig benannt und werden nach der
+  Freigabe oder spätestens bei der nächsten Bereinigung entfernt.
+
+## Qualität
+
+- Unit-Tests prüfen Auswahlreihenfolge, Bereichsauswahl, Datenschutzoptionen,
+  Markdown-Einbettung, sichere Dateinamen und mehrseitige PDF-Erzeugung.
+- Der reale macOS-UI-Ablauf prüft Auswahl, Alle/Keine, Exportoptionen,
+  Abbrechen und die Kopier-Rückmeldung auf dem MacBook Air.
+- Das finale Release-Gate umfasst 210 Unit-Tests mit 204 Erfolgen und 6
+  bewusst übersprungenen Live-Provider-Tests, 1 erfolgreiche
+  Accessibility-Prüfung und 34 von 34 vollständige UI-Abläufe.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.32/Instant-0.1.32-34.zip" length="6003408" type="application/octet-stream" sparkle:edSignature="xefXb7t+981/cpO8tmEIHe1wJLzugH+/3EI6R0vkLnUXTCpazx7VQaJf34cw/43oPq0FiLzFNtj3e6hDIIp8CA=="/>
+        </item>
+        <item>
             <title>0.1.31</title>
             <pubDate>Mon, 24 Aug 2026 12:30:34 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.31</link>
@@ -330,33 +379,6 @@
   Auslassungspunkte enthält und dieselbe einzeilige Höhe wie „Hört zu“ behält.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.23/Instant-0.1.23-25.zip" length="5643462" type="application/octet-stream" sparkle:edSignature="rx44n52uNnszBUAhmIFecv2bDIzCBZygnZKbQCH+72gPZDb1apM0ILGBbrZGox466HG4ZBjCplApDQRTs27dBQ=="/>
-        </item>
-        <item>
-            <title>0.1.22</title>
-            <pubDate>Sun, 23 Aug 2026 11:05:47 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.22</link>
-            <sparkle:version>24</sparkle:version>
-            <sparkle:shortVersionString>0.1.22</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.22
-
-## Verbessert
-
-- Status und Audioanzeige des visuellen Chats stehen jetzt sauber nebeneinander
-  statt versetzt untereinander.
-- Ein fester Statusbereich hält Mikrofon, Aktivitätsanzeige und Tastatur auch
-  bei längeren deutschen oder englischen Meldungen an derselben Position.
-- Zuhören zeigt die Waveform; Verbinden und Nachdenken zeigen an derselben
-  Stelle eine Fortschrittsanzeige. Bereitschaft, Sprechen und Fehler bleiben
-  ebenso eindeutig erkennbar.
-
-## Qualität
-
-- Der GUI-Test vergleicht die Geometrie der kurzen Meldung „Hört zu“ mit der
-  längeren Meldung „Verbindung wird hergestellt …“.
-- Die vollständige deutsche und englische Lokalisierung bleibt geprüft.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.22/Instant-0.1.22-24.zip" length="5643514" type="application/octet-stream" sparkle:edSignature="rLBxx9q9qzFbrbQQt1KYsyiEedPMYb77PZAZ2LOrZAx0YSRkkLpBkeE1k5rPmYKzBFMZFizfrlQHjPkVBiCACQ=="/>
         </item>
     </channel>
 </rss>
