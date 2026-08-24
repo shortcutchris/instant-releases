@@ -3,6 +3,60 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.36</title>
+            <pubDate>Mon, 24 Aug 2026 21:19:42 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.36</link>
+            <sparkle:version>38</sparkle:version>
+            <sparkle:shortVersionString>0.1.36</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.36
+
+## Frei skalierbarer visueller Chat
+
+- Das aufgeklappte Chatfenster und der integrierte Bild-Viewer lassen sich
+  jetzt frei in der Größe verändern.
+- Ein dezenter Griff unten rechts ergänzt die gewohnten macOS-Fensterkanten
+  und macht die Größenänderung auch bei dem rahmenlosen Panel eindeutig.
+- Chat und Viewer behalten während der Sitzung jeweils ihre zuletzt gewählte
+  Größe; die kompakte Sprachleiste bleibt unverändert klein.
+
+## Markierungen nachträglich bearbeiten
+
+- Der Zeichenmodus besitzt einen neuen Auswahlpfeil. Bereits gezeichnete
+  Linien, Textmarker, Pfeile, Rahmen, Kreise und Schwärzungen können damit
+  ausgewählt, verschoben, skaliert und einzeln gelöscht werden.
+- Nummerierte Pins bleiben verschiebbar und behalten ihre semantisch feste
+  Größe.
+- Zeichnen, Verschieben, Skalieren und Löschen sind in die vorhandene
+  Rückgängig-Historie eingebunden.
+
+## Verbesserte KI-Bildbearbeitung
+
+- Der Bearbeitungsprompt ist jetzt ein stabiles mehrzeiliges Textfeld und
+  bleibt auch bei längeren Beschreibungen gut bedienbar.
+- Der Modus „Markierter Bereich“ behandelt jede Fläche als eigenes Objekt.
+  Flächen lassen sich auswählen, verschieben, über vier Eckgriffe skalieren
+  sowie einzeln oder gemeinsam löschen.
+- Bereichsauswahl, Qualitäts- und Größenoptionen sowie Start-/Abbruchaktionen
+  sind responsiv angeordnet und werden nicht mehr zu schmalen vertikalen
+  Textfragmenten zusammengedrückt.
+
+## Qualität
+
+- Neue Logiktests prüfen Auswahl, Randbegrenzung, Verschieben, Skalieren und
+  Trefferreihenfolge.
+- Echte UI-Tests auf dem MacBook Air ziehen Zeichen- und Maskengriffe,
+  verändern die Panelgröße und prüfen den stabilen Promptbereich.
+- Alle neuen Texte und VoiceOver-Beschriftungen sind auf Deutsch und Englisch
+  verfügbar.
+- Das vollständige Freigabe-Gate auf dem MacBook Air umfasst 235 Unit-Tests
+  (229 bestanden, 6 bewusst übersprungen), 1 von 1 Accessibility-Prüfung und
+  37 von 37 UI-Abläufe. Release-Build und statische Analyse sind ohne Fehler
+  oder Warnungen abgeschlossen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.36/Instant-0.1.36-38.zip" length="6483991" type="application/octet-stream" sparkle:edSignature="/iGhn29LVFj8yZboAWLFj0V9QteMQmfyaeJ9IJPcW7zPBBO/5fv8bhMg/s5hlOIuqVSYKSVkiGIZBTr07r9qAA=="/>
+        </item>
+        <item>
             <title>0.1.35</title>
             <pubDate>Mon, 24 Aug 2026 19:34:47 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.35</link>
@@ -424,38 +478,6 @@
   fortsetzbare sowie nicht fortsetzbare Serverfehler ab.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.27/Instant-0.1.27-29.zip" length="5669096" type="application/octet-stream" sparkle:edSignature="/HwTiKOMeOVdX/kreSM2UaCp5XvSnqafjD/DKgdcUMoEIkSobbJ3l2XbJgUQYWXFc2EhCNO93UybaIix18pjCg=="/>
-        </item>
-        <item>
-            <title>0.1.26</title>
-            <pubDate>Mon, 24 Aug 2026 00:53:09 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.26</link>
-            <sparkle:version>28</sparkle:version>
-            <sparkle:shortVersionString>0.1.26</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.26
-
-## Visueller Chat
-
-- Die OpenAI-Realtime-Verbindung wird jetzt vorbereitet, sobald das
-  Chat-Fenster erscheint. Der Verbindungsaufbau läuft damit bereits, bevor eine
-  Sprach- oder Textfrage abgeschickt wird.
-- Der OpenAI-Schlüssel wird beim App-Start einmal aus der macOS-Keychain geladen
-  und ausschließlich für die laufende App-Sitzung im Arbeitsspeicher
-  wiederverwendet. Besonders langsame Keychain-Entschlüsselungen im
-  Remote-Betrieb blockieren dadurch nicht mehr jeden einzelnen Chat-Start.
-- Mehrkanalige virtuelle Audiogeräte wie Jump Desktop umgehen Apples dafür
-  ungeeigneten Sprachverarbeitungsweg. So bleibt der Audiomotor stabil, statt
-  nach dem Verbindungsaufbau wieder abzubrechen.
-
-## Sicherheit und Qualität
-
-- Der Schlüssel wird weiterhin weder in Einstellungen noch in Dateien oder
-  Protokollen gespeichert. Ändern oder Entfernen des Keychain-Eintrags
-  aktualisiert zugleich die flüchtige Sitzungskopie.
-- Die Audio-Routenentscheidung ist zusätzlich mit einem Test für virtuelle
-  Achtkanal-Ein- und -Ausgabegeräte abgesichert.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.26/Instant-0.1.26-28.zip" length="5655796" type="application/octet-stream" sparkle:edSignature="UDU/1ssTNtoCU0/g6rwQMrC7B7se/Ye47VYB8jmcqblKmaRgYEnQVe6ptrjabmS8gjXTQiEsKHRvoYGTBj8PCQ=="/>
         </item>
     </channel>
 </rss>
