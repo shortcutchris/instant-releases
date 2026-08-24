@@ -3,6 +3,49 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.38</title>
+            <pubDate>Mon, 24 Aug 2026 23:29:51 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.38</link>
+            <sparkle:version>40</sparkle:version>
+            <sparkle:shortVersionString>0.1.38</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.38
+
+## Präzise Bereichsmasken
+
+- Neue Auswahlrahmen beginnen jetzt exakt an der Mausposition auf der
+  sichtbaren Bildfläche. Die vertikale Zentrierung des Bildes verursacht
+  keinen Versatz mehr.
+- Verschieben und Skalieren vorhandener Masken behalten weiterhin ihren
+  stabilen, Canvas-bezogenen Bezugspunkt.
+
+## Sicherer Generierungszustand
+
+- Während Vorbereitung und KI-Bildgenerierung ist der gesamte Bildeditor
+  modal gesperrt. Prompt, Maske, Optionen, Fenstergriff und Größenänderung
+  können in dieser Zeit nicht versehentlich verändert werden.
+- Eine klar sichtbare Fortschrittsanzeige informiert über den laufenden
+  Vorgang. „Abbrechen“ bleibt als einzige Aktion verfügbar und beendet den
+  Auftrag kontrolliert.
+- Der gesperrte Hintergrund wird auch für Tastatur und VoiceOver aus dem
+  bedienbaren Fokus entfernt.
+
+## Qualität
+
+- Ein echter UI-Regressionstest auf dem MacBook Air misst die Mitte der neu
+  erstellten Maske gegen die Mauskoordinaten und prüft die vollständige
+  Interaktionssperre einschließlich Fenstergriffen und Abbruch.
+- Finder-UI-Tests arbeiten pro Ablauf mit genau einem isolierten Fenster und
+  vermeiden damit eine systemweite Accessibility-Hierarchieabfrage, die
+  Finder unter macOS 26.6 blockieren konnte.
+- Das vollständige Gate umfasst 235 Unit-Tests (229 bestanden, 6 bewusst
+  übersprungen), 1 von 1 Accessibility-Prüfung und 37 von 37 UI-Abläufe.
+  Release-Build und statische Analyse sind ohne Fehler oder Warnungen
+  abgeschlossen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.38/Instant-0.1.38-40.zip" length="6504203" type="application/octet-stream" sparkle:edSignature="BfRucthe8TmoSerSPy/TIWvkJWNc/t4U5k8tzhnBC7ys7qEUekdcCGHgEQghm2gj43IOCmoPvsQUxjNrfUKLBA=="/>
+        </item>
+        <item>
             <title>0.1.37</title>
             <pubDate>Mon, 24 Aug 2026 22:03:48 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.37</link>
@@ -437,57 +480,6 @@
   Audioübertragung mit anschließender Antwort.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.29/Instant-0.1.29-31.zip" length="5706037" type="application/octet-stream" sparkle:edSignature="8Uabf9mbCk60yIuNYDBK7US3D2HcAs0hzfW1P4ggY1mbLj5hXa0iLas8WJs5Sm8uBWqnlolgYFi+G3cTOl7gCw=="/>
-        </item>
-        <item>
-            <title>0.1.28</title>
-            <pubDate>Mon, 24 Aug 2026 02:20:29 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.28</link>
-            <sparkle:version>30</sparkle:version>
-            <sparkle:shortVersionString>0.1.28</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.28
-
-## Zuverlässiger visueller Live-Chat
-
-- Realtime-Antworten nutzen jetzt das dokumentierte Ausgabemaximum der
-  aktuellen OpenAI-Modelle statt der veralteten lokalen Grenze von 4.096
-  Tokens.
-- Unerwartet geschlossene WebSocket-Verbindungen werden erkannt und bis zu
-  fünfmal automatisch mit kurzem exponentiellem Backoff neu aufgebaut.
-- Noch nicht versendete Textfragen bleiben während einer Neuverbindung
-  erhalten. Sprache kann bereits während des Verbindungsaufbaus beginnen;
-  höchstens 30 Sekunden Audio werden dafür ausschließlich im Arbeitsspeicher
-  gepuffert.
-- Antworten sind standardmäßig kürzer und leichter zu unterbrechen. Ein
-  einzelnes abgeschlossenes oder unterbrochenes Antwortereignis beendet nicht
-  mehr die gesamte Unterhaltung.
-
-## Direkter Start nach dem Zeichnen
-
-- In „Einstellungen > Visueller Chat“ kann getrennt gewählt werden, ob nach
-  „Fertig“ direkt die vollständige Unterhaltung angezeigt wird.
-- Eine zweite Checkbox steuert unabhängig davon, ob das Mikrofon nach
-  „Fertig“ sofort zuhört. Beide Optionen sind standardmäßig aktiviert.
-- Das kompakte Voice-Widget und das ausgeklappte Chatfenster besitzen einen
-  sichtbaren Drag-Griff und lassen sich per Maus verschieben. Die Position
-  bleibt beim Auf- und Zuklappen erhalten.
-
-## Updates
-
-- Das Menüleistenmenü enthält dauerhaft „Nach Updates suchen …“.
-- Sobald Sparkle eine neuere Version erkannt hat, wechselt der Eintrag auf
-  „Update <Version> verfügbar …“ und öffnet direkt den Update-Dialog.
-
-## Qualität
-
-- Der echte OpenAI-Realtime-Test stellt zwei vollständige Antworten in einer
-  Sitzung sicher.
-- Unit-Tests decken Modellbudget, Wiederholbarkeit von Transportfehlern,
-  Konfigurationspersistenz und den dynamischen Update-Menütitel ab.
-- Der fokussierte macOS-UI-Test prüft beide Drag-Zustände sowie die neuen
-  Einstellungen.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.28/Instant-0.1.28-30.zip" length="5701439" type="application/octet-stream" sparkle:edSignature="FyEgf5q/M1i50jO+9YskZrLQm2idCuDIqzeAtCmdek6QXIHCdUeR5pD1Qec8nmhMOYIniVnnT+ezL+1C6N0dCA=="/>
         </item>
     </channel>
 </rss>
