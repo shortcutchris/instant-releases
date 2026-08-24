@@ -3,6 +3,48 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.30</title>
+            <pubDate>Mon, 24 Aug 2026 10:56:18 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.30</link>
+            <sparkle:version>32</sparkle:version>
+            <sparkle:shortVersionString>0.1.30</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.30
+
+## Unabhängige Audiosteuerung
+
+- Mikrofon und Assistentenstimme besitzen getrennte Schalter. Das Mikrofon
+  steuert ausschließlich das Zuhören; der Lautsprecher schaltet ausschließlich
+  die lokale Sprachausgabe stumm.
+- Beim Stummschalten der Stimme läuft die Antwort weiter und bleibt vollständig
+  als Transkript sichtbar. Bereits laufende Wiedergabe stoppt sofort.
+- In der kompakten Leiste stehen beide Audioknöpfe nebeneinander. Im großen
+  Chat bleibt der Mikrofonknopf unten, während der Lautsprecher in der
+  Kopfzeile sitzt, damit der feste einzeilige Statusbereich unverändert bleibt.
+
+## Ruhiges Transkript
+
+- Laufende Benutzer- und Assistententranskripte zeigen keinen bedeutungslosen
+  Spinner mehr.
+- Fortschrittsanzeigen bleiben echten Zuständen wie Verbindungsaufbau und
+  Verarbeitung vorbehalten.
+
+## Chat-Memory
+
+- Der optionale lokale Verlauf bleibt chatbezogen: Beim Fortsetzen werden die
+  letzten zwölf Nachrichten desselben Chats wieder als Kontext verwendet.
+- Es entsteht keine globale oder chatübergreifende Nutzer-Memory.
+
+## Qualität
+
+- Unit-Tests prüfen die unabhängige Wiedergabeentscheidung.
+- Ein fokussierter UI-Test auf dem MacBook Air prüft beide Audioknöpfe, ihren
+  Zustandswechsel, das spinnerfreie Live-Transkript und den weiterhin
+  einzeiligen Statusbereich.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.30/Instant-0.1.30-32.zip" length="5717002" type="application/octet-stream" sparkle:edSignature="5Uw/TmX7BXbGGHw4S0Z3uS29OR2cJRVCZs4aFUDTJVuoPvoZoU+ajlGqLGRSlLRNGOadzR5PyV7bmjci4LF2Ag=="/>
+        </item>
+        <item>
             <title>0.1.29</title>
             <pubDate>Mon, 24 Aug 2026 10:04:57 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.29</link>
@@ -293,56 +335,6 @@
   Bedienelemente vor späteren Regressionen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.21/Instant-0.1.21-23.zip" length="5635878" type="application/octet-stream" sparkle:edSignature="CsQ7NDKyYx1lRrEst4I6/Nve6Ym41HN+spD+Ap8Oh5iSr13hpIpuW1oyh1u4qCWTshE7rB5KWz/XB7PIlYLeDQ=="/>
-        </item>
-        <item>
-            <title>0.1.20</title>
-            <pubDate>Sun, 23 Aug 2026 04:15:29 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.20</link>
-            <sparkle:version>22</sparkle:version>
-            <sparkle:shortVersionString>0.1.20</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.20
-
-## Neu
-
-- Mit „Bildschirm fragen“ lässt sich ein Bildschirmbereich markieren und
-  direkt mit OpenAI besprechen.
-- Fragen funktionieren per Text oder als live gesprochener Dialog mit
-  sichtbarem Pegel, Transkript und gesprochener Antwort.
-- Die kompakte Voice-Pille wächst nur bei Bedarf zu einem schmalen
-  Gesprächsverlauf und bleibt über normalen App-Fenstern sichtbar.
-- Visuelle Chats lassen sich lokal speichern, wieder öffnen und fortsetzen.
-  Modell, Stimme und Screenshot-Aufbewahrung sind konfigurierbar.
-
-## Bedienung
-
-- Der Zeichenmodus unterstützt Freihandmarkierungen, Rückgängig, vollständiges
-  Löschen, `Esc` zum Abbrechen und `Return` zum Fortfahren.
-- Texteingabe bleibt auch ohne Mikrofonberechtigung vollständig nutzbar.
-- Beim Dazwischenreden stoppt Instant die laufende Audioantwort sofort.
-- Ein eigener Einstellungsbereich bündelt Modell, Stimme, Bildschirm- und
-  Mikrofonberechtigungen sowie alle Verlaufsoptionen.
-
-## Datenschutz
-
-- Bildschirmaufnahme und Mikrofon starten nur nach einer sichtbaren Aktion.
-- Roh-Audio wird niemals gespeichert. Der Verlauf ist optional und liegt nur
-  lokal mit restriktiven Dateirechten.
-- Screenshots werden nach der gewählten Frist gelöscht; geschützte Felder und
-  gesperrte Apps bleiben ausgeschlossen.
-- API-Schlüssel verbleiben ausschließlich in der macOS-Keychain.
-
-## Qualität
-
-- Realtime-WebSocket, Bildfrage, Text- und Audioantwort wurden gegen OpenAI
-  live geprüft.
-- Verlauf, Bildaufbereitung, Panelplatzierung, Konfigurationsmigration und
-  Fehlerzustände sind automatisiert getestet.
-- Der vollständige Rail und der neue Einstellungsbereich wurden auf dem
-  MacBook Air visuell und per UI-Test abgenommen.
-- Alle neuen sichtbaren Texte sind auf Deutsch und Englisch lokalisiert.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.20/Instant-0.1.20-22.zip" length="5630997" type="application/octet-stream" sparkle:edSignature="HaU6LzFlpqInqhirSXfqS0WKQ8Ul9Oc1yhLVXB/MTmzAH5eYsISf+vFD8scVuLJuHVBIyq/1mcksyz+K14SGAg=="/>
         </item>
     </channel>
 </rss>
