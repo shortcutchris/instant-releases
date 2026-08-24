@@ -3,6 +3,55 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.31</title>
+            <pubDate>Mon, 24 Aug 2026 12:30:34 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.31</link>
+            <sparkle:version>33</sparkle:version>
+            <sparkle:shortVersionString>0.1.31</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.31
+
+## Weitere Bilder im visuellen Chat
+
+- Ein neuer Plusknopf ergänzt einen laufenden Chat um einen markierten
+  Screenshot, eine Bilddatei oder ein Bild aus der Zwischenablage.
+- Das Bild erscheint zunächst als entfernbare Vorschau. Es wird erst zusammen
+  mit der nächsten Textfrage oder beim tatsächlichen Sprechbeginn verwendet.
+- Die Kopfzeile zeigt die aktuelle Bildanzahl; Benutzerbeiträge behalten ihre
+  Bildanhänge auch im lokalen Chatverlauf.
+
+## Ruhiger, stabiler Ablauf
+
+- Für eine erneute Bildschirmaufnahme verschwindet das Chatpanel kurz und
+  kehrt danach aufgeklappt an exakt dieselbe Position zurück. Der bestehende
+  Chat wird dabei nicht beendet.
+- Mikrofon und Wiedergabe pausieren während Bildauswahl und Zeichenmodus.
+  Abbrechen stellt den vorherigen Zustand wieder her.
+- Bilder aus Dateien und Zwischenablage werden lokal geprüft, verkleinert und
+  in ein kompatibles Format gebracht. Zu große oder ungültige Bilder werden
+  verständlich abgewiesen.
+
+## Verlauf und Datenschutz
+
+- Zusätzliche Bilder folgen derselben konfigurierten Aufbewahrungsfrist wie der
+  erste Screenshot und werden beim Löschen eines Chats vollständig entfernt.
+- Alte Chatverläufe bleiben kompatibel. Bilder, Schlüssel und Inhalte gelangen
+  weiterhin weder in Diagnose noch Konfigurationsexport.
+
+## Qualität
+
+- Unit-Tests decken Bildaufbereitung, Realtime-Bildereignisse,
+  Verlaufskompatibilität und vollständige Dateibereinigung ab.
+- Ein fokussierter macOS-UI-Test prüft Plusknopf, vorbereitete Bildvorschau,
+  Entfernen und das stabile einzeilige Composer-Layout.
+- Ein echter OpenAI-Realtime-Test ergänzt ein zweites Bild in derselben
+  Sitzung und bestätigt, dass es als neuester visueller Kontext erkannt wird.
+- Das finale Release-Gate auf dem MacBook Air umfasst 201 Unit-Tests,
+  1 Accessibility-Prüfung und 34 vollständige UI-Abläufe ohne Fehler.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.31/Instant-0.1.31-33.zip" length="5829808" type="application/octet-stream" sparkle:edSignature="wC9PQBfjhmSPjSTct2U7vsOtTTcFovmMFW2imxrONXslDz50/wfKKxcK22ZLOKGdk5RscAYUq8V5JEce/PS0BQ=="/>
+        </item>
+        <item>
             <title>0.1.30</title>
             <pubDate>Mon, 24 Aug 2026 10:56:18 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.30</link>
@@ -308,33 +357,6 @@
 - Die vollständige deutsche und englische Lokalisierung bleibt geprüft.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.22/Instant-0.1.22-24.zip" length="5643514" type="application/octet-stream" sparkle:edSignature="rLBxx9q9qzFbrbQQt1KYsyiEedPMYb77PZAZ2LOrZAx0YSRkkLpBkeE1k5rPmYKzBFMZFizfrlQHjPkVBiCACQ=="/>
-        </item>
-        <item>
-            <title>0.1.21</title>
-            <pubDate>Sun, 23 Aug 2026 10:35:42 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.21</link>
-            <sparkle:version>23</sparkle:version>
-            <sparkle:shortVersionString>0.1.21</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.21
-
-## Verbessert
-
-- Die untere Voice-Bar des visuellen Chats ist jetzt als eigene, eingerückte
-  Dock-Fläche klar vom Gespräch getrennt.
-- Das Mikrofon sitzt wie in der Designreferenz links. Status und Pegel stehen
-  direkt daneben, der Tastaturumschalter rechts.
-- Das Texteingabefeld gehört sichtbar zur selben Composer-Fläche, ohne an
-  Antworten oder das Mikrofon zu stoßen.
-
-## Qualität
-
-- Die neue Anordnung wurde bei identischer Panelgröße visuell gegen die
-  freigegebene Referenz geprüft.
-- Ein zusätzlicher UI-Geometrie-Test schützt Abstand und Ausrichtung der
-  Bedienelemente vor späteren Regressionen.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.21/Instant-0.1.21-23.zip" length="5635878" type="application/octet-stream" sparkle:edSignature="CsQ7NDKyYx1lRrEst4I6/Nve6Ym41HN+spD+Ap8Oh5iSr13hpIpuW1oyh1u4qCWTshE7rB5KWz/XB7PIlYLeDQ=="/>
         </item>
     </channel>
 </rss>
