@@ -3,6 +3,55 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.34</title>
+            <pubDate>Mon, 24 Aug 2026 17:28:44 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.34</link>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>0.1.34</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.34
+
+## Präzisere Bildschirmfragen
+
+- Der Zeichenmodus bietet jetzt Stift, Marker, Pfeil, Rechteck, Ellipse,
+  nummerierte Pins und eine echte Schwärzung in einer kompakten Leiste.
+- Pfeile zeigen eindeutig auf ihr Ziel, Formen grenzen Bereiche ab und Pins
+  schaffen stabile Referenzen wie „Bereich 1“ für Sprache und Text.
+- Undo und Zurücksetzen funktionieren einheitlich über alle Werkzeugarten.
+
+## Besseres Verständnis durch die KI
+
+- Instant übermittelt neben dem sichtbaren Bild strukturierte Angaben zu Art,
+  Position, Pfeilziel und Pin-Nummer jeder Markierung.
+- Der visuelle Assistent kennt die Bedeutung aller Zeichenwerkzeuge, folgt der
+  gesprochenen oder geschriebenen Frage und trennt sichtbare Fakten von
+  Schlussfolgerungen.
+- Der semantische Kontext bleibt auch bei nachträglich hinzugefügten Bildern
+  und beim Fortsetzen eines gespeicherten Chats erhalten.
+
+## Sichere Schwärzungen
+
+- Schwärzungen werden undurchsichtig in das tatsächlich übertragene Bild
+  eingebrannt; verdeckte Originalpixel verlassen diesen Verarbeitungsschritt
+  nicht.
+- Der Assistent darf geschwärzte Inhalte weder erraten noch rekonstruieren,
+  beschreiben oder erneut anfordern.
+- Bestehende Chats und ältere Freihandmarkierungen bleiben kompatibel.
+
+## Qualität
+
+- 216 Unit-Tests liefen mit 210 Erfolgen, 0 Fehlern und 6 bewusst
+  übersprungenen Live-Provider-Tests.
+- Die unabhängige Accessibility-Prüfung bestand mit 1 von 1; die vollständige
+  reale UI-Matrix auf dem MacBook Air bestand mit 35 von 35 Abläufen.
+- Die Werkzeugleiste wurde zusätzlich als echter Air-Screenshot visuell auf
+  Dichte, Ausrichtung, Auswahlzustand und einzeilige Darstellung geprüft.
+- Developer-ID-Signatur, Apple-Notarisierung, Stapling, Gatekeeper,
+  öffentliches ZIP und der signierte Sparkle-Appcast wurden geprüft.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.34/Instant-0.1.34-36.zip" length="6068688" type="application/octet-stream" sparkle:edSignature="QJedUiOMdy8l++5avwtgoXi+grX8ZhSnpj9YKlmC7MNktr58Q9pLGwrreelDI/0cvP47wsjFayVpT7BTzLLdAQ=="/>
+        </item>
+        <item>
             <title>0.1.33</title>
             <pubDate>Mon, 24 Aug 2026 15:49:53 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.33</link>
@@ -378,33 +427,6 @@
   live geprüft.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.25/Instant-0.1.25-27.zip" length="5649434" type="application/octet-stream" sparkle:edSignature="x5OezwOTTV/xQR/j5B1B8i+ea0QKANm32sSGDziq/MVVbGb7f37fLgVmFW2zovdiPS2Navpylk7wVrgbfstzAQ=="/>
-        </item>
-        <item>
-            <title>0.1.24</title>
-            <pubDate>Sun, 23 Aug 2026 19:35:43 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.24</link>
-            <sparkle:version>26</sparkle:version>
-            <sparkle:shortVersionString>0.1.24</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.24
-
-## Kompatibilität
-
-- Safari ist jetzt durch einen echten Textarea-Ablauf mit Auswahl,
-  Transformation, direkter Ersetzung und nativem `⌘Z` abgesichert.
-- Notizen ist durch denselben vollständigen Ersetzungs- und Undo-Ablauf
-  abgesichert. Der Test behandelt auch Apples einmaligen Einführungsdialog und
-  entfernt ausschließlich seine eigene Testnotiz wieder.
-- Terminal-Ausgaben werden als unveränderlicher Text behandelt: Instant
-  transformiert die Auswahl und legt das Ergebnis sicher in die
-  Zwischenablage, ohne Terminal-Inhalte oder Befehlszeile zu überschreiben.
-
-## Qualität
-
-- Die drei neuen Abläufe bestehen sowohl einzeln als auch gemeinsam, sodass
-  Fokus, Zwischenablage und App-Zustand nicht zwischen den Tests auslaufen.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.24/Instant-0.1.24-26.zip" length="5643500" type="application/octet-stream" sparkle:edSignature="3741w029Ia/JP6csQktJiYERx1NT8lJNUvE7m1R8VDCn4orSj06MsyJq5yzD4JLFiDK/d0Xy8w3VpRm7HE51Dw=="/>
         </item>
     </channel>
 </rss>
