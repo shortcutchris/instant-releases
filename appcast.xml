@@ -3,6 +3,46 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.33</title>
+            <pubDate>Mon, 24 Aug 2026 15:49:53 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.33</link>
+            <sparkle:version>35</sparkle:version>
+            <sparkle:shortVersionString>0.1.33</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.33
+
+## Neu gestalteter PDF-Chatverlauf
+
+- Der PDF-Export erhält eine klare Dokumentkopfzeile mit Titel, Quell-App,
+  Erstellungsdatum sowie einer Zusammenfassung von Beiträgen und Bildern.
+- Nutzerfragen und Antworten erscheinen als nummerierte, optisch getrennte
+  Karten; Bildschirmkontext und weitere Bilder besitzen eigene Bereiche.
+- Seitenzahlen, wiederholte Dokumenttitel und gekennzeichnete Fortsetzungen
+  machen auch längere Chatverläufe gut lesbar.
+- Beiträge bleiben nach Möglichkeit vollständig auf einer Seite. Nur Inhalte,
+  die länger als eine ganze Seite sind, werden kontrolliert fortgesetzt.
+
+## Vollständige und verlässliche Inhalte
+
+- Sämtliche ausgewählten Chattexte werden als durchsuchbarer und kopierbarer
+  Text in das PDF übernommen.
+- Eine feste Druckfarbpalette und weiße A4-Seiten verhindern unsichtbaren Text,
+  wenn macOS oder Instant im Dunkelmodus verwendet wird.
+- Automatische Tests lesen den erzeugten PDF-Verlauf wieder ein und prüfen den
+  Inhalt jeder ausgewählten Nachricht.
+
+## Direkte Audiosteuerung
+
+- Mikrofon und Lautsprecher sind im kompakten wie im erweiterten Chat zwei
+  gleich große, direkt nebeneinanderliegende Schalter.
+- Beide bleiben unabhängig bedienbar: Das Mikrofon stoppt die Eingabe, der
+  Lautsprecher schaltet ausschließlich die lokale Sprachausgabe stumm.
+- Lange Statusmeldungen bleiben in einer stabilen Zeile und verschieben die
+  untere Chatleiste nicht.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.33/Instant-0.1.33-35.zip" length="6022118" type="application/octet-stream" sparkle:edSignature="1T+DEgNRBpqrf8KJE8T9lE2SBzGvpsCwRKQzQU3iV9cw0J+EW2IKeoNMtULK36VLzSNi18I99ize04mDnmR/Bw=="/>
+        </item>
+        <item>
             <title>0.1.32</title>
             <pubDate>Mon, 24 Aug 2026 14:53:16 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.32</link>
@@ -356,29 +396,6 @@
   Fokus, Zwischenablage und App-Zustand nicht zwischen den Tests auslaufen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.24/Instant-0.1.24-26.zip" length="5643500" type="application/octet-stream" sparkle:edSignature="3741w029Ia/JP6csQktJiYERx1NT8lJNUvE7m1R8VDCn4orSj06MsyJq5yzD4JLFiDK/d0Xy8w3VpRm7HE51Dw=="/>
-        </item>
-        <item>
-            <title>0.1.23</title>
-            <pubDate>Sun, 23 Aug 2026 12:29:39 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.23</link>
-            <sparkle:version>25</sparkle:version>
-            <sparkle:shortVersionString>0.1.23</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.23
-
-## Verbessert
-
-- „Verbindung wird hergestellt“ bleibt jetzt einzeilig. Die zuvor allein in
-  die zweite Zeile umgebrochenen Auslassungspunkte wurden entfernt.
-- Der Spinner zeigt den laufenden Verbindungsaufbau weiterhin eindeutig an.
-- Die englische Meldung „Connecting“ folgt derselben Darstellung.
-
-## Qualität
-
-- Der GUI-Test prüft nun ausdrücklich, dass der Verbindungsstatus keine
-  Auslassungspunkte enthält und dieselbe einzeilige Höhe wie „Hört zu“ behält.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.23/Instant-0.1.23-25.zip" length="5643462" type="application/octet-stream" sparkle:edSignature="rx44n52uNnszBUAhmIFecv2bDIzCBZygnZKbQCH+72gPZDb1apM0ILGBbrZGox466HG4ZBjCplApDQRTs27dBQ=="/>
         </item>
     </channel>
 </rss>
