@@ -39,6 +39,15 @@
   Lautsprecher schaltet ausschließlich die lokale Sprachausgabe stumm.
 - Lange Statusmeldungen bleiben in einer stabilen Zeile und verschieben die
   untere Chatleiste nicht.
+
+## Qualität
+
+- 211 Unit-Tests liefen mit 205 Erfolgen, 0 Fehlern und 6 bewusst
+  übersprungenen Live-Provider-Tests.
+- Die unabhängige Accessibility-Prüfung bestand mit 1 von 1; die vollständige
+  reale UI-Matrix auf dem MacBook Air bestand mit 34 von 34 Abläufen.
+- Developer-ID-Signatur, Apple-Notarisierung, Stapling, Gatekeeper,
+  öffentliches ZIP und der signierte Sparkle-Appcast wurden geprüft.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.33/Instant-0.1.33-35.zip" length="6022118" type="application/octet-stream" sparkle:edSignature="1T+DEgNRBpqrf8KJE8T9lE2SBzGvpsCwRKQzQU3iV9cw0J+EW2IKeoNMtULK36VLzSNi18I99ize04mDnmR/Bw=="/>
         </item>
