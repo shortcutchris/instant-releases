@@ -3,6 +3,41 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.42</title>
+            <pubDate>Tue, 25 Aug 2026 17:30:37 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.42</link>
+            <sparkle:version>44</sparkle:version>
+            <sparkle:shortVersionString>0.1.42</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.42
+
+## Zuverlässige manuelle Updatesuche
+
+- Der Menüpunkt „Nach Updates suchen …“ ist unmittelbar nach dem App-Start
+  auswählbar und bleibt auch während der kurzen Sparkle-Initialisierung
+  anklickbar.
+- Sparkle startet jetzt gemeinsam mit dem zentralen App-Modell und hängt nicht
+  mehr vom verzögerten Aufbau der SwiftUI-Menüleiste ab.
+- Sobald ein neueres Release erkannt wurde, zeigt derselbe Menüpunkt weiterhin
+  dynamisch die verfügbare Versionsnummer an.
+- Ein manueller Aufruf initialisiert den Updater vorsorglich erneut, bevor der
+  eigentliche Prüfauftrag an Sparkle übergeben wird.
+
+## Qualität
+
+- Zwei neue Regressionstests sichern den Updater-Start beim Aufbau des
+  App-Modells und die Reihenfolge einer manuellen Updatesuche ab.
+- Das vollständige Gate umfasst 253 Unit-Tests mit 247 Erfolgen, 0 Fehlern und
+  6 bewusst übersprungenen Live-Provider-Tests, 1 von 1 Accessibility-Test
+  sowie 39 von 39 reale GUI-Abläufe auf dem MacBook Air.
+- Release-Build und statische Analyse laufen ohne Fehler oder Warnungen durch.
+- Alle sichtbaren Texte bleiben vollständig auf Deutsch und Englisch
+  lokalisiert; Update-Schlüssel und Provider-Zugangsdaten verbleiben
+  unverändert in ihren geschützten macOS-Keychain-Bereichen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.42/Instant-0.1.42-44.zip" length="6674704" type="application/octet-stream" sparkle:edSignature="6UgrkmuP07Zga+SK9YVANkjgoGHZhsz2Mec/4Sc/kM7tgSfADxB0raISqrzO/5O5MKIuCgQshxrA7nu8QVNSDg=="/>
+        </item>
+        <item>
             <title>0.1.41</title>
             <pubDate>Tue, 25 Aug 2026 16:29:33 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.41</link>
@@ -459,55 +494,6 @@
   öffentliches ZIP und der signierte Sparkle-Appcast wurden geprüft.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.33/Instant-0.1.33-35.zip" length="6022118" type="application/octet-stream" sparkle:edSignature="1T+DEgNRBpqrf8KJE8T9lE2SBzGvpsCwRKQzQU3iV9cw0J+EW2IKeoNMtULK36VLzSNi18I99ize04mDnmR/Bw=="/>
-        </item>
-        <item>
-            <title>0.1.32</title>
-            <pubDate>Mon, 24 Aug 2026 14:53:16 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.32</link>
-            <sparkle:version>34</sparkle:version>
-            <sparkle:shortVersionString>0.1.32</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.32
-
-## Chatbeiträge bewusst auswählen
-
-- Über das Mehr-Menü lassen sich einzelne Nachrichten, Bereiche oder der
-  gesamte visuelle Chat auswählen.
-- Die feste Aktionszeile kopiert die Auswahl oder öffnet direkt PDF-,
-  Markdown- und macOS-Share-Export.
-- Ein Schnellzugriff im Chatkopf exportiert auf Wunsch sofort den ganzen Chat.
-
-## Flexible Exporte
-
-- PDF-Dateien werden mehrseitig, durchsuchbar und mit Seitenzahlen erzeugt.
-- Für PDF stehen ein kompaktes und ein ausführliches Layout zur Wahl.
-- Bilder und Zeitstempel können vor jedem Datei- oder Share-Export unabhängig
-  voneinander ausgeschlossen werden.
-- Markdown kann die bewusst freigegebenen Bilder direkt einbetten; Kopieren
-  erzeugt eine geordnete, gut lesbare Textfassung.
-
-## Verlauf und Datenschutz
-
-- Gespeicherte Chats lassen sich direkt aus dem Verlauf als PDF oder Markdown
-  exportieren und über macOS teilen.
-- Nach Ablauf der Bildaufbewahrung bleibt der Export der vorhandenen
-  Transkripte möglich.
-- Nur abgeschlossene und ausgewählte Beiträge gelangen in den Export.
-  Roh-Audio, API-Schlüssel und interne Anweisungen werden nie einbezogen.
-- Temporäre Share-Dateien sind privat, zufällig benannt und werden nach der
-  Freigabe oder spätestens bei der nächsten Bereinigung entfernt.
-
-## Qualität
-
-- Unit-Tests prüfen Auswahlreihenfolge, Bereichsauswahl, Datenschutzoptionen,
-  Markdown-Einbettung, sichere Dateinamen und mehrseitige PDF-Erzeugung.
-- Der reale macOS-UI-Ablauf prüft Auswahl, Alle/Keine, Exportoptionen,
-  Abbrechen und die Kopier-Rückmeldung auf dem MacBook Air.
-- Das finale Release-Gate umfasst 210 Unit-Tests mit 204 Erfolgen und 6
-  bewusst übersprungenen Live-Provider-Tests, 1 erfolgreiche
-  Accessibility-Prüfung und 34 von 34 vollständige UI-Abläufe.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.32/Instant-0.1.32-34.zip" length="6003408" type="application/octet-stream" sparkle:edSignature="xefXb7t+981/cpO8tmEIHe1wJLzugH+/3EI6R0vkLnUXTCpazx7VQaJf34cw/43oPq0FiLzFNtj3e6hDIIp8CA=="/>
         </item>
     </channel>
 </rss>
