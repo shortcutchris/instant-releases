@@ -3,6 +3,67 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.41</title>
+            <pubDate>Tue, 25 Aug 2026 16:29:33 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.41</link>
+            <sparkle:version>43</sparkle:version>
+            <sparkle:shortVersionString>0.1.41</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.41
+
+## Bilder direkt im Chat bearbeiten
+
+- In einem Bild-Chat reicht jetzt eine natürliche Text- oder Sprachanweisung
+  wie „Entferne den Hintergrund“ oder „Mach den Himmel sonnig“.
+- Der Realtime-Assistent erkennt eine ausdrückliche Bearbeitungsabsicht und
+  ruft Instants vorhandenen GPT-Image-2-Editor genau einmal als Werkzeug auf.
+- Analysefragen, reine Fähigkeitsfragen und Dokument-Chats lösen keine
+  Bildgenerierung aus.
+- Während der Bearbeitung zeigt Instant einen eindeutigen Arbeitsstatus und
+  sperrt neue Chat-Eingaben sowie das Mikrofon. Das Chatfenster bleibt
+  weiterhin frei beweglich.
+
+## Nicht-destruktive Versionen und Fortsetzung
+
+- Jedes Ergebnis wird als neue Bildversion mit Elternbezug, Modell,
+  Bearbeitungsanweisung und Zeitstempel gespeichert; das Ausgangsbild bleibt
+  unverändert.
+- Das erzeugte Bild erscheint direkt als Beitrag im bestehenden Chat und kann
+  dort geöffnet, verglichen, erneut bearbeitet oder für weitere Fragen
+  verwendet werden.
+- Der Assistent erhält die neue Bildversion zurück und bestätigt das Ergebnis
+  im selben Gespräch, ohne einen zweiten Chat oder Editor-Dialog zu öffnen.
+- Fehler und Abbrüche erzeugen keine falsche Erfolgsmeldung und werden nicht
+  automatisch kostenpflichtig wiederholt.
+
+## Provider, Kosten und Datenschutz
+
+- Das Werkzeug wird nur für echte Bildquellen, bei aktiviertem OpenAI-
+  Bildeditor und innerhalb des konfigurierten Monatslimits angeboten.
+- Der vorhandene OpenAI-Schlüssel bleibt ausschließlich in der macOS-Keychain.
+- Tool-Ergebnisse übertragen keine lokalen Dateipfade, versteckten Prompts oder
+  Schlüssel. Der Realtime-Assistent erhält nur das ausdrücklich bearbeitete
+  Bild und sichere Versionsmetadaten.
+- Doppelte Realtime-Ereignisse werden über ihre Aufruf-ID dedupliziert, sodass
+  dieselbe Anweisung nicht zweimal berechnet wird.
+
+## Qualität
+
+- 251 Unit-Tests: 245 bestanden, 0 fehlgeschlagen und 6 bewusst
+  übersprungene Live-Provider-Tests.
+- Unabhängiges Accessibility-Gate: 1 von 1 bestanden.
+- Vollständige reale GUI-Matrix auf dem MacBook Air: 39 von 39 Abläufen
+  bestanden, einschließlich des neuen Arbeitsstatus und der Eingabesperre.
+- Echter Ende-zu-Ende-Lauf: OpenAI Realtime rief `edit_image` genau einmal
+  auf, GPT Image 2 erzeugte 826.488 Byte Bilddaten und der Chat bestätigte die
+  zurückgegebene Version.
+- Alle 641 sichtbaren Lokalisierungsschlüssel sind vollständig auf Deutsch und
+  Englisch gepflegt; der App-Icon-Katalog enthält weiterhin alle sieben
+  erforderlichen macOS-Basisgrößen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.41/Instant-0.1.41-43.zip" length="6678781" type="application/octet-stream" sparkle:edSignature="q0UwfnZdmMZKpNJM/o1NqjqpuKCPcBCKVHZpFifXnl7WtnhphLuM1+SFOh70bcJPc4XTtP5bBqYeQ+jcx/CcCw=="/>
+        </item>
+        <item>
             <title>0.1.40</title>
             <pubDate>Tue, 25 Aug 2026 15:14:30 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.40</link>
@@ -447,55 +508,6 @@
   Accessibility-Prüfung und 34 von 34 vollständige UI-Abläufe.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.32/Instant-0.1.32-34.zip" length="6003408" type="application/octet-stream" sparkle:edSignature="xefXb7t+981/cpO8tmEIHe1wJLzugH+/3EI6R0vkLnUXTCpazx7VQaJf34cw/43oPq0FiLzFNtj3e6hDIIp8CA=="/>
-        </item>
-        <item>
-            <title>0.1.31</title>
-            <pubDate>Mon, 24 Aug 2026 12:30:34 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.31</link>
-            <sparkle:version>33</sparkle:version>
-            <sparkle:shortVersionString>0.1.31</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.31
-
-## Weitere Bilder im visuellen Chat
-
-- Ein neuer Plusknopf ergänzt einen laufenden Chat um einen markierten
-  Screenshot, eine Bilddatei oder ein Bild aus der Zwischenablage.
-- Das Bild erscheint zunächst als entfernbare Vorschau. Es wird erst zusammen
-  mit der nächsten Textfrage oder beim tatsächlichen Sprechbeginn verwendet.
-- Die Kopfzeile zeigt die aktuelle Bildanzahl; Benutzerbeiträge behalten ihre
-  Bildanhänge auch im lokalen Chatverlauf.
-
-## Ruhiger, stabiler Ablauf
-
-- Für eine erneute Bildschirmaufnahme verschwindet das Chatpanel kurz und
-  kehrt danach aufgeklappt an exakt dieselbe Position zurück. Der bestehende
-  Chat wird dabei nicht beendet.
-- Mikrofon und Wiedergabe pausieren während Bildauswahl und Zeichenmodus.
-  Abbrechen stellt den vorherigen Zustand wieder her.
-- Bilder aus Dateien und Zwischenablage werden lokal geprüft, verkleinert und
-  in ein kompatibles Format gebracht. Zu große oder ungültige Bilder werden
-  verständlich abgewiesen.
-
-## Verlauf und Datenschutz
-
-- Zusätzliche Bilder folgen derselben konfigurierten Aufbewahrungsfrist wie der
-  erste Screenshot und werden beim Löschen eines Chats vollständig entfernt.
-- Alte Chatverläufe bleiben kompatibel. Bilder, Schlüssel und Inhalte gelangen
-  weiterhin weder in Diagnose noch Konfigurationsexport.
-
-## Qualität
-
-- Unit-Tests decken Bildaufbereitung, Realtime-Bildereignisse,
-  Verlaufskompatibilität und vollständige Dateibereinigung ab.
-- Ein fokussierter macOS-UI-Test prüft Plusknopf, vorbereitete Bildvorschau,
-  Entfernen und das stabile einzeilige Composer-Layout.
-- Ein echter OpenAI-Realtime-Test ergänzt ein zweites Bild in derselben
-  Sitzung und bestätigt, dass es als neuester visueller Kontext erkannt wird.
-- Das finale Release-Gate auf dem MacBook Air umfasst 201 Unit-Tests,
-  1 Accessibility-Prüfung und 34 vollständige UI-Abläufe ohne Fehler.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.31/Instant-0.1.31-33.zip" length="5829808" type="application/octet-stream" sparkle:edSignature="wC9PQBfjhmSPjSTct2U7vsOtTTcFovmMFW2imxrONXslDz50/wfKKxcK22ZLOKGdk5RscAYUq8V5JEce/PS0BQ=="/>
         </item>
     </channel>
 </rss>
