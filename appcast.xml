@@ -3,6 +3,37 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.44</title>
+            <pubDate>Tue, 25 Aug 2026 22:14:01 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.44</link>
+            <sparkle:version>46</sparkle:version>
+            <sparkle:shortVersionString>0.1.44</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.44
+
+## Zuverlässig angedockte Chatliste
+
+- Die Chatliste von Instant Home erscheint bereits beim ersten Öffnen als
+  feste linke Spalte und liegt nicht mehr vorübergehend über dem Chat.
+- Ein- und Ausblenden verschiebt den Chat jetzt in jeder Fensterbreite
+  verlässlich, statt zwischen Overlay- und Split-Darstellung zu wechseln.
+- Das Auswählen einer Unterhaltung behält die Liste bei; sie wird nur noch
+  über den dafür vorgesehenen Sidebar-Schalter ein- oder ausgeblendet.
+
+## Qualität
+
+- Ein neuer GUI-Regressionstest prüft den allerersten Layout-Pass sowie
+  wiederholtes Schließen und Öffnen auf Überlappung und korrekte
+  Inhaltsverschiebung.
+- Das vollständige Gate umfasst 258 Unit-Tests mit 252 Erfolgen, 0 Fehlern und
+  6 bewusst übersprungenen Live-Provider-Tests, 1 von 1 Accessibility-Test
+  sowie 40 von 40 reale GUI-Abläufe auf dem MacBook Air.
+- Lokalisierungs- und App-Icon-Katalog bleiben vollständig geprüft; es wurden
+  keine Zugangsdaten oder Providerpfade verändert.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.44/Instant-0.1.44-46.zip" length="6876656" type="application/octet-stream" sparkle:edSignature="lpjw7vzbOHOTS76/xEJpdU5AkbdTLa7SRhAJy0rNiqhimbQ4JOlP8J6R3aV1p9KR7julSF9/bkrGXuSdiZ68AQ=="/>
+        </item>
+        <item>
             <title>0.1.43</title>
             <pubDate>Tue, 25 Aug 2026 21:36:38 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.43</link>
@@ -443,55 +474,6 @@
   Upload und nichtleere Bildausgabe über den produktiven Edit-Endpunkt.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.35/Instant-0.1.35-37.zip" length="6371058" type="application/octet-stream" sparkle:edSignature="q818h0LnLOqM7VV+3D6gv2Ugu0ljDMYcZ0wNshYeX+CutrVUjrAxJI8davvkdUDxyxtC2qBb0tfNiL/BueazCw=="/>
-        </item>
-        <item>
-            <title>0.1.34</title>
-            <pubDate>Mon, 24 Aug 2026 17:28:44 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.34</link>
-            <sparkle:version>36</sparkle:version>
-            <sparkle:shortVersionString>0.1.34</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.34
-
-## Präzisere Bildschirmfragen
-
-- Der Zeichenmodus bietet jetzt Stift, Marker, Pfeil, Rechteck, Ellipse,
-  nummerierte Pins und eine echte Schwärzung in einer kompakten Leiste.
-- Pfeile zeigen eindeutig auf ihr Ziel, Formen grenzen Bereiche ab und Pins
-  schaffen stabile Referenzen wie „Bereich 1“ für Sprache und Text.
-- Undo und Zurücksetzen funktionieren einheitlich über alle Werkzeugarten.
-
-## Besseres Verständnis durch die KI
-
-- Instant übermittelt neben dem sichtbaren Bild strukturierte Angaben zu Art,
-  Position, Pfeilziel und Pin-Nummer jeder Markierung.
-- Der visuelle Assistent kennt die Bedeutung aller Zeichenwerkzeuge, folgt der
-  gesprochenen oder geschriebenen Frage und trennt sichtbare Fakten von
-  Schlussfolgerungen.
-- Der semantische Kontext bleibt auch bei nachträglich hinzugefügten Bildern
-  und beim Fortsetzen eines gespeicherten Chats erhalten.
-
-## Sichere Schwärzungen
-
-- Schwärzungen werden undurchsichtig in das tatsächlich übertragene Bild
-  eingebrannt; verdeckte Originalpixel verlassen diesen Verarbeitungsschritt
-  nicht.
-- Der Assistent darf geschwärzte Inhalte weder erraten noch rekonstruieren,
-  beschreiben oder erneut anfordern.
-- Bestehende Chats und ältere Freihandmarkierungen bleiben kompatibel.
-
-## Qualität
-
-- 216 Unit-Tests liefen mit 210 Erfolgen, 0 Fehlern und 6 bewusst
-  übersprungenen Live-Provider-Tests.
-- Die unabhängige Accessibility-Prüfung bestand mit 1 von 1; die vollständige
-  reale UI-Matrix auf dem MacBook Air bestand mit 35 von 35 Abläufen.
-- Die Werkzeugleiste wurde zusätzlich als echter Air-Screenshot visuell auf
-  Dichte, Ausrichtung, Auswahlzustand und einzeilige Darstellung geprüft.
-- Developer-ID-Signatur, Apple-Notarisierung, Stapling, Gatekeeper,
-  öffentliches ZIP und der signierte Sparkle-Appcast wurden geprüft.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.34/Instant-0.1.34-36.zip" length="6068688" type="application/octet-stream" sparkle:edSignature="QJedUiOMdy8l++5avwtgoXi+grX8ZhSnpj9YKlmC7MNktr58Q9pLGwrreelDI/0cvP47wsjFayVpT7BTzLLdAQ=="/>
         </item>
     </channel>
 </rss>
