@@ -3,6 +3,48 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.45</title>
+            <pubDate>Tue, 25 Aug 2026 23:22:03 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.45</link>
+            <sparkle:version>47</sparkle:version>
+            <sparkle:shortVersionString>0.1.45</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.45
+
+## Dateien direkt im Chat
+
+- Das Plus-Symbol im schwebenden Chat und in Instant Home akzeptiert jetzt
+  neben Bildern auch bis zu fünf Dateien gleichzeitig.
+- Unterstützt werden Text, Quellcode, Markdown, PDF, RTF/RTFD, Word, Excel,
+  PowerPoint und Bilder. Instant verwendet dafür die vorhandene lokale
+  Textextraktion und OCR mit den konfigurierten Größen- und Seitenlimits.
+- Dateinamen und extrahierter Inhalt bleiben als Quellen im bestehenden Chat
+  erhalten. Nachfolgende Fragen per Text oder Sprache beziehen die neuen
+  Dateien ein, ohne einen separaten Chat anzulegen.
+- Bereits verbundene Sprachchats laden den erweiterten Kontext kontrolliert
+  neu. Sensible Speicherorte behalten ihre ausdrückliche
+  Datenschutzbestätigung vor externer Verarbeitung.
+
+## Updates im App-Menü
+
+- „Nach Updates suchen …“ ist nun auch direkt im nativen Instant-App-Menü
+  verfügbar.
+- Der Eintrag verwendet dieselbe Sparkle-Instanz wie das Menüleistensymbol und
+  zeigt bei einem bekannten Update dynamisch die verfügbare Version an.
+
+## Qualität
+
+- Neue Tests sichern das dauerhafte Zusammenführen mehrerer Dateiquellen,
+  Datenschutzstatus, die Plus-Menü-Darstellung und den nativen Update-Befehl.
+- Das vollständige Gate umfasst 261 Unit-Tests mit 255 Erfolgen, 0 Fehlern und
+  6 bewusst übersprungenen Live-Provider-Tests, 1 von 1 Accessibility-Test
+  sowie 41 von 41 reale GUI-Abläufe auf dem MacBook Air.
+- Der lokalisierte String Catalog ist mit 689 deutschen und englischen
+  Schlüsseln vollständig; der App-Icon-Katalog bleibt ebenfalls grün.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.45/Instant-0.1.45-47.zip" length="6891740" type="application/octet-stream" sparkle:edSignature="ihAky5pLt4QHeszcJYYHHMQEKJZvOc44Xw10uw89sCtkUu553JfFywn98Cu6DE4Hw5vPkE17wuT3a+1qx+ZjBQ=="/>
+        </item>
+        <item>
             <title>0.1.44</title>
             <pubDate>Tue, 25 Aug 2026 22:14:01 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.44</link>
@@ -415,65 +457,6 @@
   oder Warnungen abgeschlossen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.36/Instant-0.1.36-38.zip" length="6483991" type="application/octet-stream" sparkle:edSignature="/iGhn29LVFj8yZboAWLFj0V9QteMQmfyaeJ9IJPcW7zPBBO/5fv8bhMg/s5hlOIuqVSYKSVkiGIZBTr07r9qAA=="/>
-        </item>
-        <item>
-            <title>0.1.35</title>
-            <pubDate>Mon, 24 Aug 2026 19:34:47 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.35</link>
-            <sparkle:version>37</sparkle:version>
-            <sparkle:shortVersionString>0.1.35</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.35
-
-## Visual Workspace
-
-- Jedes Bild eines visuellen Chats lässt sich in einem integrierten Viewer
-  öffnen, vergrößern, verschieben, wechseln, kopieren und sichern.
-- Originale, lokale Markierungen und KI-Bearbeitungen bleiben als
-  unveränderliche Versionen mit Herkunft, Elternversion und Schutzstatus
-  nachvollziehbar.
-- Eine gewählte Version kann erneut markiert, erneut analysiert oder gezielt
-  für die nächste Frage in den Chat übernommen werden.
-
-## Direkt erklären
-
-- Die Markierungsleiste bietet den neuen Modus „Direkt erklären“. Nach
-  „Fertig“ startet Instant auf Wunsch unmittelbar eine kurze Erklärung der
-  sichtbaren Markierungen.
-- Der Startzustand lässt sich in den Einstellungen festlegen, ohne die
-  unabhängigen Optionen für Chatfenster und Mikrofon zu verändern.
-
-## KI-Bildbearbeitung
-
-- GPT Image 2 kann das gesamte Bild oder ausdrücklich markierte Bereiche
-  bearbeiten. Prompt, Qualität und Ausgabegröße bleiben vor dem Start sichtbar.
-- Der Bearbeitungsprompt kann getippt oder per Mikrofon diktiert werden; erst
-  die Schaltfläche „Bild bearbeiten“ löst einen kostenpflichtigen Auftrag aus.
-- Quelle und Ergebnis lassen sich direkt vergleichen. Ergebnisse können
-  übernommen, im Chat verwendet, weiterbearbeitet oder vollständig verworfen
-  werden, ohne das Original zu überschreiben.
-- Ein separates lokales Monatslimit begrenzt erfolgreiche Bildbearbeitungen.
-
-## Datenschutz und Qualität
-
-- Schwärzungen bleiben in abgeleiteten Versionen als geschützt markiert;
-  Provider erhalten ausschließlich die sichtbare, bereits gerenderte
-  Bildversion.
-- KI-bearbeitete Bilder werden im Viewer, Providerkontext, Verlauf und Export
-  dauerhaft als generierte Ableitungen gekennzeichnet.
-- Die neue Oberfläche ist auf Deutsch und Englisch lokalisiert und besitzt
-  eindeutige VoiceOver-Beschriftungen für Viewer, Navigation, Diktat und
-  Bearbeitungsaktionen.
-- 231 Unit-Tests liefen mit 225 Erfolgen, 0 Fehlern und 6 bewusst
-  übersprungenen Live-Provider-Tests. Analyse, Lokalisierungs- und Icon-Prüfung
-  sind ebenfalls grün.
-- Die unabhängige Accessibility-Prüfung bestand mit 1 von 1. Die vollständige
-  bestehende UI-Matrix bestand mit 35 von 35; der neue Viewer- und
-  Bildeditor-Ablauf wurde zusätzlich mit 1 von 1 auf dem MacBook Air geprüft.
-- Ein echter Low-Quality-Aufruf von `gpt-image-2` bestätigte Modellzugriff,
-  Upload und nichtleere Bildausgabe über den produktiven Edit-Endpunkt.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.35/Instant-0.1.35-37.zip" length="6371058" type="application/octet-stream" sparkle:edSignature="q818h0LnLOqM7VV+3D6gv2Ugu0ljDMYcZ0wNshYeX+CutrVUjrAxJI8davvkdUDxyxtC2qBb0tfNiL/BueazCw=="/>
         </item>
     </channel>
 </rss>
