@@ -3,6 +3,45 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.51</title>
+            <pubDate>Wed, 26 Aug 2026 17:32:21 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.51</link>
+            <sparkle:version>53</sparkle:version>
+            <sparkle:shortVersionString>0.1.51</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.51
+
+## Synchroner schwebender Chat
+
+- Ein Chat bleibt beim Öffnen als schwebendes Fenster vollständig in Instant
+  Home sichtbar. Hauptfenster und schwebendes Fenster zeigen dieselbe Sitzung
+  und synchronisieren Eingaben und Nachrichten unmittelbar.
+- Das Hauptfenster kann anschließend einen anderen Chat öffnen, ohne den
+  schwebenden Chat zu schließen. Beide Fenster bleiben unabhängig bedienbar.
+- Wiederholtes Ablösen bringt das vorhandene Fenster nach vorn, statt ein
+  Duplikat zu erzeugen.
+
+## Anpinnen und Fensterposition
+
+- Das schwebende Chatfenster besitzt jetzt einen Pin-Button. Angepinnt bleibt es
+  über normalen App-Fenstern sichtbar; gelöst verhält es sich wie ein normales
+  Fenster.
+- Die Einstellung „Schwebenden Chat im Vordergrund halten“ legt das
+  Standardverhalten fest und wirkt sofort auf ein bereits geöffnetes Fenster.
+- Position und Größe des schwebenden Fensters werden gespeichert und beim
+  nächsten Öffnen wiederhergestellt.
+
+## Stabilität
+
+- Schließen, Wechseln und Löschen von Chats behandeln Hauptfenster und
+  schwebendes Fenster nun als zwei Ansichten derselben Sitzung, ohne Nachrichten
+  oder laufende Zustände versehentlich zu verlieren.
+- Neue Unit- und UI-Regressionstests prüfen Synchronisierung, Pin-Zustand,
+  Duplikatschutz und das unabhängige Schließen beider Fenster.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.51/Instant-0.1.51-53.zip" length="8775044" type="application/octet-stream" sparkle:edSignature="RbED14Mp6pnhPY4dmUoQOS5xS5rYjYLjQdspMQgHWd5zMy4+FhpinjTVNlOT3FbbmQ+dLsIp3XTfcDf3ETDeAw=="/>
+        </item>
+        <item>
             <title>0.1.50</title>
             <pubDate>Wed, 26 Aug 2026 14:57:00 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.50</link>
@@ -316,67 +355,6 @@
   unverändert in ihren geschützten macOS-Keychain-Bereichen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.42/Instant-0.1.42-44.zip" length="6674704" type="application/octet-stream" sparkle:edSignature="6UgrkmuP07Zga+SK9YVANkjgoGHZhsz2Mec/4Sc/kM7tgSfADxB0raISqrzO/5O5MKIuCgQshxrA7nu8QVNSDg=="/>
-        </item>
-        <item>
-            <title>0.1.41</title>
-            <pubDate>Tue, 25 Aug 2026 16:29:33 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.41</link>
-            <sparkle:version>43</sparkle:version>
-            <sparkle:shortVersionString>0.1.41</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.41
-
-## Bilder direkt im Chat bearbeiten
-
-- In einem Bild-Chat reicht jetzt eine natürliche Text- oder Sprachanweisung
-  wie „Entferne den Hintergrund“ oder „Mach den Himmel sonnig“.
-- Der Realtime-Assistent erkennt eine ausdrückliche Bearbeitungsabsicht und
-  ruft Instants vorhandenen GPT-Image-2-Editor genau einmal als Werkzeug auf.
-- Analysefragen, reine Fähigkeitsfragen und Dokument-Chats lösen keine
-  Bildgenerierung aus.
-- Während der Bearbeitung zeigt Instant einen eindeutigen Arbeitsstatus und
-  sperrt neue Chat-Eingaben sowie das Mikrofon. Das Chatfenster bleibt
-  weiterhin frei beweglich.
-
-## Nicht-destruktive Versionen und Fortsetzung
-
-- Jedes Ergebnis wird als neue Bildversion mit Elternbezug, Modell,
-  Bearbeitungsanweisung und Zeitstempel gespeichert; das Ausgangsbild bleibt
-  unverändert.
-- Das erzeugte Bild erscheint direkt als Beitrag im bestehenden Chat und kann
-  dort geöffnet, verglichen, erneut bearbeitet oder für weitere Fragen
-  verwendet werden.
-- Der Assistent erhält die neue Bildversion zurück und bestätigt das Ergebnis
-  im selben Gespräch, ohne einen zweiten Chat oder Editor-Dialog zu öffnen.
-- Fehler und Abbrüche erzeugen keine falsche Erfolgsmeldung und werden nicht
-  automatisch kostenpflichtig wiederholt.
-
-## Provider, Kosten und Datenschutz
-
-- Das Werkzeug wird nur für echte Bildquellen, bei aktiviertem OpenAI-
-  Bildeditor und innerhalb des konfigurierten Monatslimits angeboten.
-- Der vorhandene OpenAI-Schlüssel bleibt ausschließlich in der macOS-Keychain.
-- Tool-Ergebnisse übertragen keine lokalen Dateipfade, versteckten Prompts oder
-  Schlüssel. Der Realtime-Assistent erhält nur das ausdrücklich bearbeitete
-  Bild und sichere Versionsmetadaten.
-- Doppelte Realtime-Ereignisse werden über ihre Aufruf-ID dedupliziert, sodass
-  dieselbe Anweisung nicht zweimal berechnet wird.
-
-## Qualität
-
-- 251 Unit-Tests: 245 bestanden, 0 fehlgeschlagen und 6 bewusst
-  übersprungene Live-Provider-Tests.
-- Unabhängiges Accessibility-Gate: 1 von 1 bestanden.
-- Vollständige reale GUI-Matrix auf dem MacBook Air: 39 von 39 Abläufen
-  bestanden, einschließlich des neuen Arbeitsstatus und der Eingabesperre.
-- Echter Ende-zu-Ende-Lauf: OpenAI Realtime rief `edit_image` genau einmal
-  auf, GPT Image 2 erzeugte 826.488 Byte Bilddaten und der Chat bestätigte die
-  zurückgegebene Version.
-- Alle 641 sichtbaren Lokalisierungsschlüssel sind vollständig auf Deutsch und
-  Englisch gepflegt; der App-Icon-Katalog enthält weiterhin alle sieben
-  erforderlichen macOS-Basisgrößen.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.41/Instant-0.1.41-43.zip" length="6678781" type="application/octet-stream" sparkle:edSignature="q0UwfnZdmMZKpNJM/o1NqjqpuKCPcBCKVHZpFifXnl7WtnhphLuM1+SFOh70bcJPc4XTtP5bBqYeQ+jcx/CcCw=="/>
         </item>
     </channel>
 </rss>
