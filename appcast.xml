@@ -3,6 +3,29 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.49</title>
+            <pubDate>Wed, 26 Aug 2026 13:29:19 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.49</link>
+            <sparkle:version>51</sparkle:version>
+            <sparkle:shortVersionString>0.1.49</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.49
+
+## Stabile Sortierung der Chats
+
+- Das bloße Öffnen oder Wechseln eines Chats verändert dessen Position in der
+  zeitlich sortierten Chatliste nicht mehr.
+- Instant erkennt unveränderte Transkripte und lässt deren Änderungszeitpunkt
+  unangetastet, auch wenn eine Sitzung geschlossen oder übertragen wird.
+- Erst eine echte Änderung – etwa eine neue Nachricht, ein Bild, eine Quelle,
+  eine Umbenennung oder eine Sammlungsänderung – verschiebt den Chat wieder an
+  die erste Position.
+- Regressionstests sichern sowohl die stabile Reihenfolge beim Öffnen als auch
+  die korrekte Umsortierung nach einer tatsächlichen Inhaltsänderung ab.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.49/Instant-0.1.49-51.zip" length="8756364" type="application/octet-stream" sparkle:edSignature="WvWleuYBv8MYXKVn2PQLfkmCQDr9GvADSYCgKFnRMPaCzVVUb6oKhljZXZ43GH5PMw8+ZhxKQs4t+bIl6j44Bw=="/>
+        </item>
+        <item>
             <title>0.1.48</title>
             <pubDate>Wed, 26 Aug 2026 10:45:44 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.48</link>
@@ -395,41 +418,6 @@
   erforderlichen macOS-Basisgrößen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.40/Instant-0.1.40-42.zip" length="6633571" type="application/octet-stream" sparkle:edSignature="bVoYdRVWOsj0Ncw2S3wTktPs8jM+TXoG8o+pAg1Q9ezRWYPwdjZAaFXiXM0moDwQvho2Q8d2vk+peBCnNOeoDg=="/>
-        </item>
-        <item>
-            <title>0.1.39</title>
-            <pubDate>Tue, 25 Aug 2026 01:13:14 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.39</link>
-            <sparkle:version>41</sparkle:version>
-            <sparkle:shortVersionString>0.1.39</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.39
-
-## Beweglich während der KI-Bearbeitung
-
-- Das Bildbearbeitungsfenster lässt sich jetzt auch während Vorbereitung und
-  Generierung über den sichtbaren Kopfzeilen-Griff verschieben.
-- Prompt, Maske, Optionen, Schließen und Größenänderung bleiben währenddessen
-  weiterhin gesperrt. „Abbrechen“ bleibt als einzige inhaltliche Aktion
-  verfügbar.
-- Die Fortschrittsanzeige und der laufende Auftrag bleiben beim Verschieben
-  vollständig erhalten.
-- Bei Bereichsbearbeitungen übernimmt Instant nur die ausgewählten Flächen aus
-  dem KI-Ergebnis und legt sie lokal auf das Original. Auch mehrere Masken werden
-  gemeinsam verarbeitet; außerhalb bleibt das Bild unverändert und das Ergebnis
-  behält die vollständige Originalgröße.
-
-## Qualität
-
-- Ein echter UI-Regressionstest auf dem MacBook Air versetzt das Fenster im
-  simulierten Generierungszustand und prüft anschließend Position, konstante
-  Größe, aktive Sperre und kontrollierten Abbruch.
-- Das vollständige Gate umfasst 237 Unit-Tests (231 bestanden, 6 bewusst
-  übersprungen), 1 von 1 Accessibility-Prüfung und 37 von 37 UI-Abläufe.
-  Release-Build und statische Analyse sind ohne Fehler oder Warnungen
-  abgeschlossen.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.39/Instant-0.1.39-41.zip" length="6514083" type="application/octet-stream" sparkle:edSignature="8/TGz/aaJy0eNcIrz1fS9vT773Vib8vCqO0yJOnTzV3nzIUQizOvf3oYP9/vi2TmcylarqlrAvsg7N8fsFl1DA=="/>
         </item>
     </channel>
 </rss>
