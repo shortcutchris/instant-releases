@@ -3,6 +3,67 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.46</title>
+            <pubDate>Wed, 26 Aug 2026 04:05:36 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.46</link>
+            <sparkle:version>48</sparkle:version>
+            <sparkle:shortVersionString>0.1.46</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.46
+
+## Skills mit eigenen Werkzeugen
+
+- Instant unterstützt versionierte `.instantskill`-Pakete mit typisierten
+  Werkzeugen, JavaScript-Skripten, Tests, Schemas, Lokalisierungen und festen
+  Ressourcenlimits.
+- Drei integrierte Skills fassen Inhalte zusammen, vergleichen Dokumente und
+  extrahieren Aufgaben. Passende Skills stehen im Chat, bei Dateien und
+  optional direkt in der Aktionsleiste bereit.
+- Ergebnisse werden als nachvollziehbare, nicht-destruktive Artefakte im Chat
+  gespeichert und können später erneut geöffnet oder exportiert werden.
+
+## Sichere Verwaltung
+
+- Der neue Bereich **Einstellungen → Skills** zeigt Herkunft, Version, Hash,
+  Kontexte, Berechtigungen und Laufzeit eines Skills.
+- Skills lassen sich aktivieren, testen, an die Aktionsleiste anheften,
+  exportieren, importieren, entfernen und auf eine vorhandene Version
+  zurücksetzen.
+- Importierte Pakete bleiben bis zur bewussten Freigabe ausgeschaltet.
+  Python- und Shell-Werkzeuge benötigen zusätzlich den sichtbaren
+  Entwickler-Modus und laufen ohne geerbte Schlüssel oder Netzwerkzugriff.
+
+## Skill Studio für Agenten
+
+- Der lokale MCP-Zugang **Instant Skill Studio** erlaubt anderen Agenten,
+  Entwürfe anzulegen, Dateien innerhalb eines Skill-Pakets zu bearbeiten,
+  Validierung und isolierte Tests auszuführen und eine Veröffentlichung zur
+  Prüfung vorzulegen.
+- Ein Agent kann keinen Skill selbst produktiv schalten. Die endgültige
+  Freigabe einschließlich Datei- und Berechtigungsänderungen bleibt in Instant.
+- Bildanalyse und maskierte Bildbearbeitung verwenden die vorhandenen
+  providerneutralen Instant-Schnittstellen; API-Schlüssel verbleiben in der
+  macOS-Keychain und gelangen nie in Skill-Skripte.
+
+## Bedienung und Stabilität
+
+- **Frage zum Bildschirm …** ist wieder direkt im Menüleistensymbol verfügbar.
+- Interaktive Skill-Werkzeugaufrufe reagieren ohne Pufferverzögerung und
+  können die App bei Abbruch, Zeitüberschreitung oder einem beendeten Helfer
+  nicht mitreißen.
+- Der MCP-Transport weist beschädigte und übergroße Nachrichten kontrolliert
+  zurück und bleibt danach weiter verfügbar.
+- Externe Verarbeitung wird nun gegen den tatsächlich ausgewählten
+  Skill-Provider bestätigt. Bei Skills mit mehreren Tools gelten im Broker
+  ausschließlich die Berechtigungen des aufgerufenen Tools.
+- Autonome MCP-Tests führen nur portable JavaScript-Skills aus. Python und
+  Shell bleiben der sichtbaren Nutzerfreigabe in Instant vorbehalten; zugleich
+  sind parallele Testprozesse, Testhistorie, Fehlertexte und Protokollzeilen
+  fest begrenzt.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.46/Instant-0.1.46-48.zip" length="8311713" type="application/octet-stream" sparkle:edSignature="AUyJ3e+mw4gbbNtKeO6fm0uq8CDYW1N868xvxIRYCaOoOAq/ALX8Qwqs06O28V7oa9LtH6YNvO68UbXNy+HJAA=="/>
+        </item>
+        <item>
             <title>0.1.45</title>
             <pubDate>Tue, 25 Aug 2026 23:22:03 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.45</link>
@@ -403,60 +464,6 @@
   abgeschlossen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.37/Instant-0.1.37-39.zip" length="6489579" type="application/octet-stream" sparkle:edSignature="LhCk9y0PJ2i8oBbksrC0AMe9z+4Lo6n1nhd/0OXw8dUpbSPWdehu/i6mtNh72gYBYofDWKOIcKV/i2PTOJKEAg=="/>
-        </item>
-        <item>
-            <title>0.1.36</title>
-            <pubDate>Mon, 24 Aug 2026 21:19:42 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.36</link>
-            <sparkle:version>38</sparkle:version>
-            <sparkle:shortVersionString>0.1.36</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.36
-
-## Frei skalierbarer visueller Chat
-
-- Das aufgeklappte Chatfenster und der integrierte Bild-Viewer lassen sich
-  jetzt frei in der Größe verändern.
-- Ein dezenter Griff unten rechts ergänzt die gewohnten macOS-Fensterkanten
-  und macht die Größenänderung auch bei dem rahmenlosen Panel eindeutig.
-- Chat und Viewer behalten während der Sitzung jeweils ihre zuletzt gewählte
-  Größe; die kompakte Sprachleiste bleibt unverändert klein.
-
-## Markierungen nachträglich bearbeiten
-
-- Der Zeichenmodus besitzt einen neuen Auswahlpfeil. Bereits gezeichnete
-  Linien, Textmarker, Pfeile, Rahmen, Kreise und Schwärzungen können damit
-  ausgewählt, verschoben, skaliert und einzeln gelöscht werden.
-- Nummerierte Pins bleiben verschiebbar und behalten ihre semantisch feste
-  Größe.
-- Zeichnen, Verschieben, Skalieren und Löschen sind in die vorhandene
-  Rückgängig-Historie eingebunden.
-
-## Verbesserte KI-Bildbearbeitung
-
-- Der Bearbeitungsprompt ist jetzt ein stabiles mehrzeiliges Textfeld und
-  bleibt auch bei längeren Beschreibungen gut bedienbar.
-- Der Modus „Markierter Bereich“ behandelt jede Fläche als eigenes Objekt.
-  Flächen lassen sich auswählen, verschieben, über vier Eckgriffe skalieren
-  sowie einzeln oder gemeinsam löschen.
-- Bereichsauswahl, Qualitäts- und Größenoptionen sowie Start-/Abbruchaktionen
-  sind responsiv angeordnet und werden nicht mehr zu schmalen vertikalen
-  Textfragmenten zusammengedrückt.
-
-## Qualität
-
-- Neue Logiktests prüfen Auswahl, Randbegrenzung, Verschieben, Skalieren und
-  Trefferreihenfolge.
-- Echte UI-Tests auf dem MacBook Air ziehen Zeichen- und Maskengriffe,
-  verändern die Panelgröße und prüfen den stabilen Promptbereich.
-- Alle neuen Texte und VoiceOver-Beschriftungen sind auf Deutsch und Englisch
-  verfügbar.
-- Das vollständige Freigabe-Gate auf dem MacBook Air umfasst 235 Unit-Tests
-  (229 bestanden, 6 bewusst übersprungen), 1 von 1 Accessibility-Prüfung und
-  37 von 37 UI-Abläufe. Release-Build und statische Analyse sind ohne Fehler
-  oder Warnungen abgeschlossen.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.36/Instant-0.1.36-38.zip" length="6483991" type="application/octet-stream" sparkle:edSignature="/iGhn29LVFj8yZboAWLFj0V9QteMQmfyaeJ9IJPcW7zPBBO/5fv8bhMg/s5hlOIuqVSYKSVkiGIZBTr07r9qAA=="/>
         </item>
     </channel>
 </rss>
