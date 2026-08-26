@@ -3,6 +3,38 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.47</title>
+            <pubDate>Wed, 26 Aug 2026 09:55:43 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.47</link>
+            <sparkle:version>49</sparkle:version>
+            <sparkle:shortVersionString>0.1.47</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.47
+
+## Repository-eigener Skill-Entwickler
+
+- Das Instant-Repository enthält jetzt den Codex-Skill
+  `instant-skill-developer` als versionierte, gemeinsam gepflegte Quelle.
+- Der Skill führt Agenten durch Entwurf, Dateibearbeitung, Validierung,
+  isolierte Tests, Vorschau und die Übergabe an die Nutzerfreigabe im Instant
+  Skill Studio.
+- Sicherheitsgrenzen sind ausdrücklich Teil des Ablaufs: keine Schlüssel oder
+  privaten Inhalte in Paketen, keine direkte Änderung des produktiven
+  Skill-Speichers und keine Aktivierung ohne Nutzerprüfung.
+
+## Reproduzierbare Codex-Einrichtung
+
+- Die lokale Codex-Installation verweist auf den Skill im Repository, damit
+  verwendete Anleitung und eingecheckte Version nicht auseinanderlaufen.
+- Die Agentendokumentation erklärt die Abgrenzung zwischen Codex-Skills und
+  Instants ausführbaren `.instantskill`-Paketen sowie den notwendigen Neustart
+  nach der MCP-Registrierung.
+- Der neue Dokumentationslink im README macht Skill Studio und Agentenzugang
+  direkt auffindbar.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.47/Instant-0.1.47-49.zip" length="8311726" type="application/octet-stream" sparkle:edSignature="6jin+I2GUdMJ4qNvDMVMX3cFYT961/X5qS/ZyQwZmhv4H9USZhcgaBXjmgEi8UrQ2Nuupcbq+udli8wjd5wdDQ=="/>
+        </item>
+        <item>
             <title>0.1.46</title>
             <pubDate>Wed, 26 Aug 2026 04:05:36 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.46</link>
@@ -417,53 +449,6 @@
   abgeschlossen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.38/Instant-0.1.38-40.zip" length="6504203" type="application/octet-stream" sparkle:edSignature="BfRucthe8TmoSerSPy/TIWvkJWNc/t4U5k8tzhnBC7ys7qEUekdcCGHgEQghm2gj43IOCmoPvsQUxjNrfUKLBA=="/>
-        </item>
-        <item>
-            <title>0.1.37</title>
-            <pubDate>Mon, 24 Aug 2026 22:03:48 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.37</link>
-            <sparkle:version>39</sparkle:version>
-            <sparkle:shortVersionString>0.1.37</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.37
-
-## Ruhige Zeichenbearbeitung
-
-- Auswahlrahmen und Eckgriffe verwenden jetzt einen festen
-  Canvas-Koordinatenraum. Verschieben und Skalieren folgen dadurch dem Mausweg,
-  ohne zu springen oder während des Ziehens ihren Bezugspunkt zu verändern.
-- Die UI-Abnahme prüft neben der Richtung nun auch die tatsächlich erreichte
-  Strecke und unveränderte Objektgröße beim Verschieben.
-
-## Masken ohne Fensterkonflikt
-
-- Beim Aufziehen, Verschieben oder Skalieren einer Bereichsmaske bleibt das
-  Chatfenster vollständig an seiner Position.
-- Neue Masken entstehen nur auf der freien Bildfläche. Vorhandene Masken und
-  ihre Eckgriffe besitzen getrennte Gesten und lösen keine zweite Auswahl aus.
-- Das Fenster bleibt über einen eindeutigen Griff in der Viewer-Kopfzeile
-  verschiebbar.
-
-## Auslöseton
-
-- Nach einer erfolgreich erstellten Bildschirmaufnahme bestätigt ein kurzer
-  Auslöseton den richtigen Zeitpunkt der Aufnahme.
-- In den Visual-Chat-Einstellungen lässt sich der Ton jederzeit deaktivieren.
-  Fehlgeschlagene oder abgebrochene Aufnahmen bleiben stumm.
-
-## Qualität
-
-- Konfigurationsspeicherung und -austausch enthalten die neue Toneinstellung
-  rückwärtskompatibel.
-- Gezielte echte GUI-Tests auf dem MacBook Air prüfen Objektbewegung,
-  Griffskalierung, den unveränderten Fensterrahmen während einer Maskengeste,
-  den separaten Viewer-Ziehgriff und die neue Einstellung.
-- Das vollständige Gate umfasst 235 Unit-Tests (229 bestanden, 6 bewusst
-  übersprungen), 1 von 1 Accessibility-Prüfung und 37 von 37 UI-Abläufe.
-  Release-Build und statische Analyse sind ohne Fehler oder Warnungen
-  abgeschlossen.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.37/Instant-0.1.37-39.zip" length="6489579" type="application/octet-stream" sparkle:edSignature="LhCk9y0PJ2i8oBbksrC0AMe9z+4Lo6n1nhd/0OXw8dUpbSPWdehu/i6mtNh72gYBYofDWKOIcKV/i2PTOJKEAg=="/>
         </item>
     </channel>
 </rss>
