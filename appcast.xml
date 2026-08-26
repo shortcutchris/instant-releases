@@ -3,6 +3,26 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.50</title>
+            <pubDate>Wed, 26 Aug 2026 14:57:00 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.50</link>
+            <sparkle:version>52</sparkle:version>
+            <sparkle:shortVersionString>0.1.50</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.50
+
+## Korrekt zentrierter Hinweis bei abgelösten Chats
+
+- Wenn ein Chat als schwebendes Fenster geöffnet ist, wird der Hinweis in der
+  Home-App jetzt sauber innerhalb der verbleibenden Chatspalte zentriert.
+- Navigationsleiste und Chatauswahl werden bei der Platzberechnung korrekt
+  berücksichtigt; der Hinweis rutscht dadurch nicht mehr nach links.
+- Ein realer UI-Regressionstest koppelt einen Chat ab und prüft die horizontale
+  Ausrichtung gegenüber dem sichtbaren Detailbereich.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.50/Instant-0.1.50-52.zip" length="8757063" type="application/octet-stream" sparkle:edSignature="/fUPlMTFAcqX2YwiYswHQf0ktMRzN6wuQ1lRFzAxBBrC4BCkSvM1dlkYN7hP0D4rIOxyxs2rPkkpbsbB+wZFBg=="/>
+        </item>
+        <item>
             <title>0.1.49</title>
             <pubDate>Wed, 26 Aug 2026 13:29:19 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.49</link>
@@ -357,67 +377,6 @@
   erforderlichen macOS-Basisgrößen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.41/Instant-0.1.41-43.zip" length="6678781" type="application/octet-stream" sparkle:edSignature="q0UwfnZdmMZKpNJM/o1NqjqpuKCPcBCKVHZpFifXnl7WtnhphLuM1+SFOh70bcJPc4XTtP5bBqYeQ+jcx/CcCw=="/>
-        </item>
-        <item>
-            <title>0.1.40</title>
-            <pubDate>Tue, 25 Aug 2026 15:14:30 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.40</link>
-            <sparkle:version>42</sparkle:version>
-            <sparkle:shortVersionString>0.1.40</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.40
-
-## Dateiaktionen werden zu fortsetzbaren Chats
-
-- Inhaltsbezogene Finder-Aktionen zeigen ihr Ergebnis jetzt in derselben
-  Unterhaltung, in der anschließend per Text oder Sprache weitergearbeitet
-  werden kann.
-- Die neue kompakte Ergebnisansicht zeigt Aktion, Quellen, Provider,
-  Arbeitszustand und Schnellaktionen. Sie lässt sich ohne Kontextverlust zum
-  frei skalierbaren vollständigen Chat erweitern.
-- Unter „Visueller Chat“ lässt sich einstellen, ob Dateiergebnisse standardmäßig
-  kompakt oder direkt als vollständiger Chat geöffnet werden.
-- Quellen bleiben im Verlauf und in PDF-, Markdown- und Text-Exporten eindeutig
-  benannt; absolute Dateipfade und der verborgene Quellenkontext werden nicht
-  exportiert.
-
-## Neue Bildaktionen
-
-- „Text aus Bild“ erkennt Text vollständig lokal und benötigt weder Netzwerk
-  noch API-Schlüssel.
-- „Bild analysieren“ übergibt ausgewählte Bilder direkt als visuellen Kontext
-  an OpenAI und streamt die Analyse in den Asset-Chat.
-- „Bild fragen …“ öffnet den Chat zunächst ohne Anfrage und ohne Kosten. Erst
-  eine gesendete Text- oder Sprachnachricht baut die Verbindung auf.
-- Mehrere Bilder bleiben als getrennte, anwählbare Assets derselben
-  Unterhaltung erhalten.
-
-## Provider, Datenschutz und Verlauf
-
-- Folgefragen verwenden weiterhin den Provider der ursprünglichen Dateiaktion;
-  Codex CLI und lokale HTTP-Modelle werden nicht still auf OpenAI umgestellt.
-- Sensible Quellen verlangen unmittelbar vor der ersten externen Folgefrage
-  eine ausdrückliche Bestätigung – auch nach lokaler OCR oder einer späteren
-  Wiederaufnahme aus dem Verlauf.
-- Dokumentinhalt wird als abgegrenzter, nicht vertrauenswürdiger Quellenkontext
-  behandelt und gemeinsam mit der Sitzung nach der gewählten Aufbewahrungsfrist
-  entfernt.
-- Lokale Dateioperationen sowie der bestätigbare Umbenennungsvorschlag bleiben
-  unverändert getrennt und erzeugen keinen unnötigen Chat.
-
-## Qualität
-
-- 244 Unit-Tests: 238 bestanden, 0 fehlgeschlagen und 6 bewusst
-  übersprungene Live-Provider-Tests.
-- Unabhängiges Accessibility-Gate: 1 von 1 bestanden.
-- Vollständige reale GUI-Matrix auf dem MacBook Air: 38 von 38 Abläufen
-  bestanden, einschließlich der neuen kompakten Asset-Chat-Darstellung und der
-  bestehenden Finder-, Text-, Web-, Electron- und Office-Wege.
-- Alle 637 sichtbaren Lokalisierungsschlüssel sind vollständig auf Deutsch und
-  Englisch gepflegt; der App-Icon-Katalog enthält weiterhin alle sieben
-  erforderlichen macOS-Basisgrößen.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.40/Instant-0.1.40-42.zip" length="6633571" type="application/octet-stream" sparkle:edSignature="bVoYdRVWOsj0Ncw2S3wTktPs8jM+TXoG8o+pAg1Q9ezRWYPwdjZAaFXiXM0moDwQvho2Q8d2vk+peBCnNOeoDg=="/>
         </item>
     </channel>
 </rss>
