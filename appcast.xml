@@ -3,6 +3,30 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.48</title>
+            <pubDate>Wed, 26 Aug 2026 10:45:44 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.48</link>
+            <sparkle:version>50</sparkle:version>
+            <sparkle:shortVersionString>0.1.48</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.48
+
+## Neues räumliches App-Icon
+
+- Instant erhält ein vollständig neu aufgebautes 3D-App-Icon in der visuellen
+  Familie von Instant History und Skill Notes.
+- Drei schräg im Raum gestaffelte Karten erzeugen deutlich mehr Tiefe; die
+  sichtbaren mint-, korall- und perlmuttfarbenen Materialebenen bleiben auch
+  in kleinen Dock- und Systemeinstellungsgrößen erkennbar.
+- Das eigenständige Instant-Motiv bleibt erhalten: Ein leuchtendes blaues
+  Auswahlband und ein kompakter AI-Funken stehen für die unmittelbare
+  Transformation markierten Textes.
+- Alle sieben macOS-Größen von 16 bis 1.024 Pixeln wurden neu aus dem finalen
+  Master erzeugt und auf Abmessungen, Transparenz und Katalogzuordnung geprüft.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.48/Instant-0.1.48-50.zip" length="8754931" type="application/octet-stream" sparkle:edSignature="+hs/jCxxhA7ERd/3lH9h7Y5eKlL3FZbPwxk1TZgyOYqui2bciRPhvgjWBVAUYAn6cpXDcRU51MJcUoIdgullDQ=="/>
+        </item>
+        <item>
             <title>0.1.47</title>
             <pubDate>Wed, 26 Aug 2026 09:55:43 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.47</link>
@@ -406,49 +430,6 @@
   abgeschlossen.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.39/Instant-0.1.39-41.zip" length="6514083" type="application/octet-stream" sparkle:edSignature="8/TGz/aaJy0eNcIrz1fS9vT773Vib8vCqO0yJOnTzV3nzIUQizOvf3oYP9/vi2TmcylarqlrAvsg7N8fsFl1DA=="/>
-        </item>
-        <item>
-            <title>0.1.38</title>
-            <pubDate>Mon, 24 Aug 2026 23:29:51 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.38</link>
-            <sparkle:version>40</sparkle:version>
-            <sparkle:shortVersionString>0.1.38</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.38
-
-## Präzise Bereichsmasken
-
-- Neue Auswahlrahmen beginnen jetzt exakt an der Mausposition auf der
-  sichtbaren Bildfläche. Die vertikale Zentrierung des Bildes verursacht
-  keinen Versatz mehr.
-- Verschieben und Skalieren vorhandener Masken behalten weiterhin ihren
-  stabilen, Canvas-bezogenen Bezugspunkt.
-
-## Sicherer Generierungszustand
-
-- Während Vorbereitung und KI-Bildgenerierung ist der gesamte Bildeditor
-  modal gesperrt. Prompt, Maske, Optionen, Fenstergriff und Größenänderung
-  können in dieser Zeit nicht versehentlich verändert werden.
-- Eine klar sichtbare Fortschrittsanzeige informiert über den laufenden
-  Vorgang. „Abbrechen“ bleibt als einzige Aktion verfügbar und beendet den
-  Auftrag kontrolliert.
-- Der gesperrte Hintergrund wird auch für Tastatur und VoiceOver aus dem
-  bedienbaren Fokus entfernt.
-
-## Qualität
-
-- Ein echter UI-Regressionstest auf dem MacBook Air misst die Mitte der neu
-  erstellten Maske gegen die Mauskoordinaten und prüft die vollständige
-  Interaktionssperre einschließlich Fenstergriffen und Abbruch.
-- Finder-UI-Tests arbeiten pro Ablauf mit genau einem isolierten Fenster und
-  vermeiden damit eine systemweite Accessibility-Hierarchieabfrage, die
-  Finder unter macOS 26.6 blockieren konnte.
-- Das vollständige Gate umfasst 235 Unit-Tests (229 bestanden, 6 bewusst
-  übersprungen), 1 von 1 Accessibility-Prüfung und 37 von 37 UI-Abläufe.
-  Release-Build und statische Analyse sind ohne Fehler oder Warnungen
-  abgeschlossen.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.38/Instant-0.1.38-40.zip" length="6504203" type="application/octet-stream" sparkle:edSignature="BfRucthe8TmoSerSPy/TIWvkJWNc/t4U5k8tzhnBC7ys7qEUekdcCGHgEQghm2gj43IOCmoPvsQUxjNrfUKLBA=="/>
         </item>
     </channel>
 </rss>
