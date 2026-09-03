@@ -3,6 +3,60 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.55</title>
+            <pubDate>Thu, 03 Sep 2026 23:51:49 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.55</link>
+            <sparkle:version>57</sparkle:version>
+            <sparkle:shortVersionString>0.1.55</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.55
+
+## Zuverlässiger Voice-Chat auf MacBook-Hardware
+
+- Instant unterstützt jetzt den Drei-Kanal-Eingang aktueller eingebauter
+  MacBook-Mikrofone und mischt ihn ausdrücklich auf das von Realtime erwartete
+  Mono-PCM-Format herunter.
+- Die inkompatible Drei-zu-zwei-Kanal-Route überspringt den fehlschlagenden
+  Voice-Processing-Start und verwendet direkt einen präzisen
+  Halbduplex-Fallback. Auf kompatiblen Routen bleibt Apples Echounterdrückung
+  aktiv.
+- Die Echo-Erkennung folgt tatsächlich abgespielten Audiopuffern samt kurzem
+  Nachlauf. Veraltete Completion-Ereignisse können einen späteren Turn nicht
+  mehr beeinflussen.
+- „Hört zu“ erscheint erst, sobald der Hardware-Input-Tap wirklich läuft. Ein
+  Watchdog meldet einen defekten Capture-Pfad sichtbar, ohne absichtlich
+  unterdrückte Echo-Frames fälschlich als Mikrofonfehler zu behandeln.
+- Die semantische Sprachaktivitätserkennung reagiert wieder ausgewogen und
+  verwendet den serververwalteten Realtime-Abbruch beim Dazwischenreden.
+
+## Konsistenter Voice-Zustand in Bildansicht und KI-Bearbeitung
+
+- Eingebettete und schwebende Bildansicht verwenden nun denselben
+  Editorzustand. Das reine Betrachten eines Bildes lässt Sprache aktiv; erst
+  „Mit KI bearbeiten“ pausiert sie.
+- Rückkehr zum Chat, Rückkehr zur Bildansicht und das Schließen eines
+  gespiegelten Fensters stellen den vorherigen Mikrofonzustand wieder her.
+- Vom Chat ausgelöste Bildbearbeitung pausiert das Mikrofon nur für die Dauer
+  des Werkzeugs.
+- Verspätete Ergebnisse einer Mikrofonfreigabe können nach Stoppen, Schließen
+  oder Moduswechsel keine versteckte Aufnahme mehr starten.
+
+## Verlässliche Zeichenreferenzen
+
+- Nummerierte Pins werden der KI in stabiler Reihenfolge `1 → 2 → 3`
+  übergeben. Ziffern und Zahlwörter wie „1“, „eins“ oder „one“ meinen immer
+  exakt die sichtbare Pin-Nummer.
+- Nennt der Nutzer mehrere Pins, beantwortet Instant sie jeweils einmal und in
+  der angeforderten Reihenfolge. Fehlende Nummern werden nicht geraten.
+- Pfeile, Rahmen, Ellipsen, Textmarker und Freihandmarkierungen folgen einer
+  dokumentierten semantischen Reihenfolge.
+- Markierungen besitzen stabile IDs. Beim erneuten Zeichnen bleiben bisherige
+  Metadaten erhalten und neue Pins zählen ab der höchsten sichtbaren Nummer
+  weiter.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.55/Instant-0.1.55-57.zip" length="8892281" type="application/octet-stream" sparkle:edSignature="U/hdISqpPQPKBgylOFKlvDRagpDdFbI41gcwdX/a1j/+vvBSJVvoCObOKKNiviaKpbxWqrYarDLlzMwlm7r+DQ=="/>
+        </item>
+        <item>
             <title>0.1.54</title>
             <pubDate>Thu, 03 Sep 2026 22:10:37 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.54</link>
@@ -301,48 +355,6 @@ kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
   fest begrenzt.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.46/Instant-0.1.46-48.zip" length="8311713" type="application/octet-stream" sparkle:edSignature="AUyJ3e+mw4gbbNtKeO6fm0uq8CDYW1N868xvxIRYCaOoOAq/ALX8Qwqs06O28V7oa9LtH6YNvO68UbXNy+HJAA=="/>
-        </item>
-        <item>
-            <title>0.1.45</title>
-            <pubDate>Tue, 25 Aug 2026 23:22:03 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.45</link>
-            <sparkle:version>47</sparkle:version>
-            <sparkle:shortVersionString>0.1.45</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.45
-
-## Dateien direkt im Chat
-
-- Das Plus-Symbol im schwebenden Chat und in Instant Home akzeptiert jetzt
-  neben Bildern auch bis zu fünf Dateien gleichzeitig.
-- Unterstützt werden Text, Quellcode, Markdown, PDF, RTF/RTFD, Word, Excel,
-  PowerPoint und Bilder. Instant verwendet dafür die vorhandene lokale
-  Textextraktion und OCR mit den konfigurierten Größen- und Seitenlimits.
-- Dateinamen und extrahierter Inhalt bleiben als Quellen im bestehenden Chat
-  erhalten. Nachfolgende Fragen per Text oder Sprache beziehen die neuen
-  Dateien ein, ohne einen separaten Chat anzulegen.
-- Bereits verbundene Sprachchats laden den erweiterten Kontext kontrolliert
-  neu. Sensible Speicherorte behalten ihre ausdrückliche
-  Datenschutzbestätigung vor externer Verarbeitung.
-
-## Updates im App-Menü
-
-- „Nach Updates suchen …“ ist nun auch direkt im nativen Instant-App-Menü
-  verfügbar.
-- Der Eintrag verwendet dieselbe Sparkle-Instanz wie das Menüleistensymbol und
-  zeigt bei einem bekannten Update dynamisch die verfügbare Version an.
-
-## Qualität
-
-- Neue Tests sichern das dauerhafte Zusammenführen mehrerer Dateiquellen,
-  Datenschutzstatus, die Plus-Menü-Darstellung und den nativen Update-Befehl.
-- Das vollständige Gate umfasst 261 Unit-Tests mit 255 Erfolgen, 0 Fehlern und
-  6 bewusst übersprungenen Live-Provider-Tests, 1 von 1 Accessibility-Test
-  sowie 41 von 41 reale GUI-Abläufe auf dem MacBook Air.
-- Der lokalisierte String Catalog ist mit 689 deutschen und englischen
-  Schlüsseln vollständig; der App-Icon-Katalog bleibt ebenfalls grün.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.45/Instant-0.1.45-47.zip" length="6891740" type="application/octet-stream" sparkle:edSignature="ihAky5pLt4QHeszcJYYHHMQEKJZvOc44Xw10uw89sCtkUu553JfFywn98Cu6DE4Hw5vPkE17wuT3a+1qx+ZjBQ=="/>
         </item>
     </channel>
 </rss>
