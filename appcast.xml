@@ -3,6 +3,36 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.54</title>
+            <pubDate>Thu, 03 Sep 2026 22:10:37 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.54</link>
+            <sparkle:version>56</sparkle:version>
+            <sparkle:shortVersionString>0.1.54</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.54
+
+## Durchgängiger Voice-Chat im Bildviewer
+
+- Das Öffnen der Bild-Detailansicht lässt eine laufende Voice-Unterhaltung
+  unverändert weiterlaufen. Zoomen, Verschieben und der Wechsel zwischen
+  Bildversionen verändern den Audiozustand nicht mehr.
+- Mikrofon und Assistentenstimme sind direkt in der Viewer-Kopfzeile sichtbar
+  und getrennt steuerbar.
+- Erst „Mit KI bearbeiten“ pausiert Mikrofon und Wiedergabe und beendet eine
+  gerade gesprochene Antwort kontrolliert.
+- Beim Verlassen des Editors stellt Instant exakt den vorherigen Zustand
+  wieder her: Ein zuvor aktives Mikrofon hört wieder zu, ein reiner Text-Chat
+  bleibt ein Text-Chat und eine stummgeschaltete Stimme bleibt stumm.
+- Das Prompt-Diktat im Bildeditor ist von der Realtime-Unterhaltung getrennt
+  und aktiviert den Live-Chat nicht ungewollt.
+
+Damit bleibt die Bildbetrachtung ein natürlicher Bestandteil des Gesprächs,
+während die kostenpflichtige Bildbearbeitung einen klar abgegrenzten,
+störungsfreien Arbeitszustand erhält.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.54/Instant-0.1.54-56.zip" length="8857699" type="application/octet-stream" sparkle:edSignature="US5ad7LAXgOo2kchDDwKd+0VLT186+AXK266DtssxWvDleOynwbLicJlt17Xw8QxqE93AEtNqBuUVbjwxL7eDA=="/>
+        </item>
+        <item>
             <title>0.1.53</title>
             <pubDate>Wed, 02 Sep 2026 20:23:04 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.53</link>
@@ -313,37 +343,6 @@ kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
   Schlüsseln vollständig; der App-Icon-Katalog bleibt ebenfalls grün.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.45/Instant-0.1.45-47.zip" length="6891740" type="application/octet-stream" sparkle:edSignature="ihAky5pLt4QHeszcJYYHHMQEKJZvOc44Xw10uw89sCtkUu553JfFywn98Cu6DE4Hw5vPkE17wuT3a+1qx+ZjBQ=="/>
-        </item>
-        <item>
-            <title>0.1.44</title>
-            <pubDate>Tue, 25 Aug 2026 22:14:01 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.44</link>
-            <sparkle:version>46</sparkle:version>
-            <sparkle:shortVersionString>0.1.44</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.44
-
-## Zuverlässig angedockte Chatliste
-
-- Die Chatliste von Instant Home erscheint bereits beim ersten Öffnen als
-  feste linke Spalte und liegt nicht mehr vorübergehend über dem Chat.
-- Ein- und Ausblenden verschiebt den Chat jetzt in jeder Fensterbreite
-  verlässlich, statt zwischen Overlay- und Split-Darstellung zu wechseln.
-- Das Auswählen einer Unterhaltung behält die Liste bei; sie wird nur noch
-  über den dafür vorgesehenen Sidebar-Schalter ein- oder ausgeblendet.
-
-## Qualität
-
-- Ein neuer GUI-Regressionstest prüft den allerersten Layout-Pass sowie
-  wiederholtes Schließen und Öffnen auf Überlappung und korrekte
-  Inhaltsverschiebung.
-- Das vollständige Gate umfasst 258 Unit-Tests mit 252 Erfolgen, 0 Fehlern und
-  6 bewusst übersprungenen Live-Provider-Tests, 1 von 1 Accessibility-Test
-  sowie 40 von 40 reale GUI-Abläufe auf dem MacBook Air.
-- Lokalisierungs- und App-Icon-Katalog bleiben vollständig geprüft; es wurden
-  keine Zugangsdaten oder Providerpfade verändert.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.44/Instant-0.1.44-46.zip" length="6876656" type="application/octet-stream" sparkle:edSignature="lpjw7vzbOHOTS76/xEJpdU5AkbdTLa7SRhAJy0rNiqhimbQ4JOlP8J6R3aV1p9KR7julSF9/bkrGXuSdiZ68AQ=="/>
         </item>
     </channel>
 </rss>
