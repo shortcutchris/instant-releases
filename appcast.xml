@@ -3,6 +3,27 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.61</title>
+            <pubDate>Fri, 04 Sep 2026 18:02:08 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.61</link>
+            <sparkle:version>63</sparkle:version>
+            <sparkle:shortVersionString>0.1.61</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.61
+
+## Behoben
+
+- Der Bild-Viewer, ob schwebend oder im Werkraum von Instant Home, zeigt in
+  seiner Kopfzeile jetzt dieselbe Statuskapsel wie Chat und Home: Pegelbalken
+  beim Zuhören, Verlaufsanzeige beim Verbinden und Nachdenken sowie die
+  Stopp-Taste, während der Assistent spricht. Stummschalten oder das Mikrofon
+  auszuschalten waren dort bisher die einzigen Wege, eine Antwort zu beenden.
+- Das Mikrofonsymbol im Viewer zeigt den Anlauf des Mikrofons wie überall
+  sonst.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.61/Instant-0.1.61-63.zip" length="9017171" type="application/octet-stream" sparkle:edSignature="gKf1LQJ3vIrgEu7ZATM/mMyT9sTSE/e93MBrfiYW7HGa/u0Jwt5XL8yCZC0U3gWl7LDwJ66E7EkIi2un5aN9Aw=="/>
+        </item>
+        <item>
             <title>0.1.60</title>
             <pubDate>Fri, 04 Sep 2026 17:41:00 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.60</link>
@@ -357,45 +378,6 @@ kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
   aktivierter Bedienungshilfe ab.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.52/Instant-0.1.52-54.zip" length="8845555" type="application/octet-stream" sparkle:edSignature="yW66Om+YpQPE7xi7PyBF21JoKqxzh+26Lt5wxlHaeQVNwbMI7tjifxNAsyWgX+TKcBImWbYQfbADMjhOONCsAg=="/>
-        </item>
-        <item>
-            <title>0.1.51</title>
-            <pubDate>Wed, 26 Aug 2026 17:32:21 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.51</link>
-            <sparkle:version>53</sparkle:version>
-            <sparkle:shortVersionString>0.1.51</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.51
-
-## Synchroner schwebender Chat
-
-- Ein Chat bleibt beim Öffnen als schwebendes Fenster vollständig in Instant
-  Home sichtbar. Hauptfenster und schwebendes Fenster zeigen dieselbe Sitzung
-  und synchronisieren Eingaben und Nachrichten unmittelbar.
-- Das Hauptfenster kann anschließend einen anderen Chat öffnen, ohne den
-  schwebenden Chat zu schließen. Beide Fenster bleiben unabhängig bedienbar.
-- Wiederholtes Ablösen bringt das vorhandene Fenster nach vorn, statt ein
-  Duplikat zu erzeugen.
-
-## Anpinnen und Fensterposition
-
-- Das schwebende Chatfenster besitzt jetzt einen Pin-Button. Angepinnt bleibt es
-  über normalen App-Fenstern sichtbar; gelöst verhält es sich wie ein normales
-  Fenster.
-- Die Einstellung „Schwebenden Chat im Vordergrund halten“ legt das
-  Standardverhalten fest und wirkt sofort auf ein bereits geöffnetes Fenster.
-- Position und Größe des schwebenden Fensters werden gespeichert und beim
-  nächsten Öffnen wiederhergestellt.
-
-## Stabilität
-
-- Schließen, Wechseln und Löschen von Chats behandeln Hauptfenster und
-  schwebendes Fenster nun als zwei Ansichten derselben Sitzung, ohne Nachrichten
-  oder laufende Zustände versehentlich zu verlieren.
-- Neue Unit- und UI-Regressionstests prüfen Synchronisierung, Pin-Zustand,
-  Duplikatschutz und das unabhängige Schließen beider Fenster.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.51/Instant-0.1.51-53.zip" length="8775044" type="application/octet-stream" sparkle:edSignature="RbED14Mp6pnhPY4dmUoQOS5xS5rYjYLjQdspMQgHWd5zMy4+FhpinjTVNlOT3FbbmQ+dLsIp3XTfcDf3ETDeAw=="/>
         </item>
     </channel>
 </rss>
