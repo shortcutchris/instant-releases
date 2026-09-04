@@ -3,6 +3,34 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.63</title>
+            <pubDate>Fri, 04 Sep 2026 19:39:15 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.63</link>
+            <sparkle:version>65</sparkle:version>
+            <sparkle:shortVersionString>0.1.63</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.63
+
+## Sprachdialog
+
+- Der Sprachdialog wird schon während des Zeichnens vorbereitet: Verbindung
+  und Echounterdrückung stehen bereit, wenn „Fertig“ gedrückt wird. Das
+  Zuhören beginnt danach in rund 100 Millisekunden statt nach mehreren
+  Sekunden. Das Bildschirmbild wird weiterhin erst nach „Fertig“ übertragen,
+  und das Mikrofon geht erst mit dem sichtbaren Start des Chats an. Abbrechen
+  schließt die vorbereitete Sitzung sofort.
+- „Direkt erklären“ ist jetzt ein Gespräch: Der Assistent erklärt zuerst nur
+  die erste Markierung kurz und fragt, ob es weitergehen soll. „Weiter“ und
+  „Alle erklären“ gibt es als Chips unter dem Transkript und als gesprochene
+  Wörter. Statt des langen Prompts steht im Chat ein kompakter Chip „Direkt
+  erklären“ neben dem Bild; Export und Verlaufstitel enthalten den Prompt
+  nicht mehr.
+- „Mikro aus“ während einer Antwort bricht die Antwort nicht mehr ab. Die
+  Aufnahme endet sofort, die Antwort spielt zu Ende.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.63/Instant-0.1.63-65.zip" length="9064691" type="application/octet-stream" sparkle:edSignature="9I+3w0t3/0eBeoRIQF4XDn3oFfvRZIy+qzOt8YgC+y8UaCNwgZLch5nSyOVk0hT3nfyJ2CIKh622xNzzJt8ACQ=="/>
+        </item>
+        <item>
             <title>0.1.62</title>
             <pubDate>Fri, 04 Sep 2026 18:10:27 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.62</link>
@@ -327,39 +355,6 @@ während die kostenpflichtige Bildbearbeitung einen klar abgegrenzten,
 störungsfreien Arbeitszustand erhält.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.54/Instant-0.1.54-56.zip" length="8857699" type="application/octet-stream" sparkle:edSignature="US5ad7LAXgOo2kchDDwKd+0VLT186+AXK266DtssxWvDleOynwbLicJlt17Xw8QxqE93AEtNqBuUVbjwxL7eDA=="/>
-        </item>
-        <item>
-            <title>0.1.53</title>
-            <pubDate>Wed, 02 Sep 2026 20:23:04 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.53</link>
-            <sparkle:version>55</sparkle:version>
-            <sparkle:shortVersionString>0.1.53</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.53
-
-## Verbesserte Voice-Unterhaltung
-
-- Die eigene Sprachausgabe kann eine laufende Antwort nicht mehr über OpenAIs
-  automatische Sprecherkennung abbrechen.
-- Instant entscheidet Unterbrechungen nun selbst: Mit aktiver Apple-
-  Echounterdrückung bleibt echtes Dazwischensprechen möglich.
-- Falls Voice Processing auf einer Audio-Route nicht verfügbar ist, werden
-  Mikrofondaten während der Wiedergabe und eines kurzen Echo-Nachlaufs
-  zurückgehalten. Danach hört Instant automatisch wieder zu.
-- Die semantische Sprecherkennung wartet etwas geduldiger auf das Ende einer
-  Äußerung und schneidet natürliche Sprechpausen seltener ab.
-
-Auf Audio-Routen ohne verfügbare Echounterdrückung ist Dazwischensprechen
-während der eigenen Ausgabe bewusst kurz gesperrt. Sobald die Ausgabe samt
-Echo-Nachlauf endet, ist das Mikrofon wieder aktiv.
-
-## Technische Grundlage
-
-Die Umsetzung folgt den aktuellen OpenAI-Realtime-Optionen für
-`semantic_vad`, `eagerness`, `create_response` und `interrupt_response` und
-kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.53/Instant-0.1.53-55.zip" length="8847490" type="application/octet-stream" sparkle:edSignature="JwRVIHf89TgIJScbRI0BPRLCBAlYtd0v3Ku2gZ8B9YYMrtYx/qqfHuZio4BqMIsFII3mJxc8Vl21TCeMaVEUCQ=="/>
         </item>
     </channel>
 </rss>
