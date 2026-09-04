@@ -3,6 +3,38 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.66</title>
+            <pubDate>Fri, 04 Sep 2026 21:52:24 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.66</link>
+            <sparkle:version>68</sparkle:version>
+            <sparkle:shortVersionString>0.1.66</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.66
+
+## Sprachdialog
+
+- Vom Aufruf bis zur Pille bleibt der Ablauf sichtbar: Eine kleine Kapsel
+  neben der markierten Stelle zeigt „Bildschirm wird aufgenommen“ und „Wird
+  vorbereitet“. Fehlt die Bildschirmaufnahme, erscheint dort eine Karte mit
+  Grund und Knopf in die Systemeinstellungen; bei verweigertem Mikrofon steht
+  derselbe Knopf in der Fehlerzeile des Chats.
+- Zeichenmodus: Die Ziffern 1 bis 7 wählen die Werkzeuge, ⌘Z macht
+  rückgängig, ⇧⌘Z wiederholt. Der gestrichelte Rahmen um die Auswahl lässt
+  sich verschieben, vergrößern und löschen. Beim ersten Zeichnen erklärt eine
+  Legende die Tasten.
+- Neue Einstellung „Push-to-Talk“: Instant nimmt nur auf, solange die
+  Mikrofontaste gedrückt bleibt, und antwortet beim Loslassen. Praktisch in
+  lauten Räumen und Besprechungen.
+- Die Pille merkt sich, auf welche Seite der markierten Stelle sie gezogen
+  wurde, und erscheint beim nächsten Chat zuerst dort.
+- Alle zehn Realtime-Stimmen stehen zur Wahl und lassen sich in den
+  Einstellungen probehören. Die Antwortsprache lässt sich je Chat im
+  „…“-Menü festlegen. Optional spielen leise Töne, wenn Instant zuzuhören
+  beginnt und wenn eine Antwort endet.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.66/Instant-0.1.66-68.zip" length="9223319" type="application/octet-stream" sparkle:edSignature="DsrJvx8wSdGNd4Bccnwhgn3+3GQYUO8T6MQmt+Jg8O7eWBvsg03iBKqlZ0pvoo/o+R4VvncCeIoh8U43TEIWDw=="/>
+        </item>
+        <item>
             <title>0.1.65</title>
             <pubDate>Fri, 04 Sep 2026 20:30:50 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.65</link>
@@ -266,59 +298,6 @@
   Zeichenoberfläche ab.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.57/Instant-0.1.57-59.zip" length="8974967" type="application/octet-stream" sparkle:edSignature="GH6NIV9111DvbvEnCYIA+A50z3hi68ktwMiCy2J5vtxw91YnOoXi4Zoue4rUx5YQAzg6p5XOe3ifMl2O67v7CQ=="/>
-        </item>
-        <item>
-            <title>0.1.56</title>
-            <pubDate>Fri, 04 Sep 2026 10:58:45 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.56</link>
-            <sparkle:version>58</sparkle:version>
-            <sparkle:shortVersionString>0.1.56</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.56
-
-## Sauberer Wechsel zwischen Voice-Chats
-
-- Ein neuer Bildschirm-Chat beendet die Audioaufnahme, Wiedergabe,
-  Wiederverbindungsversuche und Providerverbindung des zuvor aktiven Chats,
-  bevor die neue Unterhaltung verbunden wird.
-- Das gilt auch dann, wenn der alte Chat nur noch in Instant Home oder in einem
-  schwebenden Fenster im Hintergrund sichtbar ist. Sein gespeicherter Verlauf
-  bleibt erhalten.
-- Bereits schwebende Chats werden beim Öffnen in Instant Home anhand ihrer
-  Sitzungs-ID wiederverwendet. Hauptfenster und schwebendes Fenster können
-  dadurch nicht versehentlich zwei getrennte Live-Instanzen desselben Chats
-  erzeugen.
-- Das reine Schließen des kleinen Fensters bleibt unverändert: Ist derselbe
-  Chat noch in Instant Home offen, wird nur der Spiegel geschlossen.
-- Laufende Text-, Bild- und Tool-Anfragen werden beim Wechsel generationstreu
-  beendet. Verspätete Fehler oder Wiederverbindungsversuche eines alten Chats
-  können die neue Unterhaltung dadurch nicht mehr übernehmen.
-- Schnelle aufeinanderfolgende Sprach-, Text- und Tool-Turns laufen über einen
-  zentralen Antwort-Koordinator. Er beendet eine aktive Antwort höchstens
-  einmal und startet anschließend genau eine zusammengefasste Folgeantwort.
-- Während einer gesprochenen Antwort bleiben die Zustände „spricht“ und
-  „denkt“ stabil; verspätete Audio-Hardwareereignisse schalten die Oberfläche
-  nicht irrtümlich zurück auf „hört zu“.
-
-## Inhalt statt Markierungsgeometrie erklären
-
-- „Direkt erklären“ beschreibt nun den sichtbaren Inhalt, auf den eine
-  Markierung zeigt, statt Lage, Farbe oder Form der Markierung vorzulesen.
-- Nummerierte Pins werden in der Reihenfolge 1, 2, 3 ausgewertet und besitzen
-  einen exakten Referenzanker. Kreis und Rechteck beziehen sich auf ihren
-  Inhalt, ein Pfeil auf sein Ziel und ein Textmarker auf den hervorgehobenen
-  Text oder Bildbereich.
-- Für jede Referenz identifiziert Instant zuerst den betroffenen Inhalt und
-  erklärt anschließend dessen Bedeutung im lokalen Kontext. Unklare oder
-  verdeckte Stellen werden nicht geraten.
-- Geschwärzte Inhalte bleiben ausdrücklich ausgeschlossen und werden weder
-  rekonstruiert noch beschrieben.
-- Instant sendet dafür zwei exakt ausgerichtete Ansichten: ein sauberes,
-  redaktionssicheres Inhaltsbild ohne grafische Marker und eine
-  Annotationsreferenz. So verdecken Pin-Badges und Linien den zu erklärenden
-  Inhalt nicht mehr.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.56/Instant-0.1.56-58.zip" length="8920275" type="application/octet-stream" sparkle:edSignature="VS7oFO8/hJdEBbnBdgjulm/+05GFSDnzplZGotOlvmA2V8J+8ZOkA+px51okqQprrZI21AHx0GxqMcGz/TwtCA=="/>
         </item>
     </channel>
 </rss>
