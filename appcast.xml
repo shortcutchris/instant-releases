@@ -3,6 +3,34 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.65</title>
+            <pubDate>Fri, 04 Sep 2026 20:30:50 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.65</link>
+            <sparkle:version>67</sparkle:version>
+            <sparkle:shortVersionString>0.1.65</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.65
+
+## Sprachdialog
+
+- Neue Einstellung „Antwortlänge“: Kurz, Normal oder Ausführlich. Unter jeder
+  Antwort erscheint der Chip „Mehr dazu“, mit dem der Assistent vertieft.
+- Unterbrochene Antworten sind als solche erkennbar: Was gehört wurde, steht
+  normal, der Rest gedimmt mit dem Hinweis „unterbrochen“. Beim Fortsetzen
+  kennt der Assistent nur den gehörten Teil; der Export kennzeichnet die
+  Stelle.
+- Läuft bereits ein Chat, bietet die Aktionsleiste bei „Bildschirm fragen“ mit
+  ⌥ „Zum aktuellen Chat hinzufügen“ an. Die Kapsel meldet kurz „Neuer Chat“
+  oder „Zum Chat hinzugefügt“, damit kein Kontext unbemerkt verloren geht.
+- Die Einstellungen „Nach ‚Fertig‘ sofort zuhören“ und „Markierungen direkt
+  erklären“ sind zu einer Auswahl „Nach ‚Fertig‘: Zuhören, Direkt erklären,
+  Nur anzeigen“ zusammengefasst. Beim ersten Bildschirm-Chat erklärt eine
+  kurze Einführung die drei Schritte Markieren, Sprechen oder Tippen sowie
+  Stoppen und Weiterfragen.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.65/Instant-0.1.65-67.zip" length="9099713" type="application/octet-stream" sparkle:edSignature="CJDS6xY2mIyUJcTYfa4XOuqJjtazoCO4gvpuqu1foQxM1gbLP6hIIE4bHNSvKIOCx30iNiuwJ0hRvlibVFA6Dg=="/>
+        </item>
+        <item>
             <title>0.1.64</title>
             <pubDate>Fri, 04 Sep 2026 20:05:53 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.64</link>
@@ -291,60 +319,6 @@
   Inhalt nicht mehr.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.56/Instant-0.1.56-58.zip" length="8920275" type="application/octet-stream" sparkle:edSignature="VS7oFO8/hJdEBbnBdgjulm/+05GFSDnzplZGotOlvmA2V8J+8ZOkA+px51okqQprrZI21AHx0GxqMcGz/TwtCA=="/>
-        </item>
-        <item>
-            <title>0.1.55</title>
-            <pubDate>Thu, 03 Sep 2026 23:51:49 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.55</link>
-            <sparkle:version>57</sparkle:version>
-            <sparkle:shortVersionString>0.1.55</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.55
-
-## Zuverlässiger Voice-Chat auf MacBook-Hardware
-
-- Instant unterstützt jetzt den Drei-Kanal-Eingang aktueller eingebauter
-  MacBook-Mikrofone und mischt ihn ausdrücklich auf das von Realtime erwartete
-  Mono-PCM-Format herunter.
-- Die inkompatible Drei-zu-zwei-Kanal-Route überspringt den fehlschlagenden
-  Voice-Processing-Start und verwendet direkt einen präzisen
-  Halbduplex-Fallback. Auf kompatiblen Routen bleibt Apples Echounterdrückung
-  aktiv.
-- Die Echo-Erkennung folgt tatsächlich abgespielten Audiopuffern samt kurzem
-  Nachlauf. Veraltete Completion-Ereignisse können einen späteren Turn nicht
-  mehr beeinflussen.
-- „Hört zu“ erscheint erst, sobald der Hardware-Input-Tap wirklich läuft. Ein
-  Watchdog meldet einen defekten Capture-Pfad sichtbar, ohne absichtlich
-  unterdrückte Echo-Frames fälschlich als Mikrofonfehler zu behandeln.
-- Die semantische Sprachaktivitätserkennung reagiert wieder ausgewogen und
-  verwendet den serververwalteten Realtime-Abbruch beim Dazwischenreden.
-
-## Konsistenter Voice-Zustand in Bildansicht und KI-Bearbeitung
-
-- Eingebettete und schwebende Bildansicht verwenden nun denselben
-  Editorzustand. Das reine Betrachten eines Bildes lässt Sprache aktiv; erst
-  „Mit KI bearbeiten“ pausiert sie.
-- Rückkehr zum Chat, Rückkehr zur Bildansicht und das Schließen eines
-  gespiegelten Fensters stellen den vorherigen Mikrofonzustand wieder her.
-- Vom Chat ausgelöste Bildbearbeitung pausiert das Mikrofon nur für die Dauer
-  des Werkzeugs.
-- Verspätete Ergebnisse einer Mikrofonfreigabe können nach Stoppen, Schließen
-  oder Moduswechsel keine versteckte Aufnahme mehr starten.
-
-## Verlässliche Zeichenreferenzen
-
-- Nummerierte Pins werden der KI in stabiler Reihenfolge `1 → 2 → 3`
-  übergeben. Ziffern und Zahlwörter wie „1“, „eins“ oder „one“ meinen immer
-  exakt die sichtbare Pin-Nummer.
-- Nennt der Nutzer mehrere Pins, beantwortet Instant sie jeweils einmal und in
-  der angeforderten Reihenfolge. Fehlende Nummern werden nicht geraten.
-- Pfeile, Rahmen, Ellipsen, Textmarker und Freihandmarkierungen folgen einer
-  dokumentierten semantischen Reihenfolge.
-- Markierungen besitzen stabile IDs. Beim erneuten Zeichnen bleiben bisherige
-  Metadaten erhalten und neue Pins zählen ab der höchsten sichtbaren Nummer
-  weiter.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.55/Instant-0.1.55-57.zip" length="8892281" type="application/octet-stream" sparkle:edSignature="U/hdISqpPQPKBgylOFKlvDRagpDdFbI41gcwdX/a1j/+vvBSJVvoCObOKKNiviaKpbxWqrYarDLlzMwlm7r+DQ=="/>
         </item>
     </channel>
 </rss>
