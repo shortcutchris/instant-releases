@@ -3,6 +3,29 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.60</title>
+            <pubDate>Fri, 04 Sep 2026 17:41:00 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.60</link>
+            <sparkle:version>62</sparkle:version>
+            <sparkle:shortVersionString>0.1.60</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.60
+
+## Behoben
+
+- Die Zeichenleiste zeigte zwei Augen: Das Werkzeug „Unkenntlich machen“
+  verwendete `eye.slash` und war damit vom Schalter „Direkt erklären“ kaum zu
+  unterscheiden. Die Schwärzung hat jetzt ein Balkensymbol; das Auge steht nur
+  noch für „Direkt erklären“.
+- Instant Home zeigt in der Unterhaltung dieselbe Statuskapsel wie der
+  schwebende Chat: Pegelbalken beim Zuhören, Verlaufsanzeige beim Verbinden
+  und Nachdenken sowie die Stopp-Taste, während der Assistent spricht.
+- Das Mikrofonsymbol in Instant Home zeigt den Anlauf des Mikrofons wie im
+  schwebenden Chat.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.60/Instant-0.1.60-62.zip" length="9016202" type="application/octet-stream" sparkle:edSignature="KjKNz1wqZ4TXtnyyNDKa+dtwgqkfJSVUvMw4HtFFCs/XLtl4suOv9MganRGLEuOHcFhMVVolXSowIYPfaJL0DA=="/>
+        </item>
+        <item>
             <title>0.1.59</title>
             <pubDate>Fri, 04 Sep 2026 16:40:54 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.59</link>
@@ -373,26 +396,6 @@ kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
   Duplikatschutz und das unabhängige Schließen beider Fenster.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.51/Instant-0.1.51-53.zip" length="8775044" type="application/octet-stream" sparkle:edSignature="RbED14Mp6pnhPY4dmUoQOS5xS5rYjYLjQdspMQgHWd5zMy4+FhpinjTVNlOT3FbbmQ+dLsIp3XTfcDf3ETDeAw=="/>
-        </item>
-        <item>
-            <title>0.1.50</title>
-            <pubDate>Wed, 26 Aug 2026 14:57:00 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.50</link>
-            <sparkle:version>52</sparkle:version>
-            <sparkle:shortVersionString>0.1.50</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.50
-
-## Korrekt zentrierter Hinweis bei abgelösten Chats
-
-- Wenn ein Chat als schwebendes Fenster geöffnet ist, wird der Hinweis in der
-  Home-App jetzt sauber innerhalb der verbleibenden Chatspalte zentriert.
-- Navigationsleiste und Chatauswahl werden bei der Platzberechnung korrekt
-  berücksichtigt; der Hinweis rutscht dadurch nicht mehr nach links.
-- Ein realer UI-Regressionstest koppelt einen Chat ab und prüft die horizontale
-  Ausrichtung gegenüber dem sichtbaren Detailbereich.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.50/Instant-0.1.50-52.zip" length="8757063" type="application/octet-stream" sparkle:edSignature="/fUPlMTFAcqX2YwiYswHQf0ktMRzN6wuQ1lRFzAxBBrC4BCkSvM1dlkYN7hP0D4rIOxyxs2rPkkpbsbB+wZFBg=="/>
         </item>
     </channel>
 </rss>
