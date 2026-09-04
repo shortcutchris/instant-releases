@@ -3,6 +3,45 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.57</title>
+            <pubDate>Fri, 04 Sep 2026 13:39:27 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.57</link>
+            <sparkle:version>59</sparkle:version>
+            <sparkle:shortVersionString>0.1.57</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.57
+
+## Behoben
+
+- Ein zweiter visueller Sprachchat kann nach dem Schließen des ersten Chats
+  wieder zuverlässig zuhören und antworten. Instant verwirft dafür beendete
+  macOS-Audio-Graphen vollständig und baut Aufnahme sowie Wiedergabe sauber neu
+  auf.
+- Unerwartete Audio-Routen- und Konfigurationswechsel werden erkannt. Die
+  Aufnahme startet kontrolliert neu, statt in einem scheinbar aktiven, aber
+  stummen Zustand zu bleiben.
+- „Direkt erklären“ über das Augen-Symbol startet nach „Fertig“ wieder
+  zuverlässig die Erklärung der markierten Bildinhalte.
+- Nummerierte Pins werden in der Reihenfolge 1, 2, 3 usw. inhaltlich erklärt.
+  Kreise, Rechtecke, Pfeile und Hervorhebungen beziehen sich auf den darunter
+  sichtbaren Inhalt, nicht auf Form oder Position der Markierung.
+- Während einer automatischen Marker-Erklärung kann die Mikrofonerkennung die
+  laufende Antwort nicht mehr unterbrechen. Nach vollständiger Wiedergabe hört
+  der Chat automatisch weiter zu.
+- Auch bei einem kurzen Verbindungsabbruch bleibt die Direkt-Erklärung erhalten,
+  ohne doppelte Chatnachricht oder dauerhaft blockiertes Mikrofon.
+
+## Qualität
+
+- Ein neuer Audio-Hardware-Test prüft drei Aufnahme-/Wiedergabezyklen über zwei
+  getrennte, gleichzeitig gehaltene Chat-Sitzungen.
+- Zusätzliche Regressionstests sichern Session-Wechsel, Audio-Recovery,
+  Wiedergabe-Gating, Reconnect und die Weitergabe des Augenmodus aus der
+  Zeichenoberfläche ab.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.57/Instant-0.1.57-59.zip" length="8974967" type="application/octet-stream" sparkle:edSignature="GH6NIV9111DvbvEnCYIA+A50z3hi68ktwMiCy2J5vtxw91YnOoXi4Zoue4rUx5YQAzg6p5XOe3ifMl2O67v7CQ=="/>
+        </item>
+        <item>
             <title>0.1.56</title>
             <pubDate>Fri, 04 Sep 2026 10:58:45 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.56</link>
@@ -315,38 +354,6 @@ kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
   Master erzeugt und auf Abmessungen, Transparenz und Katalogzuordnung geprüft.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.48/Instant-0.1.48-50.zip" length="8754931" type="application/octet-stream" sparkle:edSignature="+hs/jCxxhA7ERd/3lH9h7Y5eKlL3FZbPwxk1TZgyOYqui2bciRPhvgjWBVAUYAn6cpXDcRU51MJcUoIdgullDQ=="/>
-        </item>
-        <item>
-            <title>0.1.47</title>
-            <pubDate>Wed, 26 Aug 2026 09:55:43 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.47</link>
-            <sparkle:version>49</sparkle:version>
-            <sparkle:shortVersionString>0.1.47</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.47
-
-## Repository-eigener Skill-Entwickler
-
-- Das Instant-Repository enthält jetzt den Codex-Skill
-  `instant-skill-developer` als versionierte, gemeinsam gepflegte Quelle.
-- Der Skill führt Agenten durch Entwurf, Dateibearbeitung, Validierung,
-  isolierte Tests, Vorschau und die Übergabe an die Nutzerfreigabe im Instant
-  Skill Studio.
-- Sicherheitsgrenzen sind ausdrücklich Teil des Ablaufs: keine Schlüssel oder
-  privaten Inhalte in Paketen, keine direkte Änderung des produktiven
-  Skill-Speichers und keine Aktivierung ohne Nutzerprüfung.
-
-## Reproduzierbare Codex-Einrichtung
-
-- Die lokale Codex-Installation verweist auf den Skill im Repository, damit
-  verwendete Anleitung und eingecheckte Version nicht auseinanderlaufen.
-- Die Agentendokumentation erklärt die Abgrenzung zwischen Codex-Skills und
-  Instants ausführbaren `.instantskill`-Paketen sowie den notwendigen Neustart
-  nach der MCP-Registrierung.
-- Der neue Dokumentationslink im README macht Skill Studio und Agentenzugang
-  direkt auffindbar.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.47/Instant-0.1.47-49.zip" length="8311726" type="application/octet-stream" sparkle:edSignature="6jin+I2GUdMJ4qNvDMVMX3cFYT961/X5qS/ZyQwZmhv4H9USZhcgaBXjmgEi8UrQ2Nuupcbq+udli8wjd5wdDQ=="/>
         </item>
     </channel>
 </rss>
