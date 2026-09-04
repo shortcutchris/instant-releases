@@ -3,6 +3,43 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.58</title>
+            <pubDate>Fri, 04 Sep 2026 15:35:37 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.58</link>
+            <sparkle:version>60</sparkle:version>
+            <sparkle:shortVersionString>0.1.58</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.58
+
+## Behoben
+
+- Apples Echounterdrückung (Voice Processing) startet jetzt auch mit dem
+  eingebauten Mikrofon-Array aktueller MacBooks. Bisher schlug der Start auf
+  dieser Hardware bei jedem Chat still fehl, und Instant lief im
+  Halbduplex-Fallback: Während einer Antwort und kurz danach war das Mikrofon
+  komplett stumm, Dazwischenreden war unmöglich, und eine lange
+  Direkt-Erklärung blockierte das Zuhören für ihre gesamte Dauer.
+- Instant setzt für den Mikrofon-Tap und die Ausgabe dasselbe Mono-Format bei
+  der Hardware-Abtastrate, wartet den Routenwechsel des Mikrofon-Arrays beim
+  Aktivieren im Leerlauf ab und startet die Aufnahme erst danach. Echtes
+  Dazwischensprechen bleibt damit möglich; der Halbduplex-Fallback greift nur
+  noch, wenn eine Audio-Route Voice Processing tatsächlich nicht bietet.
+- Beendete oder ersetzte Chats schließen ihre Realtime-Verbindung jetzt
+  wirklich. Bisher blieb der WebSocket des alten Chats offen, und die
+  OpenAI-Sitzung lief serverseitig weiter, bis der Server sie trennte.
+
+## Qualität
+
+- Regressionstests für die Routenprüfung und das explizite
+  Voice-Processing-Client-Format.
+- Die Audio-Engine wurde mit echter Mikrofon- und Lautsprecher-Hardware in den
+  Abläufen „ersten Chat beenden, zweiten Chat starten" und „Direkt erklären"
+  geprüft; der Transport wurde gegen einen echten WebSocket-Server auf das
+  Schließen des Sockets geprüft.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.58/Instant-0.1.58-60.zip" length="8976961" type="application/octet-stream" sparkle:edSignature="olhVTvS1d2myy/pqis0b+98CO7oBDSS/Y6n1PPp662SdGTCTZq90xgjH1BGhc+7j98LsPcid0rjKILiBqcj0Dw=="/>
+        </item>
+        <item>
             <title>0.1.57</title>
             <pubDate>Fri, 04 Sep 2026 13:39:27 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.57</link>
@@ -330,30 +367,6 @@ kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
   die korrekte Umsortierung nach einer tatsächlichen Inhaltsänderung ab.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.49/Instant-0.1.49-51.zip" length="8756364" type="application/octet-stream" sparkle:edSignature="WvWleuYBv8MYXKVn2PQLfkmCQDr9GvADSYCgKFnRMPaCzVVUb6oKhljZXZ43GH5PMw8+ZhxKQs4t+bIl6j44Bw=="/>
-        </item>
-        <item>
-            <title>0.1.48</title>
-            <pubDate>Wed, 26 Aug 2026 10:45:44 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.48</link>
-            <sparkle:version>50</sparkle:version>
-            <sparkle:shortVersionString>0.1.48</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.48
-
-## Neues räumliches App-Icon
-
-- Instant erhält ein vollständig neu aufgebautes 3D-App-Icon in der visuellen
-  Familie von Instant History und Skill Notes.
-- Drei schräg im Raum gestaffelte Karten erzeugen deutlich mehr Tiefe; die
-  sichtbaren mint-, korall- und perlmuttfarbenen Materialebenen bleiben auch
-  in kleinen Dock- und Systemeinstellungsgrößen erkennbar.
-- Das eigenständige Instant-Motiv bleibt erhalten: Ein leuchtendes blaues
-  Auswahlband und ein kompakter AI-Funken stehen für die unmittelbare
-  Transformation markierten Textes.
-- Alle sieben macOS-Größen von 16 bis 1.024 Pixeln wurden neu aus dem finalen
-  Master erzeugt und auf Abmessungen, Transparenz und Katalogzuordnung geprüft.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.48/Instant-0.1.48-50.zip" length="8754931" type="application/octet-stream" sparkle:edSignature="+hs/jCxxhA7ERd/3lH9h7Y5eKlL3FZbPwxk1TZgyOYqui2bciRPhvgjWBVAUYAn6cpXDcRU51MJcUoIdgullDQ=="/>
         </item>
     </channel>
 </rss>
