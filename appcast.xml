@@ -3,6 +3,55 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.59</title>
+            <pubDate>Fri, 04 Sep 2026 16:40:54 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.59</link>
+            <sparkle:version>61</sparkle:version>
+            <sparkle:shortVersionString>0.1.59</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.59
+
+## Sprachdialog
+
+- Eine gesprochene Antwort lässt sich jederzeit stoppen: Die Statuskapsel wird
+  während der Ausgabe zur Stopp-Taste, `Esc` löst sie ebenfalls aus. Instant
+  bricht die Antwort serverseitig ab und behält nur den gehörten Teil als
+  Kontext. Stummschalten bleibt davon getrennt.
+- Eine getippte Frage unterbricht eine laufende Antwort genauso wie
+  Dazwischenreden.
+- Auch während einer automatischen Marker-Erklärung bleibt das Mikrofon offen;
+  die Erklärung kann per Stimme unterbrochen werden.
+- Die eigenen Worte erscheinen bereits während des Sprechens im Chat
+  (`gpt-live-transcribe`). Lehnt der Server das Modell ab, fällt Instant
+  automatisch auf die bisherige Transkription pro Sprechpause zurück.
+- Der Status unterscheidet jetzt „Verbindet", „Mikrofon startet", „Hört zu",
+  „Sprache erkannt", „Denkt nach …" und „Spricht". Das Mikrofonsymbol zeigt den
+  Anlauf des Mikrofons sichtbar an. Nach acht Sekunden Stille erinnert die
+  Pille mit „Sprich oder tippe" daran, dass beides möglich ist.
+
+## Bedienung
+
+- Die kompakte Pille ist breiter, schneidet Statustexte nicht mehr ab und
+  klappt bei einem Fehler automatisch auf, damit „Erneut versuchen" sichtbar
+  ist. Instant Home bietet denselben Knopf.
+- „Erneut versuchen" schaltet ein zuvor aktives Mikrofon wieder ein.
+- `Esc` klappt den Chat zu beziehungsweise schließt die Pille, `⌘W` schließt
+  den schwebenden Chat.
+- Der Größenziehpunkt zeigt einen diagonalen Cursor.
+- Phasenwechsel werden VoiceOver angesagt.
+
+## Behoben
+
+- Die Aktion „Bildschirm fragen" besaß keinen Eintrag im String Catalog und
+  zeigte in Textdarstellung, Tooltip und Editor ihren rohen Schlüssel.
+- Schreibfehler des lokalen Verlaufs werden protokolliert und im Chat
+  angezeigt statt still verschluckt.
+- Chats, die mit einer automatischen Marker-Erklärung beginnen, erhalten ihren
+  Titel aus der Antwort statt aus dem internen Prompt.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.59/Instant-0.1.59-61.zip" length="9019175" type="application/octet-stream" sparkle:edSignature="3oZ4PYLNGZR8ij/3JQnp8o9Iy9dlK5mQFkgvcNVs/hbKuR/cxe10zosDlCOPx0Vr72q6NJ2s7ol5f0K/c6jbAA=="/>
+        </item>
+        <item>
             <title>0.1.58</title>
             <pubDate>Fri, 04 Sep 2026 15:35:37 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.58</link>
@@ -344,29 +393,6 @@ kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
   Ausrichtung gegenüber dem sichtbaren Detailbereich.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.50/Instant-0.1.50-52.zip" length="8757063" type="application/octet-stream" sparkle:edSignature="/fUPlMTFAcqX2YwiYswHQf0ktMRzN6wuQ1lRFzAxBBrC4BCkSvM1dlkYN7hP0D4rIOxyxs2rPkkpbsbB+wZFBg=="/>
-        </item>
-        <item>
-            <title>0.1.49</title>
-            <pubDate>Wed, 26 Aug 2026 13:29:19 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.49</link>
-            <sparkle:version>51</sparkle:version>
-            <sparkle:shortVersionString>0.1.49</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.49
-
-## Stabile Sortierung der Chats
-
-- Das bloße Öffnen oder Wechseln eines Chats verändert dessen Position in der
-  zeitlich sortierten Chatliste nicht mehr.
-- Instant erkennt unveränderte Transkripte und lässt deren Änderungszeitpunkt
-  unangetastet, auch wenn eine Sitzung geschlossen oder übertragen wird.
-- Erst eine echte Änderung – etwa eine neue Nachricht, ein Bild, eine Quelle,
-  eine Umbenennung oder eine Sammlungsänderung – verschiebt den Chat wieder an
-  die erste Position.
-- Regressionstests sichern sowohl die stabile Reihenfolge beim Öffnen als auch
-  die korrekte Umsortierung nach einer tatsächlichen Inhaltsänderung ab.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.49/Instant-0.1.49-51.zip" length="8756364" type="application/octet-stream" sparkle:edSignature="WvWleuYBv8MYXKVn2PQLfkmCQDr9GvADSYCgKFnRMPaCzVVUb6oKhljZXZ43GH5PMw8+ZhxKQs4t+bIl6j44Bw=="/>
         </item>
     </channel>
 </rss>
