@@ -3,6 +3,59 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.56</title>
+            <pubDate>Fri, 04 Sep 2026 10:58:45 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.56</link>
+            <sparkle:version>58</sparkle:version>
+            <sparkle:shortVersionString>0.1.56</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.56
+
+## Sauberer Wechsel zwischen Voice-Chats
+
+- Ein neuer Bildschirm-Chat beendet die Audioaufnahme, Wiedergabe,
+  Wiederverbindungsversuche und Providerverbindung des zuvor aktiven Chats,
+  bevor die neue Unterhaltung verbunden wird.
+- Das gilt auch dann, wenn der alte Chat nur noch in Instant Home oder in einem
+  schwebenden Fenster im Hintergrund sichtbar ist. Sein gespeicherter Verlauf
+  bleibt erhalten.
+- Bereits schwebende Chats werden beim Öffnen in Instant Home anhand ihrer
+  Sitzungs-ID wiederverwendet. Hauptfenster und schwebendes Fenster können
+  dadurch nicht versehentlich zwei getrennte Live-Instanzen desselben Chats
+  erzeugen.
+- Das reine Schließen des kleinen Fensters bleibt unverändert: Ist derselbe
+  Chat noch in Instant Home offen, wird nur der Spiegel geschlossen.
+- Laufende Text-, Bild- und Tool-Anfragen werden beim Wechsel generationstreu
+  beendet. Verspätete Fehler oder Wiederverbindungsversuche eines alten Chats
+  können die neue Unterhaltung dadurch nicht mehr übernehmen.
+- Schnelle aufeinanderfolgende Sprach-, Text- und Tool-Turns laufen über einen
+  zentralen Antwort-Koordinator. Er beendet eine aktive Antwort höchstens
+  einmal und startet anschließend genau eine zusammengefasste Folgeantwort.
+- Während einer gesprochenen Antwort bleiben die Zustände „spricht“ und
+  „denkt“ stabil; verspätete Audio-Hardwareereignisse schalten die Oberfläche
+  nicht irrtümlich zurück auf „hört zu“.
+
+## Inhalt statt Markierungsgeometrie erklären
+
+- „Direkt erklären“ beschreibt nun den sichtbaren Inhalt, auf den eine
+  Markierung zeigt, statt Lage, Farbe oder Form der Markierung vorzulesen.
+- Nummerierte Pins werden in der Reihenfolge 1, 2, 3 ausgewertet und besitzen
+  einen exakten Referenzanker. Kreis und Rechteck beziehen sich auf ihren
+  Inhalt, ein Pfeil auf sein Ziel und ein Textmarker auf den hervorgehobenen
+  Text oder Bildbereich.
+- Für jede Referenz identifiziert Instant zuerst den betroffenen Inhalt und
+  erklärt anschließend dessen Bedeutung im lokalen Kontext. Unklare oder
+  verdeckte Stellen werden nicht geraten.
+- Geschwärzte Inhalte bleiben ausdrücklich ausgeschlossen und werden weder
+  rekonstruiert noch beschrieben.
+- Instant sendet dafür zwei exakt ausgerichtete Ansichten: ein sauberes,
+  redaktionssicheres Inhaltsbild ohne grafische Marker und eine
+  Annotationsreferenz. So verdecken Pin-Badges und Linien den zu erklärenden
+  Inhalt nicht mehr.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.56/Instant-0.1.56-58.zip" length="8920275" type="application/octet-stream" sparkle:edSignature="VS7oFO8/hJdEBbnBdgjulm/+05GFSDnzplZGotOlvmA2V8J+8ZOkA+px51okqQprrZI21AHx0GxqMcGz/TwtCA=="/>
+        </item>
+        <item>
             <title>0.1.55</title>
             <pubDate>Thu, 03 Sep 2026 23:51:49 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.55</link>
@@ -294,67 +347,6 @@ kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
   direkt auffindbar.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.47/Instant-0.1.47-49.zip" length="8311726" type="application/octet-stream" sparkle:edSignature="6jin+I2GUdMJ4qNvDMVMX3cFYT961/X5qS/ZyQwZmhv4H9USZhcgaBXjmgEi8UrQ2Nuupcbq+udli8wjd5wdDQ=="/>
-        </item>
-        <item>
-            <title>0.1.46</title>
-            <pubDate>Wed, 26 Aug 2026 04:05:36 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.46</link>
-            <sparkle:version>48</sparkle:version>
-            <sparkle:shortVersionString>0.1.46</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.46
-
-## Skills mit eigenen Werkzeugen
-
-- Instant unterstützt versionierte `.instantskill`-Pakete mit typisierten
-  Werkzeugen, JavaScript-Skripten, Tests, Schemas, Lokalisierungen und festen
-  Ressourcenlimits.
-- Drei integrierte Skills fassen Inhalte zusammen, vergleichen Dokumente und
-  extrahieren Aufgaben. Passende Skills stehen im Chat, bei Dateien und
-  optional direkt in der Aktionsleiste bereit.
-- Ergebnisse werden als nachvollziehbare, nicht-destruktive Artefakte im Chat
-  gespeichert und können später erneut geöffnet oder exportiert werden.
-
-## Sichere Verwaltung
-
-- Der neue Bereich **Einstellungen → Skills** zeigt Herkunft, Version, Hash,
-  Kontexte, Berechtigungen und Laufzeit eines Skills.
-- Skills lassen sich aktivieren, testen, an die Aktionsleiste anheften,
-  exportieren, importieren, entfernen und auf eine vorhandene Version
-  zurücksetzen.
-- Importierte Pakete bleiben bis zur bewussten Freigabe ausgeschaltet.
-  Python- und Shell-Werkzeuge benötigen zusätzlich den sichtbaren
-  Entwickler-Modus und laufen ohne geerbte Schlüssel oder Netzwerkzugriff.
-
-## Skill Studio für Agenten
-
-- Der lokale MCP-Zugang **Instant Skill Studio** erlaubt anderen Agenten,
-  Entwürfe anzulegen, Dateien innerhalb eines Skill-Pakets zu bearbeiten,
-  Validierung und isolierte Tests auszuführen und eine Veröffentlichung zur
-  Prüfung vorzulegen.
-- Ein Agent kann keinen Skill selbst produktiv schalten. Die endgültige
-  Freigabe einschließlich Datei- und Berechtigungsänderungen bleibt in Instant.
-- Bildanalyse und maskierte Bildbearbeitung verwenden die vorhandenen
-  providerneutralen Instant-Schnittstellen; API-Schlüssel verbleiben in der
-  macOS-Keychain und gelangen nie in Skill-Skripte.
-
-## Bedienung und Stabilität
-
-- **Frage zum Bildschirm …** ist wieder direkt im Menüleistensymbol verfügbar.
-- Interaktive Skill-Werkzeugaufrufe reagieren ohne Pufferverzögerung und
-  können die App bei Abbruch, Zeitüberschreitung oder einem beendeten Helfer
-  nicht mitreißen.
-- Der MCP-Transport weist beschädigte und übergroße Nachrichten kontrolliert
-  zurück und bleibt danach weiter verfügbar.
-- Externe Verarbeitung wird nun gegen den tatsächlich ausgewählten
-  Skill-Provider bestätigt. Bei Skills mit mehreren Tools gelten im Broker
-  ausschließlich die Berechtigungen des aufgerufenen Tools.
-- Autonome MCP-Tests führen nur portable JavaScript-Skills aus. Python und
-  Shell bleiben der sichtbaren Nutzerfreigabe in Instant vorbehalten; zugleich
-  sind parallele Testprozesse, Testhistorie, Fehlertexte und Protokollzeilen
-  fest begrenzt.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.46/Instant-0.1.46-48.zip" length="8311713" type="application/octet-stream" sparkle:edSignature="AUyJ3e+mw4gbbNtKeO6fm0uq8CDYW1N868xvxIRYCaOoOAq/ALX8Qwqs06O28V7oa9LtH6YNvO68UbXNy+HJAA=="/>
         </item>
     </channel>
 </rss>
