@@ -3,6 +3,26 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.62</title>
+            <pubDate>Fri, 04 Sep 2026 18:10:27 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.62</link>
+            <sparkle:version>64</sparkle:version>
+            <sparkle:shortVersionString>0.1.62</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.62
+
+## Sprachdialog
+
+- Neben Mikrofon und Lautsprecher gibt es jetzt überall eine eigene
+  Stopp-Taste: im schwebenden Chat, in Instant Home und im Bild-Viewer.
+  Spricht der Assistent, beendet sie die Antwort; hört Instant zu, beendet sie
+  das Zuhören. Sie bleibt sichtbar und ist nur ausgegraut, wenn es nichts zu
+  stoppen gibt. Die Statuskapsel zeigt während einer Antwort weiterhin das
+  Stopp-Symbol und funktioniert wie bisher.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.62/Instant-0.1.62-64.zip" length="9023936" type="application/octet-stream" sparkle:edSignature="8Y1FckdvDlhtjTJbhlPpVnzBLUxDxx4SlM8QT+F/mzSIYV+13lCPvJdOlCTCfmxvcc7WN0JskKoTDSbBR/OxCg=="/>
+        </item>
+        <item>
             <title>0.1.61</title>
             <pubDate>Fri, 04 Sep 2026 18:02:08 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.61</link>
@@ -340,44 +360,6 @@ Die Umsetzung folgt den aktuellen OpenAI-Realtime-Optionen für
 kombiniert sie mit Apples Voice Processing für kompatible Duplex-Audiorouten.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.53/Instant-0.1.53-55.zip" length="8847490" type="application/octet-stream" sparkle:edSignature="JwRVIHf89TgIJScbRI0BPRLCBAlYtd0v3Ku2gZ8B9YYMrtYx/qqfHuZio4BqMIsFII3mJxc8Vl21TCeMaVEUCQ=="/>
-        </item>
-        <item>
-            <title>0.1.52</title>
-            <pubDate>Wed, 26 Aug 2026 19:04:54 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.52</link>
-            <sparkle:version>54</sparkle:version>
-            <sparkle:shortVersionString>0.1.52</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.52
-
-## Ruhigere, einheitliche Übergänge
-
-- Instant Home, der schwebende Chat, die Aktionsleiste, Rückmeldungen und der
-  Bildeditor verwenden jetzt eine gemeinsame, zurückhaltende Bewegungssprache.
-- Neue Chats, Nachrichten, Bilder, Dateien und Skill-Artefakte erscheinen mit
-  kurzen, präzisen Übergängen. Bestehende Inhalte verschieben sich dabei
-  kontrolliert an ihre neue Position.
-- Chat-, Workspace-, Viewer- und Editor-Zustände wechseln weich, statt den
-  Inhalt hart auszutauschen.
-
-## Direkte Bedienung bleibt direkt
-
-- Gestreamter Text wird nicht pro Textfragment animiert und bleibt dadurch
-  ruhig lesbar.
-- Zeichnen, Auswahlrahmen, Anfasser, Fensterbewegungen und Größenänderungen
-  bleiben unmittelbar an Maus und Trackpad gekoppelt.
-- Mikrofon, Lautsprecher, Pin-Status und kurze Erfolgsanzeigen reagieren mit
-  kleinen Symbol- und Farbwechseln, ohne das Layout zu verändern.
-
-## Bedienungshilfen
-
-- Die macOS-Einstellung „Bewegung reduzieren“ wird nun zentral von allen neuen
-  Animationen berücksichtigt. Räumliche Bewegungen werden dabei durch schlichte
-  Überblendungen ersetzt oder vollständig ausgelassen.
-- Automatisierte Tests sichern die drei Bewegungsstufen und das Verhalten bei
-  aktivierter Bedienungshilfe ab.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.52/Instant-0.1.52-54.zip" length="8845555" type="application/octet-stream" sparkle:edSignature="yW66Om+YpQPE7xi7PyBF21JoKqxzh+26Lt5wxlHaeQVNwbMI7tjifxNAsyWgX+TKcBImWbYQfbADMjhOONCsAg=="/>
         </item>
     </channel>
 </rss>
