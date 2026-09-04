@@ -3,6 +3,26 @@
     <channel>
         <title>Instant</title>
         <item>
+            <title>0.1.64</title>
+            <pubDate>Fri, 04 Sep 2026 20:05:53 +0200</pubDate>
+            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.64</link>
+            <sparkle:version>66</sparkle:version>
+            <sparkle:shortVersionString>0.1.64</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.64
+
+## Sprachdialog
+
+- Spricht der Assistent, zeigt die Statuskapsel jetzt eine eigene, violette
+  Waveform, die dem tatsächlich abgespielten Ton folgt, statt eines zweiten
+  Stopp-Symbols neben der Stopp-Taste. Beim Zuhören bleibt die Waveform in der
+  Akzentfarbe des Mikrofons. Gestoppt wird ausschließlich über die Stopp-Taste
+  neben Mikrofon und Lautsprecher, im schwebenden Chat, in Instant Home und im
+  Bild-Viewer gleich.
+]]></description>
+            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.64/Instant-0.1.64-66.zip" length="9064665" type="application/octet-stream" sparkle:edSignature="UBPQr6j5GDjQPLywfX3NFBEs23dyd6ZGaNwYBOwb4IoQ8NbXCq0Nox1qdrgl9Jdqs1PRvc6da0sScZ/wQ2RcAw=="/>
+        </item>
+        <item>
             <title>0.1.63</title>
             <pubDate>Fri, 04 Sep 2026 19:39:15 +0200</pubDate>
             <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.63</link>
@@ -325,36 +345,6 @@
   weiter.
 ]]></description>
             <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.55/Instant-0.1.55-57.zip" length="8892281" type="application/octet-stream" sparkle:edSignature="U/hdISqpPQPKBgylOFKlvDRagpDdFbI41gcwdX/a1j/+vvBSJVvoCObOKKNiviaKpbxWqrYarDLlzMwlm7r+DQ=="/>
-        </item>
-        <item>
-            <title>0.1.54</title>
-            <pubDate>Thu, 03 Sep 2026 22:10:37 +0200</pubDate>
-            <link>https://github.com/shortcutchris/instant-releases/releases/tag/v0.1.54</link>
-            <sparkle:version>56</sparkle:version>
-            <sparkle:shortVersionString>0.1.54</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# Instant 0.1.54
-
-## Durchgängiger Voice-Chat im Bildviewer
-
-- Das Öffnen der Bild-Detailansicht lässt eine laufende Voice-Unterhaltung
-  unverändert weiterlaufen. Zoomen, Verschieben und der Wechsel zwischen
-  Bildversionen verändern den Audiozustand nicht mehr.
-- Mikrofon und Assistentenstimme sind direkt in der Viewer-Kopfzeile sichtbar
-  und getrennt steuerbar.
-- Erst „Mit KI bearbeiten“ pausiert Mikrofon und Wiedergabe und beendet eine
-  gerade gesprochene Antwort kontrolliert.
-- Beim Verlassen des Editors stellt Instant exakt den vorherigen Zustand
-  wieder her: Ein zuvor aktives Mikrofon hört wieder zu, ein reiner Text-Chat
-  bleibt ein Text-Chat und eine stummgeschaltete Stimme bleibt stumm.
-- Das Prompt-Diktat im Bildeditor ist von der Realtime-Unterhaltung getrennt
-  und aktiviert den Live-Chat nicht ungewollt.
-
-Damit bleibt die Bildbetrachtung ein natürlicher Bestandteil des Gesprächs,
-während die kostenpflichtige Bildbearbeitung einen klar abgegrenzten,
-störungsfreien Arbeitszustand erhält.
-]]></description>
-            <enclosure url="https://github.com/shortcutchris/instant-releases/releases/download/v0.1.54/Instant-0.1.54-56.zip" length="8857699" type="application/octet-stream" sparkle:edSignature="US5ad7LAXgOo2kchDDwKd+0VLT186+AXK266DtssxWvDleOynwbLicJlt17Xw8QxqE93AEtNqBuUVbjwxL7eDA=="/>
         </item>
     </channel>
 </rss>
